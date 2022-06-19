@@ -1,0 +1,2 @@
+# Layouts directory
+Nuxt provides a customizable layouts framework you can use throughout your application, ideal for extracting common UI or code patterns into reusable layout components. Page layouts are placed in the layouts/ directory and will be automatically loaded via asynchronous import when used. If you create a layouts/default.vue this will be used for all pages in your app. Other layouts are used by setting a layout property as part of your component's options.
