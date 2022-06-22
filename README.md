@@ -1,7 +1,7 @@
 # Nuxt 3 Starter
 This repo contains a fully configured nuxt 3 instance supporting TypeScript and several considered as useful libraries, fully configured and ready to use in real world projects!
 
-## Vitest (will be added soon)
+## Vitest
 Vitest is a blazing fast unit test framework powered by Vite. Given Jest's massive adoption, Vitest provides a compatible API that allows you to use it as a drop-in replacement in most projects. 
 [learn more](https://vitest.dev/).
 

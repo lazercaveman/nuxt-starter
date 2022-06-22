@@ -127,6 +127,7 @@ export const parameters = {
   backgrounds: CustomBackgrounds,
   layout: 'centered',
   panelPosition: 'right',
+  controls: { sort: 'alpha' },
   darkMode: {
     dark: darkTheme,
     light: lightTheme,
