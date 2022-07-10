@@ -1,13 +1,17 @@
 # Nuxt 3 Starter
 This repo contains a fully configured nuxt 3 instance supporting TypeScript and several considered as useful libraries, fully configured and ready to use in real world projects!
 
+## Vite
+Vite (French word for "quick", pronounced /vit/, like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects. 
+[learn more](https://vitejs.dev/).
+
 ## Vitest
 Vitest is a blazing fast unit test framework powered by Vite. Given Jest's massive adoption, Vitest provides a compatible API that allows you to use it as a drop-in replacement in most projects. 
 [learn more](https://vitest.dev/).
 
-## Vite
-Vite (French word for "quick", pronounced /vit/, like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects. 
-[learn more](https://vitejs.dev/).
+## Vite-SVG-Loader
+Vite plugin to load SVG files as Vue components, using SVGO for optimization.
+[learn more](https://github.com/jpkleemans/vite-svg-loader).
 
 ## Storybook
 Storybook is a tool for UI development. It makes development faster and easier by isolating components. This allows you to work on one component at a time. You can develop entire UIs without needing to start up a complex dev stack, force certain data into your database, or navigate around your application. 
