@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "storybook": "start-storybook -p 6006 -s ./public,./assets",
-    "build-storybook": "STORYBOOK_BASE_HREF=storybook build-storybook",
+    "build:storybook": "STORYBOOK_BASE_HREF=storybook build-storybook",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage"
