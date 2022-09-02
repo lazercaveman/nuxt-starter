@@ -14,11 +14,8 @@ export default defineNuxtConfig({
       ],
     },
   },
-  buildModules: [
-    [
+  modules: [
       '@pinia/nuxt',
-      { disableVuex: true },
-    ],
   ],
   build: {
     postcss: {
