@@ -2,18 +2,16 @@ import { defineStore } from 'pinia';
 
 export const useSampleStore = defineStore('sampleStore', {
   state: (): {
-    searchParameter: string | number,
-    pageContentData: any
+    sampleData: string,
   } => ({
-    searchParameter: 'Hello from sample store!',
-    pageContentData: [],
+    sampleData: '🍍 Hello from sample store.',
   }),
   getters: {
-    getSearchParameter: state => state.searchParameter,
+    getSampleData: state => state.sampleData,
   },
   actions: {
-    setSearchParameter (searchArgument: string | number) {
-      this.searchParameter = searchArgument;
+    setSampleData (testString: string) {
+      this.sampleData = testString;
     },
   },
 });
