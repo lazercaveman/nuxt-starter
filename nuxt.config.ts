@@ -17,18 +17,14 @@ export default defineNuxtConfig({
   modules: [
       '@pinia/nuxt',
   ],
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
-    },
-  },
   css: [
     '~/assets/styles/css/tailwind.css',
     '~/assets/styles/scss/main.scss',
   ],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 });
