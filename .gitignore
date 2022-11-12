@@ -1,8 +1,11 @@
 *.log
 .nuxt
-nuxt.d.ts
 .output
 .env
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+nuxt.d.ts
 
 # compiled output
 /dist
