@@ -1,4 +1,3 @@
-import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
 import { defineConfig } from 'vitest/config';
 import svgLoader from 'vite-svg-loader';
