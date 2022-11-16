@@ -1,6 +1,9 @@
-# NOTE: this repo uses the Nuxt 3 Stable version, which is dealing with Problems using some package managers as like Yarn Berry - node 16.18.1 npm should work fine.
+# NOTE: issues with package managers
+There are currently some issues when using some package managers with nuxt 3 stable, as mentioned in the following threats:
 
---
+- https://github.com/nuxt/framework/issues/581
+- https://github.com/nuxt/framework/issues/5411
+- https://github.com/nuxt/framework/discussions/3546
 
 # Nuxt 3 Starter
 This repo contains a fully configured nuxt 3 instance supporting TypeScript and several considered as useful libraries, fully configured and ready to use in real world projects! Nuxt 3 is a JavaScript meta framework on Vue 3 [learn more](https://v3.nuxtjs.org/guide/concepts/introduction).
