@@ -5,7 +5,7 @@ There are currently some issues when using some package managers with nuxt 3 sta
 - https://github.com/nuxt/framework/issues/5411
 - https://github.com/nuxt/framework/discussions/3546
 
-Using **Node v18.12.1** and `npm i --legacy-peer-deps` should work fine :/
+Using **Node v16.18.1** and `npm i --legacy-peer-deps` should work fine :/
 
 # Nuxt 3 Starter
 This repo contains a fully configured nuxt 3 instance supporting TypeScript and several considered as useful libraries, fully configured and ready to use in real world projects! Nuxt 3 is a JavaScript meta framework on Vue 3 [learn more](https://v3.nuxtjs.org/guide/concepts/introduction).
