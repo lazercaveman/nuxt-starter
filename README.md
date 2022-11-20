@@ -5,12 +5,12 @@ There are currently some issues when using some package managers with nuxt 3 sta
 - https://github.com/nuxt/framework/issues/5411
 - https://github.com/nuxt/framework/discussions/3546
 
-Using **Node v16.18.1** and `npm i --legacy-peer-deps` should work fine :/
+Using **Node v16.18.1** and `npm i` should work fine, if there should be problems with Pinia one can also use `npm i --legacy-peer-deps` :/
 
 # Nuxt 3 Starter
 This repo contains a fully configured nuxt 3 instance supporting TypeScript and several considered as useful libraries, fully configured and ready to use in real world projects! Nuxt 3 is a JavaScript meta framework on Vue 3 [learn more](https://v3.nuxtjs.org/guide/concepts/introduction).
 
-## Vite
+## ViteÖ
 Vite (French word for "quick", pronounced /vit/, like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects. 
 [learn more](https://vitejs.dev/).
 
