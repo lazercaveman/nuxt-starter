@@ -1,5 +1,5 @@
 # NOTE: issues with package managers
-There are currently some issues when using some package managers with nuxt 3 stable, as mentioned in the following threats:
+It currently seems like there are some issues when using some package managers with nuxt 3 stable, as mentioned in the following threats:
 
 - https://github.com/nuxt/framework/issues/581
 - https://github.com/nuxt/framework/issues/5411
@@ -10,7 +10,7 @@ Using **Node v16.18.1** and `npm i` should work fine, if there should be problem
 # Nuxt 3 Starter
 This repo contains a fully configured nuxt 3 instance supporting TypeScript and several considered as useful libraries, fully configured and ready to use in real world projects! Nuxt 3 is a JavaScript meta framework on Vue 3 [learn more](https://v3.nuxtjs.org/guide/concepts/introduction).
 
-## ViteÖ
+## Vite
 Vite (French word for "quick", pronounced /vit/, like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects. 
 [learn more](https://vitejs.dev/).
 
