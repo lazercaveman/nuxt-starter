@@ -1,13 +1,13 @@
 {
   "private": true,
   "scripts": {
+    "dev": "TAILWIND_MODE='watch' nuxi dev",
     "build": "nuxt build",
     "start": "node .output/server/index.mjs",
     "start-build": "nuxi build && node .output/server/index.mjs",
-    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "storybook": "start-storybook -p 6006 -s ./public,./assets",
+    "storybook": "TAILWIND_MODE='watch' start-storybook -p 6006 -s ./public,./assets",
     "build:storybook": "STORYBOOK_BASE_HREF=storybook build-storybook",
     "test": "vitest",
     "test:ui": "vitest --ui",
