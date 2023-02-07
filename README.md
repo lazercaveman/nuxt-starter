@@ -38,10 +38,10 @@ Tailwind CSS works by scanning all of your HTML files, JavaScript components, an
 Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. 
 [learn more](https://sass-lang.com/).
 
-### 👉 Pinia
+### Pinia
 Pinia started as an experiment to redesign what a Store for Vue could look like with the Composition API around November 2019. Since then, the initial principles are still the same, but Pinia works for both Vue 2 and Vue 3 and doesn't require you to use the composition API. The API is the same for both except for installation and SSR, and these docs are targeted to Vue 3 with notes about Vue 2 whenever necessary so it can be read by Vue 2 and Vue 3 users! 
 [learn more](https://pinia.vuejs.org).
 
-### 👉 TypeScript
+### TypeScript
 TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. 
 [learn more](https://www.typescriptlang.org/).
