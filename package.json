@@ -11,7 +11,9 @@
     "build:storybook": "STORYBOOK_BASE_HREF=storybook build-storybook",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "analyze": "npx nuxi analyze",
+    "project-info": "npx nuxi info"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^6.5.16",
