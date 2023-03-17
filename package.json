@@ -16,6 +16,7 @@
     "project-info": "npx nuxi info"
   },
   "devDependencies": {
+    "@nuxt/devtools": "^0.2.5",
     "@storybook/addon-a11y": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-postcss": "^2.0.0",
