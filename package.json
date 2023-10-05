@@ -25,7 +25,7 @@
     "@vitest/coverage-c8": "^0.32.2",
     "@vitest/ui": "^0.32.2",
     "nuxt": "^3.6.0",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.31",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
     "storybook-dark-mode": "^2.1.1",
