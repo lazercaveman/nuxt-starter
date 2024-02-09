@@ -23,9 +23,9 @@ Vite provides developers with a faster and more streamlined development experien
 Vitest is a fast and efficient unit testing framework for modern web projects, fully compatible with Jest. It enhances the development experience by speeding up the testing process and catching bugs early on, ensuring that your code is stable and reliable.
 [learn more](https://vitest.dev/).
 
-### Storybook
+<!-- ### Storybook
 Storybook streamlines the UI development process by allowing for isolated development of individual components. It provides better visualization and collaboration, making it easier for teams to work together and create a better end product.
-[learn more](https://storybook.js.org/docs/vue/get-started/introduction).
+[learn more](https://storybook.js.org/docs/vue/get-started/introduction). -->
 
 ### Tailwind CSS
 Tailwind CSS is a highly effective utility-first CSS framework that greatly enhances the styling of a Nuxt project. Its approach of scanning HTML, JavaScript components, and templates for class names, generating styles, and writing them to a CSS file results in fast, flexible, and reliable styles. Tailwind's zero-runtime feature further adds to its performance, making it a valuable addition to a Nuxt project looking to achieve high-quality and optimized styling.

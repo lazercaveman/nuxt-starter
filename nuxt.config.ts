@@ -1,7 +1,6 @@
 import { fileURLToPath, URL } from 'url';
 import svgLoader from 'vite-svg-loader';
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   app: {
     head: {
@@ -26,6 +25,7 @@ export default defineNuxtConfig({
       },
     },
     plugins: [svgLoader()],
+    assetsInclude: ['**/*.mdx'],
     test: {
       include: ['tests/*.test.ts'],
     },

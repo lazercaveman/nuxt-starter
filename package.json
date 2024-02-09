@@ -7,8 +7,6 @@
     "start-build": "nuxi build && node .output/server/index.mjs",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "storybook": "start-storybook -p 6006 -s ./public,./assets",
-    "build:storybook": "STORYBOOK_BASE_HREF=storybook build-storybook",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
@@ -16,26 +14,22 @@
     "project-info": "npx nuxi info"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.6.3",
-    "@storybook/addon-a11y": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/builder-vite": "^0.2.7",
-    "@storybook/vue3": "^6.5.16",
-    "@vitest/coverage-c8": "^0.32.2",
-    "@vitest/ui": "^0.32.2",
-    "nuxt": "^3.6.0",
-    "postcss": "^8.4.24",
-    "sass": "^1.63.6",
-    "sass-loader": "^13.3.2",
-    "storybook-dark-mode": "^2.1.1",
-    "tailwindcss": "^3.3.2",
-    "typescript": "5.0.4",
-    "vite-svg-loader": "^4.0.0",
-    "vitest": "^0.32.2"
+    "@nuxt/devtools": "^1.0.8",
+    "@vitest/coverage-c8": "^0.33.0",
+    "@vitest/ui": "^1.2.2",
+    "postcss": "^8.4.35",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.1.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.3.3",
+    "vite-svg-loader": "^5.1.0",
+    "vitest": "^1.2.2"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
-    "pinia": "^2.1.4"
+    "@pinia/nuxt": "^0.5.1",
+    "nuxt": "^3.10.1",
+    "pinia": "^2.1.7"
   }
 }
