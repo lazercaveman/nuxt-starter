@@ -26,9 +26,6 @@ export default defineNuxtConfig({
     },
     plugins: [svgLoader()],
     assetsInclude: ['**/*.mdx'],
-    test: {
-      include: ['tests/*.test.ts'],
-    },
   },
   css: [
     '~/assets/styles/css/tailwind.css',
