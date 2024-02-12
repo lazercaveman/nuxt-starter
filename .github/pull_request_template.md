@@ -1,4 +1,4 @@
-# I am submitting some updates to Firefly Theme
+# I am submitting some updates to Nuxt-Starter repo
 
 ## I have changed
 <!--- Please descripe what you've changed in general -->

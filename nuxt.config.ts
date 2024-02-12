@@ -3,6 +3,7 @@ import svgLoader from 'vite-svg-loader';
 
 export default defineNuxtConfig({
   app: {
+    baseURL: process.env.BASE_URL,
     head: {
       title: 'Nuxt 3 starter',
       link: [
@@ -14,10 +15,30 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  css: [
+    '~/assets/styles/css/tailwind.css',
+    '~/assets/styles/scss/main.scss',
+  ],
+
   modules: [
     '@pinia/nuxt',
     '@nuxt/devtools',
   ],
+
+  runtimeConfig: {
+    public: {
+      API_KEY: process.env.API_KEY
+    }
+  },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   vite: {
     resolve: {
       alias: {
@@ -26,18 +47,5 @@ export default defineNuxtConfig({
     },
     plugins: [svgLoader()],
     assetsInclude: ['**/*.mdx'],
-    test: {
-      include: ['tests/*.test.ts'],
-    },
-  },
-  css: [
-    '~/assets/styles/css/tailwind.css',
-    '~/assets/styles/scss/main.scss',
-  ],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
   },
 });
