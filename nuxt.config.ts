@@ -16,27 +16,16 @@ export default defineNuxtConfig({
     },
   },
 
-  css: [
-    '~/assets/styles/css/tailwind.css',
-    '~/assets/styles/scss/main.scss',
-  ],
-
   modules: [
-    '@pinia/nuxt',
-    '@nuxt/devtools',
+    '@pinia/nuxt', 
+    '@nuxt/devtools', 
+    "@nuxtjs/tailwindcss"
   ],
 
   runtimeConfig: {
     public: {
       API_KEY: process.env.API_KEY
     }
-  },
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
   },
 
   vite: {
