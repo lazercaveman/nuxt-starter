@@ -6,7 +6,6 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "gruntfuggly.todo-tree",
-    "vue.vscode-typescript-vue-plugin",
     "vue.volar",
     "bradlc.vscode-tailwindcss",
     "syler.sass-indented",
@@ -16,5 +15,6 @@
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": [
     "octref.vetur",
+    "vue.vscode-typescript-vue-plugin",
   ]
 }
