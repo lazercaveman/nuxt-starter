@@ -4482,10 +4482,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immutable@npm:^4.0.0":
-  version: 4.3.7
-  resolution: "immutable@npm:4.3.7"
-  checksum: 1c50eb053bb300796551604afff554066f041aa8e15926cf98f6d11d9736b62ad12531c06515dd96375258653878b4736f8051cd20b640f5f976d09fa640e3ec
+"immutable@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "immutable@npm:5.0.2"
+  checksum: 4adbd70580c78fafa7e367473e4f307f78f6768372ef464d45ba55f670b7f61d92c71461da571d80011544b61416d3dee0132736d9b592f33dcfa86e43bdd8f1
   languageName: node
   linkType: hard
 
@@ -7128,7 +7128,7 @@ __metadata:
     nuxt: latest
     pinia: ^2.2.6
     postcss: ^8.4.47
-    sass: ^1.80.6
+    sass: ^1.81.0
     sass-loader: ^16.0.3
     typescript: 5.6.3
     vite-svg-loader: ^5.1.0
@@ -7199,20 +7199,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.80.6":
-  version: 1.80.6
-  resolution: "sass@npm:1.80.6"
+"sass@npm:^1.81.0":
+  version: 1.81.0
+  resolution: "sass@npm:1.81.0"
   dependencies:
     "@parcel/watcher": ^2.4.1
     chokidar: ^4.0.0
-    immutable: ^4.0.0
+    immutable: ^5.0.2
     source-map-js: ">=0.6.2 <2.0.0"
   dependenciesMeta:
     "@parcel/watcher":
       optional: true
   bin:
     sass: sass.js
-  checksum: 1a81e0fe093ff9109228b5dc1ea2ad64d3fb0e266d968e664a52aca059dd448fbe9a90d9a5a7518e5f31fd1087149ea349bf6fe1271ab15075b7a145c1bea0c9
+  checksum: 93db5b342c3b0449af2b08123ed4c0793643bd3a30f78e4e0686a1aa991ad640e0d9bc8da09aa5d7ff313bbd317b3be9c827cca60fb33b07d9f4b14b001eccfe
   languageName: node
   linkType: hard
 
