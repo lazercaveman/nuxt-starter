@@ -3049,13 +3049,13 @@ __metadata:
   linkType: hard
 
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.3":
-  version: 7.0.4
-  resolution: "cross-spawn@npm:7.0.4"
+  version: 7.0.6
+  resolution: "cross-spawn@npm:7.0.6"
   dependencies:
     path-key: ^3.1.0
     shebang-command: ^2.0.0
     which: ^2.0.1
-  checksum: 7db025938789a927d0e55eecefef2236319eb4ca723d457faa2c1572f8927f6b048fa20667ef2e663b5873b24145401219813120be4023554d239a9bd2e76644
+  checksum: 8d306efacaf6f3f60e0224c287664093fa9185680b2d195852ba9a863f85d02dcc737094c6e512175f8ee0161f9b87c73c6826034c2422e39de7d6569cf4503b
   languageName: node
   linkType: hard
 
