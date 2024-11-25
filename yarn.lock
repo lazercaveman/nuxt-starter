@@ -948,6 +948,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/devtools-kit@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@nuxt/devtools-kit@npm:1.6.1"
+  dependencies:
+    "@nuxt/kit": ^3.13.2
+    "@nuxt/schema": ^3.13.2
+    execa: ^7.2.0
+  peerDependencies:
+    vite: "*"
+  checksum: a618e0d1b3e59dd3ad48025d385327ec9df274cbf2827739906279227d53e4a9706d74ef75fb3841021b2aaa11b4b32101cc0c032af326c54bfa8f2a589559f4
+  languageName: node
+  linkType: hard
+
 "@nuxt/devtools-wizard@npm:1.6.0":
   version: 1.6.0
   resolution: "@nuxt/devtools-wizard@npm:1.6.0"
@@ -965,6 +978,26 @@ __metadata:
   bin:
     devtools-wizard: cli.mjs
   checksum: ed2e2f03b5e9dba93fe7480362121e820fc478ef8b64dc64885b948ff69992585455e7abeee8d06c14eea515b929aab4add182f25399031c9da3f5d48338f5fc
+  languageName: node
+  linkType: hard
+
+"@nuxt/devtools-wizard@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@nuxt/devtools-wizard@npm:1.6.1"
+  dependencies:
+    consola: ^3.2.3
+    diff: ^7.0.0
+    execa: ^7.2.0
+    global-directory: ^4.0.1
+    magicast: ^0.3.5
+    pathe: ^1.1.2
+    pkg-types: ^1.2.0
+    prompts: ^2.4.2
+    rc9: ^2.1.2
+    semver: ^7.6.3
+  bin:
+    devtools-wizard: cli.mjs
+  checksum: fa4edc0b13610916b3ea884b83005b128c16b0f6e3664ffed4ff6a25a1c3ed684b5b598f715bc85ff4d78857f343729cd19ca6a1bd3ae1849d3be13a4acbe15a
   languageName: node
   linkType: hard
 
@@ -1014,6 +1047,55 @@ __metadata:
   bin:
     devtools: cli.mjs
   checksum: 42a7fa40254167d15e0f6eac09a00a43524b2a8b5cb60ddcea28d91c9f79b7531f9bd3fbe5867ef26df2c78e4be959421a32f3214242d187bb1664027d329e63
+  languageName: node
+  linkType: hard
+
+"@nuxt/devtools@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "@nuxt/devtools@npm:1.6.1"
+  dependencies:
+    "@antfu/utils": ^0.7.10
+    "@nuxt/devtools-kit": 1.6.1
+    "@nuxt/devtools-wizard": 1.6.1
+    "@nuxt/kit": ^3.13.2
+    "@vue/devtools-core": 7.6.4
+    "@vue/devtools-kit": 7.6.4
+    birpc: ^0.2.17
+    consola: ^3.2.3
+    cronstrue: ^2.50.0
+    destr: ^2.0.3
+    error-stack-parser-es: ^0.1.5
+    execa: ^7.2.0
+    fast-npm-meta: ^0.2.2
+    flatted: ^3.3.1
+    get-port-please: ^3.1.2
+    hookable: ^5.5.3
+    image-meta: ^0.2.1
+    is-installed-globally: ^1.0.0
+    launch-editor: ^2.9.1
+    local-pkg: ^0.5.0
+    magicast: ^0.3.5
+    nypm: ^0.3.11
+    ohash: ^1.1.4
+    pathe: ^1.1.2
+    perfect-debounce: ^1.0.0
+    pkg-types: ^1.2.0
+    rc9: ^2.1.2
+    scule: ^1.3.0
+    semver: ^7.6.3
+    simple-git: ^3.27.0
+    sirv: ^2.0.4
+    tinyglobby: ^0.2.6
+    unimport: ^3.12.0
+    vite-plugin-inspect: ^0.8.7
+    vite-plugin-vue-inspector: 5.1.3
+    which: ^3.0.1
+    ws: ^8.18.0
+  peerDependencies:
+    vite: "*"
+  bin:
+    devtools: cli.mjs
+  checksum: e07f9bd1c3d71758459405e9a9e7c83fa1aa187e716eab016b1e1ed225f4e431fe30be3ee14f9b002f875b2e2bb054841f0ecb0c094e7ab0537a6766f1f32bc6
   languageName: node
   linkType: hard
 
@@ -2062,6 +2144,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/devtools-core@npm:7.6.4":
+  version: 7.6.4
+  resolution: "@vue/devtools-core@npm:7.6.4"
+  dependencies:
+    "@vue/devtools-kit": ^7.6.4
+    "@vue/devtools-shared": ^7.6.4
+    mitt: ^3.0.1
+    nanoid: ^3.3.4
+    pathe: ^1.1.2
+    vite-hot-client: ^0.2.3
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: cea9fd81bac65029f1877c724abc3b316e0c164a5e638dfa94ab049c203543ebe6e75f09b7e85e6a91d70ff8b89bbec2d8ece2b1f7668855aa9eac1246337813
+  languageName: node
+  linkType: hard
+
 "@vue/devtools-kit@npm:7.4.4":
   version: 7.4.4
   resolution: "@vue/devtools-kit@npm:7.4.4"
@@ -2074,6 +2172,21 @@ __metadata:
     speakingurl: ^14.0.1
     superjson: ^2.2.1
   checksum: 06bb064a22e41481fda7bc238e94cde2a45d6420fee8cdf22698cf096598dc795dbe22886cbd6848daa31b9a7a62ebb8cf9179bd9237ab5069f42f91e04396ae
+  languageName: node
+  linkType: hard
+
+"@vue/devtools-kit@npm:7.6.4, @vue/devtools-kit@npm:^7.6.4":
+  version: 7.6.4
+  resolution: "@vue/devtools-kit@npm:7.6.4"
+  dependencies:
+    "@vue/devtools-shared": ^7.6.4
+    birpc: ^0.2.19
+    hookable: ^5.5.3
+    mitt: ^3.0.1
+    perfect-debounce: ^1.0.0
+    speakingurl: ^14.0.1
+    superjson: ^2.2.1
+  checksum: 34f2ad847f091c04f096dbc0ad3ea4a56ef9ea43ba0a58983e098c7b7133d3072477c0b90a7bc8a67e71bf37a6a23f0dc3f85fec0a4cc2261f04aab20af24677
   languageName: node
   linkType: hard
 
@@ -2098,6 +2211,15 @@ __metadata:
   dependencies:
     rfdc: ^1.4.1
   checksum: c04851060f2bf84900d0510b92bbcc2fdb2290aa63065da7e6cb71e9ac04cfc75241246e9c481233be2657017ee6577693e7fff9f2e162a505a17939deee10ff
+  languageName: node
+  linkType: hard
+
+"@vue/devtools-shared@npm:^7.6.4":
+  version: 7.6.4
+  resolution: "@vue/devtools-shared@npm:7.6.4"
+  dependencies:
+    rfdc: ^1.4.1
+  checksum: 88b5791bd45afc13b09ee705e8bfb8e7bca30da7f4558127ae320d3a90f5316fe4042ab7c2d91a1aebd4f1b4b80965cd1faddad6fe4de6dad2e8baccc2389897
   languageName: node
   linkType: hard
 
@@ -7120,7 +7242,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@nuxt/devtools": ^1.6.0
+    "@nuxt/devtools": ^1.6.1
     "@nuxtjs/tailwindcss": ^6.12.2
     "@pinia/nuxt": ^0.7.0
     "@vitest/coverage-c8": ^0.33.0

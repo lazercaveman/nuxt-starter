@@ -15,7 +15,7 @@
     "project-hard-reset": "rm -rf node_modules yarn.lock && yarn cache clean && yarn && yarn dev"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.6.0",
+    "@nuxt/devtools": "^1.6.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@vitest/coverage-c8": "^0.33.0",
     "@vitest/ui": "^2.1.4",
