@@ -27,7 +27,7 @@
     "vitest": "^2.1.5"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.7.0",
+    "@pinia/nuxt": "^0.8.0",
     "nuxt": "latest",
     "pinia": "^2.2.6"
   },
