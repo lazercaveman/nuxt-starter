@@ -6288,6 +6288,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pinia@npm:^2.2.8":
+  version: 2.2.8
+  resolution: "pinia@npm:2.2.8"
+  dependencies:
+    "@vue/devtools-api": ^6.6.3
+    vue-demi: ^0.14.10
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ">=4.4.4"
+    vue: ^2.6.14 || ^3.5.11
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 8bc01b5440433c5a97c9e57b6a45e2c423e24a3e7e687ab007a6615aa8f83bde6b2bcddda245bca9a9eaf9911b277f5798f61c91cfd81f33464519356cee8050
+  languageName: node
+  linkType: hard
+
 "pirates@npm:^4.0.1":
   version: 4.0.6
   resolution: "pirates@npm:4.0.6"
@@ -7126,7 +7145,7 @@ __metadata:
     "@vitest/coverage-c8": ^0.33.0
     "@vitest/ui": ^2.1.4
     nuxt: latest
-    pinia: ^2.2.6
+    pinia: ^2.2.8
     postcss: ^8.4.47
     sass: ^1.81.0
     sass-loader: ^16.0.3

@@ -29,7 +29,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.7.0",
     "nuxt": "latest",
-    "pinia": "^2.2.6"
+    "pinia": "^2.2.8"
   },
   "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
