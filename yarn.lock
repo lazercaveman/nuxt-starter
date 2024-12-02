@@ -1838,21 +1838,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/pretty-format@npm:2.1.4":
-  version: 2.1.4
-  resolution: "@vitest/pretty-format@npm:2.1.4"
-  dependencies:
-    tinyrainbow: ^1.2.0
-  checksum: 4d6c799d9b9418ebfce77df518a5ea8717051bdb5eecce63d6b7009634d4843630c0bc424d0f405bd12b8f404e4bf09b6f208a331568de9b6b9395322221e41c
-  languageName: node
-  linkType: hard
-
 "@vitest/pretty-format@npm:2.1.5, @vitest/pretty-format@npm:^2.1.5":
   version: 2.1.5
   resolution: "@vitest/pretty-format@npm:2.1.5"
   dependencies:
     tinyrainbow: ^1.2.0
   checksum: 0d470aabe0b27825c19da9e922bd2da073da5a7bdf0db7b101107c83f3071d728d98633b465d73b90c3fd68926f750fbf50d322140853fb30bad51389c766074
+  languageName: node
+  linkType: hard
+
+"@vitest/pretty-format@npm:2.1.8":
+  version: 2.1.8
+  resolution: "@vitest/pretty-format@npm:2.1.8"
+  dependencies:
+    tinyrainbow: ^1.2.0
+  checksum: 2214ca317a19220a5f308a4e77fe403fa091c2f006d1f5b1bd91e8fad6e167db2fdc7882e564da3518d5b2cd9dedb1e97067bb666a820519c54f1c26ac9b0c5a
   languageName: node
   linkType: hard
 
@@ -1886,31 +1886,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:^2.1.4":
-  version: 2.1.4
-  resolution: "@vitest/ui@npm:2.1.4"
+"@vitest/ui@npm:^2.1.8":
+  version: 2.1.8
+  resolution: "@vitest/ui@npm:2.1.8"
   dependencies:
-    "@vitest/utils": 2.1.4
+    "@vitest/utils": 2.1.8
     fflate: ^0.8.2
     flatted: ^3.3.1
     pathe: ^1.1.2
     sirv: ^3.0.0
-    tinyglobby: ^0.2.9
+    tinyglobby: ^0.2.10
     tinyrainbow: ^1.2.0
   peerDependencies:
-    vitest: 2.1.4
-  checksum: 6bb8643c914680945d94104e77474cc5c3bae17badfa48924aef0d792f5dcd4a11788a68f4de817f35d9268a3ddbf7435e2f0e90b59195f198a5dfe12a409f1d
-  languageName: node
-  linkType: hard
-
-"@vitest/utils@npm:2.1.4":
-  version: 2.1.4
-  resolution: "@vitest/utils@npm:2.1.4"
-  dependencies:
-    "@vitest/pretty-format": 2.1.4
-    loupe: ^3.1.2
-    tinyrainbow: ^1.2.0
-  checksum: f7d9a4e8c411b9e80e7df46a725933977c9a330b133cc17e39e6f069d31832a849c070ef18b96abe2f07847f1860f36c8dd081eff2dad62b2874592d68e7dc43
+    vitest: 2.1.8
+  checksum: 0bd1f4d1d134dcdea4fc0dbd2d36fbcd40f4c76da2a3fae55d97f72bd0edf838e0898427dcbe7d318385c8ff33609a93c8e83b341d6bdb604d96d763afd97738
   languageName: node
   linkType: hard
 
@@ -1922,6 +1911,17 @@ __metadata:
     loupe: ^3.1.2
     tinyrainbow: ^1.2.0
   checksum: f12f6d95d058b537afd9e0b0af1075a80bf77789f32b75bf6a110a2bbf5afd08930ee71a0bd53bfb42bc923e4706d5e26c41df0e1c2854db1a668a011d6c010a
+  languageName: node
+  linkType: hard
+
+"@vitest/utils@npm:2.1.8":
+  version: 2.1.8
+  resolution: "@vitest/utils@npm:2.1.8"
+  dependencies:
+    "@vitest/pretty-format": 2.1.8
+    loupe: ^3.1.2
+    tinyrainbow: ^1.2.0
+  checksum: 711e7998ba9785880ed416d08b478e2b881cd218d37c3d773b26477adaa6aab91758e01ac039f839175f446111118fb5aa041317b619eeeb05537e3912159eb7
   languageName: node
   linkType: hard
 
@@ -7124,7 +7124,7 @@ __metadata:
     "@nuxtjs/tailwindcss": ^6.12.2
     "@pinia/nuxt": ^0.7.0
     "@vitest/coverage-c8": ^0.33.0
-    "@vitest/ui": ^2.1.4
+    "@vitest/ui": ^2.1.8
     nuxt: latest
     pinia: ^2.2.6
     postcss: ^8.4.47
@@ -7874,7 +7874,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:0.2.10, tinyglobby@npm:^0.2.6, tinyglobby@npm:^0.2.9":
+"tinyglobby@npm:0.2.10, tinyglobby@npm:^0.2.10, tinyglobby@npm:^0.2.6":
   version: 0.2.10
   resolution: "tinyglobby@npm:0.2.10"
   dependencies:

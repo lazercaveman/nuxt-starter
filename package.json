@@ -18,7 +18,7 @@
     "@nuxt/devtools": "^1.6.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@vitest/coverage-c8": "^0.33.0",
-    "@vitest/ui": "^2.1.4",
+    "@vitest/ui": "^2.1.8",
     "postcss": "^8.4.47",
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
