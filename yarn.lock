@@ -3021,10 +3021,13 @@ __metadata:
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.3":
   version: 7.0.6
   resolution: "cross-spawn@npm:7.0.6"
+  version: 7.0.6
+  resolution: "cross-spawn@npm:7.0.6"
   dependencies:
     path-key: ^3.1.0
     shebang-command: ^2.0.0
     which: ^2.0.1
+  checksum: 8d306efacaf6f3f60e0224c287664093fa9185680b2d195852ba9a863f85d02dcc737094c6e512175f8ee0161f9b87c73c6826034c2422e39de7d6569cf4503b
   checksum: 8d306efacaf6f3f60e0224c287664093fa9185680b2d195852ba9a863f85d02dcc737094c6e512175f8ee0161f9b87c73c6826034c2422e39de7d6569cf4503b
   languageName: node
   linkType: hard
@@ -3533,6 +3536,13 @@ __metadata:
   version: 0.1.0
   resolution: "errx@npm:0.1.0"
   checksum: 96dc94ff92e6f665b7c1ec49bfe38dcee69e9234b2dfb2c51d994fa26089a8690bcee44fc46ca27b8c3314e102db3b743fbaf07575e1d44c2b16ab898ac67889
+  languageName: node
+  linkType: hard
+
+"es-module-lexer@npm:^1.5.4":
+  version: 1.5.4
+  resolution: "es-module-lexer@npm:1.5.4"
+  checksum: a0cf04fb92d052647ac7d818d1913b98d3d3d0f5b9d88f0eafb993436e4c3e2c958599db68839d57f2dfa281fdf0f60e18d448eb78fc292c33c0f25635b6854f
   languageName: node
   linkType: hard
 
@@ -7195,6 +7205,7 @@ __metadata:
     "@parcel/watcher": ^2.4.1
     chokidar: ^4.0.0
     immutable: ^5.0.2
+    immutable: ^5.0.2
     source-map-js: ">=0.6.2 <2.0.0"
   dependenciesMeta:
     "@parcel/watcher":
@@ -8494,6 +8505,7 @@ __metadata:
     expect-type: ^1.1.0
     magic-string: ^0.30.12
     pathe: ^1.1.2
+    std-env: ^3.8.0
     std-env: ^3.8.0
     tinybench: ^2.9.0
     tinyexec: ^0.3.1
