@@ -36,5 +36,17 @@ export default defineNuxtConfig({
     },
     plugins: [svgLoader()],
     assetsInclude: ['**/*.mdx'],
+    css: {
+      preprocessorOptions: {
+        sass: {
+          api: 'modern',
+        },
+        scss: {
+          api: 'modern',
+        },
+      },
+    },
   },
+
+  compatibilityDate: '2024-12-05',
 });
