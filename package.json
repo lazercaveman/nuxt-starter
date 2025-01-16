@@ -15,16 +15,16 @@
     "project-hard-reset": "rm -rf node_modules yarn.lock && yarn cache clean && yarn && yarn dev"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.6.3",
-    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@nuxt/devtools": "^2.0.0-beta.2",
+    "@nuxtjs/tailwindcss": "^6.13.1",
     "@vitest/coverage-c8": "^0.33.0",
-    "@vitest/ui": "^2.1.8",
-    "postcss": "^8.4.49",
-    "sass": "^1.82.0",
+    "@vitest/ui": "^3.0.0",
+    "postcss": "^8.5.1",
+    "sass": "^1.83.4",
     "sass-loader": "^16.0.4",
-    "typescript": "5.7.2",
+    "typescript": "5.7.3",
     "vite-svg-loader": "^5.1.0",
-    "vitest": "^2.1.8"
+    "vitest": "^3.0.0"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.9.0",
