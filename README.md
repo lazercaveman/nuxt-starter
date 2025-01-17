@@ -24,7 +24,7 @@ Tailwind CSS is a highly effective utility-first CSS framework that greatly enha
 [learn more](https://tailwindcss.com).
 
 ### ESLint
-Nuxt 3 starter kit uses ESLint with a "Flat Config setup" tailored for TypeScript and Vue 3 or Nuxt 3. The configuration targets *.ts and *.vue files, supports modern ECMAScript, and ignores peer structures of the nuxt project (node_modules, .nuxt, ...) - also it is configured to use best practices using some standard plugins (eslint:recommended, typescript-eslint, and eslint-plugin-vue). Add custom rules to meet your team's needs to ensure clean, maintainable, and standard-compliant code quality. (For VS Code users I recommend using the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), instead of prettier to enforce ruleset and autoformatting)
+Nuxt 3 starter kit uses ESLint V9 with a "Flat Config setup" tailored for TypeScript and Vue 3 or Nuxt 3. The configuration targets *.ts and *.vue files, supports modern ECMAScript, and ignores peer structures of the nuxt project (node_modules, .nuxt, ...) - also it is configured to use best practices using some standard plugins (eslint:recommended, typescript-eslint, and eslint-plugin-vue). Add custom rules to meet your team's needs to ensure clean, maintainable, and standard-compliant code quality. (For VS Code users I recommend using the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), instead of prettier to enforce ruleset and autoformatting)
 [learn more](https://eslint.org/blog/2024/04/eslint-v9.0.0-released/).
 
 ### Vitest
