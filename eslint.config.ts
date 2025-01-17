@@ -33,8 +33,20 @@ export default typescriptEslint.config(
 			},
 		},
 		rules: {
-      // place your rules here for example @typescript-eslint/no-unused-vars:
+      // place your rules here!
+      // For example:
 			'@typescript-eslint/no-unused-vars': 'error',
+			'vue/multi-word-component-names': [
+				'error',
+				{
+					ignores: [
+						'default',
+						'error',
+						'index',
+						'[id]',
+					],
+				},
+			],
     },
 	},
 );
