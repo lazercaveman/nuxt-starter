@@ -4,11 +4,11 @@
       👋 Hello Nuxt 3 starter
     </h1>
     <p>
-      {{Store.sampleData}}
+      {{ Store.sampleData }}
     </p>
     <button
-      @click="changeSampleStoreData('✅ Hello from changed store!')"
       class="px-3 py-2 w-fit bg-gray-800 text-white"
+      @click="changeSampleStoreData('✅ Hello from changed store!')"
     >
       Change state
     </button>
@@ -18,11 +18,10 @@
 
 <script setup>
   import { useSampleStore } from '~/store/sample';
-  
+
   const Store = useSampleStore();
 
   function changeSampleStoreData(testString) {
     Store.setSampleData(testString);
   }
-
 </script>

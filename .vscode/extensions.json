@@ -16,5 +16,6 @@
   "unwantedRecommendations": [
     "octref.vetur",
     "vue.vscode-typescript-vue-plugin",
+    "esbenp.prettier-vscode",
   ]
 }

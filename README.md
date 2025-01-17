@@ -19,6 +19,14 @@ This Nuxt 3 starter kit comes equipped with pre-configured libraries that are co
 Vite provides developers with a faster and more streamlined development experience, thanks to its faster build times and on-demand compilation. This means it only compiles what's actually used in the project, reducing the size and complexity of the resulting code. This makes it ideal for small and large projects alike, as it helps keep the codebase clean, maintainable, and fast.
 [learn more](https://vitejs.dev/).
 
+### Tailwind CSS
+Tailwind CSS is a highly effective utility-first CSS framework that greatly enhances the styling of a Nuxt project. Its approach of scanning HTML, JavaScript components, and templates for class names, generating styles, and writing them to a CSS file results in fast, flexible, and reliable styles. Tailwind's zero-runtime feature further adds to its performance, making it a valuable addition to a Nuxt project looking to achieve high-quality and optimized styling.
+[learn more](https://tailwindcss.com).
+
+### ESLint
+Nuxt 3 starter kit uses ESLint with a "Flat Config setup" tailored for TypeScript and Vue 3 or Nuxt 3. The configuration targets *.ts and *.vue files, supports modern ECMAScript, and ignores peer structures of the nuxt project (node_modules, .nuxt, ...) - also it is configured to use best practices using some standard plugins (eslint:recommended, typescript-eslint, and eslint-plugin-vue). Add custom rules to meet your team's needs to ensure clean, maintainable, and standard-compliant code quality. (For VS Code users I recommend using the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), instead of prettier to enforce ruleset and autoformatting)
+[learn more](https://eslint.org/blog/2024/04/eslint-v9.0.0-released/).
+
 ### Vitest
 Vitest is a fast and efficient unit testing framework for modern web projects, fully compatible with Jest. It enhances the development experience by speeding up the testing process and catching bugs early on, ensuring that your code is stable and reliable.
 [learn more](https://vitest.dev/).
@@ -26,10 +34,6 @@ Vitest is a fast and efficient unit testing framework for modern web projects, f
 <!-- ### Storybook
 Storybook streamlines the UI development process by allowing for isolated development of individual components. It provides better visualization and collaboration, making it easier for teams to work together and create a better end product.
 [learn more](https://storybook.js.org/docs/vue/get-started/introduction). -->
-
-### Tailwind CSS
-Tailwind CSS is a highly effective utility-first CSS framework that greatly enhances the styling of a Nuxt project. Its approach of scanning HTML, JavaScript components, and templates for class names, generating styles, and writing them to a CSS file results in fast, flexible, and reliable styles. Tailwind's zero-runtime feature further adds to its performance, making it a valuable addition to a Nuxt project looking to achieve high-quality and optimized styling.
-[learn more](https://tailwindcss.com).
 
 ### Sass
 Using SCSS to write Tailwind CSS @apply can be a good option if you need to add custom styling not available in Tailwind.

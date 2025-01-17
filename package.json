@@ -3,6 +3,8 @@
   "scripts": {
     "dev": "TAILWIND_MODE='watch' nuxi dev",
     "build": "nuxt build",
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint . --cache --fix",
     "start": "node .output/server/index.mjs",
     "start-build": "nuxi build && node .output/server/index.mjs",
     "generate": "nuxt generate",
@@ -19,10 +21,14 @@
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@vitest/coverage-c8": "^0.33.0",
     "@vitest/ui": "^3.0.0",
+    "eslint": "^9.18.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^15.14.0",
     "postcss": "^8.5.1",
     "sass": "^1.83.4",
     "sass-loader": "^16.0.4",
     "typescript": "5.7.3",
+    "typescript-eslint": "^8.20.0",
     "vite-svg-loader": "^5.1.0",
     "vitest": "^3.0.0"
   },
