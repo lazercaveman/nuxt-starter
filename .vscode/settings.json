@@ -1,3 +1,6 @@
 {
-  "todo-tree.tree.showBadges": false
+  "todo-tree.tree.showBadges": false,
+  "editor.formatOnSave": false,
+  // Due to eslint autoformatting, prettier formatting has to be disabled - ESLint will do the formatting related to rules setup (requires the official ESLint extension: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  "prettier.enable": false,
 }
