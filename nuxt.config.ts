@@ -17,8 +17,8 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@pinia/nuxt', 
-    '@nuxt/devtools', 
+    '@pinia/nuxt',
+    '@nuxt/devtools',
     "@nuxtjs/tailwindcss"
   ],
 
@@ -48,9 +48,9 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: {
-    enabled: true,
-  },
+	devtools: {
+		enabled: true,
+	},
 
   compatibilityDate: '2024-12-05',
 });
