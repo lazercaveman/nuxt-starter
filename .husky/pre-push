@@ -1,0 +1,5 @@
+echo "============> 👨‍🏫 Executing yarn lint..."
+yarn lint
+echo "============> 🎉 Lint fix complete! "
+echo "============> 🚀 Executing test:coverage ..."
+yarn test:coverage
