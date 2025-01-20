@@ -6947,9 +6947,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "pinia@npm:2.3.0"
+"pinia@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "pinia@npm:2.3.1"
   dependencies:
     "@vue/devtools-api": "npm:^6.6.3"
     vue-demi: "npm:^0.14.10"
@@ -6959,7 +6959,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/16c219c6249330065e0b32adaccfccfbd94a9ec794630c6747c3bff662e03f6ebb4fbb6c01a28a7e79ecb20a7c4b8d9d3ebf04aa7ddd80a6b6db6ad223a44aba
+  checksum: 10/2c490c7252ca66921d46ae1bbbb1aa0daa2b531b5bb1c59dc99611e5ac3db2755e51d8919bccb51a87682de0afda9aea8ebb3412e65f8f2c92cf038c08abb7eb
   languageName: node
   linkType: hard
 
@@ -7821,7 +7821,7 @@ __metadata:
     globals: "npm:^15.14.0"
     husky: "npm:^9.1.7"
     nuxt: "npm:latest"
-    pinia: "npm:^2.3.0"
+    pinia: "npm:^2.3.1"
     postcss: "npm:^8.5.1"
     sass: "npm:^1.83.4"
     sass-loader: "npm:^16.0.4"
