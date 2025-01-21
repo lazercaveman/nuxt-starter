@@ -18,7 +18,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^2.0.0-beta.2",
+    "@nuxt/devtools": "^2.0.0-beta.3",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@vitest/coverage-v8": "^3.0.2",
     "@vitest/ui": "^3.0.2",
