@@ -4,7 +4,7 @@ export const useSampleStore = defineStore('sampleStore', {
   state: (): {
     sampleData: string,
   } => ({
-    sampleData: '🍍 Hello from sample store.',
+    sampleData: '🤌 Hello from sample store as well.',
   }),
   getters: {
     getSampleData: state => state.sampleData,

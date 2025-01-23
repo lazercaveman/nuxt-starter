@@ -36,7 +36,7 @@ Tailwind CSS is a highly effective utility-first CSS framework that greatly enha
 [learn more](https://tailwindcss.com).
 
 ### 👩‍🎤 Sass
-For flexibility in styling. Use SCSS alongside Tailwind to add custom styles when needed. (🤫 and add some class related styling using @apply 🤌 which of course we should always avoid).
+For flexibility in styling. Use SCSS alongside Tailwind to add custom styles when needed - using SASS is an option for stuff like animations or other things that are not solvable convenient using Tailwind.
 [learn more](https://sass-lang.com/).
 
 ### 🍍 Pinia

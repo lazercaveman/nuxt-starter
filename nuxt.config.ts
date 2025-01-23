@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from 'url';
 import svgLoader from 'vite-svg-loader';
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
   app: {
@@ -19,7 +20,6 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@nuxt/devtools',
-    "@nuxtjs/tailwindcss"
   ],
 
   runtimeConfig: {
@@ -28,13 +28,21 @@ export default defineNuxtConfig({
     }
   },
 
+  css: [
+    '~/assets/style/tailwind.css',
+    '~/assets/style/main.scss',
+  ],
+
   vite: {
     resolve: {
       alias: {
         '~': fileURLToPath(new URL('./', import.meta.url)),
       },
     },
-    plugins: [svgLoader()],
+    plugins: [
+      svgLoader(),
+      tailwindcss(),
+    ],
     assetsInclude: ['**/*.mdx'],
     css: {
       preprocessorOptions: {
