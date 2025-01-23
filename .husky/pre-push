@@ -1,5 +1,6 @@
-echo "============> 👨‍🏫 Executing yarn lint..."
+echo "Husky ===> 🧪 Executing EsLint ..."
 yarn lint
-echo "============> 🎉 Lint fix complete! "
-echo "============> 🚀 Executing test:coverage ..."
+echo "Husky ===> 🎉 Lint fix complete! "
+echo "Husky ===> 🧪 Executing test:coverage ..."
 yarn test:coverage
+echo "Husky ===> 🎉 Pushing to git successfully - thank you for contributing!"
