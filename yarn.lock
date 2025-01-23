@@ -2133,7 +2133,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:^3.0.2":
+"@vitest/coverage-v8@npm:^3.0.4":
   version: 3.0.4
   resolution: "@vitest/coverage-v8@npm:3.0.4"
   dependencies:
@@ -2229,7 +2229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:^3.0.2":
+"@vitest/ui@npm:^3.0.4":
   version: 3.0.4
   resolution: "@vitest/ui@npm:3.0.4"
   dependencies:
@@ -7782,8 +7782,8 @@ __metadata:
     "@nuxt/devtools": "npm:^2.0.0-beta.3"
     "@nuxtjs/tailwindcss": "npm:^6.13.1"
     "@pinia/nuxt": "npm:^0.9.0"
-    "@vitest/coverage-v8": "npm:^3.0.2"
-    "@vitest/ui": "npm:^3.0.2"
+    "@vitest/coverage-v8": "npm:^3.0.4"
+    "@vitest/ui": "npm:^3.0.4"
     eslint: "npm:^9.18.0"
     eslint-plugin-vue: "npm:^9.32.0"
     globals: "npm:^15.14.0"
@@ -7796,7 +7796,7 @@ __metadata:
     typescript: "npm:5.7.3"
     typescript-eslint: "npm:^8.21.0"
     vite-svg-loader: "npm:^5.1.0"
-    vitest: "npm:^3.0.2"
+    vitest: "npm:^3.0.4"
   languageName: unknown
   linkType: soft
 
@@ -9321,7 +9321,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^3.0.2":
+"vitest@npm:^3.0.4":
   version: 3.0.4
   resolution: "vitest@npm:3.0.4"
   dependencies:
