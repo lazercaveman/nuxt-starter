@@ -1,6 +1,7 @@
 *.log
 .nuxt
 .output
+.eslintcache
 .env
 .yarn/*
 !.yarn/releases
