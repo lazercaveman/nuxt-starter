@@ -2122,6 +2122,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitest/pretty-format@npm:3.0.5":
+  version: 3.0.5
+  resolution: "@vitest/pretty-format@npm:3.0.5"
+  dependencies:
+    tinyrainbow: "npm:^2.0.0"
+  checksum: 10/1ffbee16e9aa2cd7862bc6b83c30b7b53031d29ddae0302d09e6b1f6bfa0e4338e5c74a2dfaeed1bab317aff300c4fd309004dbaa69baf9ebe71f6806b132e96
+  languageName: node
+  linkType: hard
+
 "@vitest/runner@npm:3.0.4":
   version: 3.0.4
   resolution: "@vitest/runner@npm:3.0.4"
@@ -2152,11 +2161,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "@vitest/ui@npm:3.0.4"
+"@vitest/ui@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "@vitest/ui@npm:3.0.5"
   dependencies:
-    "@vitest/utils": "npm:3.0.4"
+    "@vitest/utils": "npm:3.0.5"
     fflate: "npm:^0.8.2"
     flatted: "npm:^3.3.2"
     pathe: "npm:^2.0.2"
@@ -2164,8 +2173,8 @@ __metadata:
     tinyglobby: "npm:^0.2.10"
     tinyrainbow: "npm:^2.0.0"
   peerDependencies:
-    vitest: 3.0.4
-  checksum: 10/6f3317b16d48cc2a35883e5c7000b533cdd1167d73117a02b4d5834a12536a3e2e9965db3a184fda57cd20db4689f23522c13be657ba58efad8ca36194c7e86b
+    vitest: 3.0.5
+  checksum: 10/60bc962243aafd50d5e8d2cdc8e86a6b2775c81171dc044e18dd3454584d44a054a08686ae7c4fee5d066a618e91f20f103fa9b8b30278fd7e3765cfe76e71e1
   languageName: node
   linkType: hard
 
@@ -2177,6 +2186,17 @@ __metadata:
     loupe: "npm:^3.1.2"
     tinyrainbow: "npm:^2.0.0"
   checksum: 10/68132cc059ac0db29e325b3e8a1ac6e0a99ea8a2d6d214bb4dc6399c3de0ffe78c42b13c733cc775a78d7ee1e7e3dcd67f75b7c35e5c28e3825cabf4ec7c50dc
+  languageName: node
+  linkType: hard
+
+"@vitest/utils@npm:3.0.5":
+  version: 3.0.5
+  resolution: "@vitest/utils@npm:3.0.5"
+  dependencies:
+    "@vitest/pretty-format": "npm:3.0.5"
+    loupe: "npm:^3.1.2"
+    tinyrainbow: "npm:^2.0.0"
+  checksum: 10/4e85a7514592df63870eb4ec27c434034cc91c9e63c052bcb2304c4cc2f4fbb49350099280480313e93526247d020b42bea52436cf7f93fee0bd98cfac51a644
   languageName: node
   linkType: hard
 
@@ -7093,7 +7113,7 @@ __metadata:
     "@pinia/nuxt": "npm:^0.9.0"
     "@tailwindcss/vite": "npm:^4.0.0"
     "@vitest/coverage-v8": "npm:^3.0.4"
-    "@vitest/ui": "npm:^3.0.4"
+    "@vitest/ui": "npm:^3.0.5"
     eslint: "npm:^9.19.0"
     eslint-plugin-vue: "npm:^9.32.0"
     globals: "npm:^15.14.0"
