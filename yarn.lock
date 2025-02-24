@@ -7102,7 +7102,7 @@ __metadata:
     pinia: "npm:^2.3.1"
     sass: "npm:^1.83.4"
     sass-loader: "npm:^16.0.4"
-    tailwindcss: "npm:^4.0.0"
+    tailwindcss: "npm:^4.0.8"
     typescript: "npm:5.7.3"
     typescript-eslint: "npm:^8.22.0"
     vite-svg-loader: "npm:^5.1.0"
@@ -7650,10 +7650,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.0.0, tailwindcss@npm:^4.0.0":
+"tailwindcss@npm:4.0.0":
   version: 4.0.0
   resolution: "tailwindcss@npm:4.0.0"
   checksum: 10/3491d86a7c3ad08209eb988fcf36d893e5f5a4c48c63da706a8788f6111e141386e1b5c8fa46f2650b08200c1b8011251d97b6d65514bdc14aa06597871d1f7d
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "tailwindcss@npm:4.0.8"
+  checksum: 10/2f2e67285f9d4b1030f2cee106c808a8ffe56c9304efa9e0c117ea86890ede1ac33a3e2ec6797040ac95048a7826a8c594f4e5801ac568d212a7f3d8c3f43c32
   languageName: node
   linkType: hard
 
