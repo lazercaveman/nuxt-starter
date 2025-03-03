@@ -26,7 +26,7 @@
     "husky": "^9.1.7",
     "sass": "^1.83.4",
     "sass-loader": "^16.0.4",
-    "tailwindcss": "^4.0.0",
+    "tailwindcss": "^4.0.9",
     "typescript": "5.7.3",
     "typescript-eslint": "^8.22.0",
     "vite-svg-loader": "^5.1.0",
