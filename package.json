@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "TAILWIND_MODE='watch' nuxi dev",
@@ -16,26 +17,26 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^2.0.0-beta.3",
-    "@tailwindcss/vite": "^4.0.0",
-    "@vitest/coverage-v8": "^3.0.4",
-    "@vitest/ui": "^3.0.4",
-    "eslint": "^9.19.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "globals": "^15.14.0",
+    "@nuxt/devtools": "^2.3.2",
+    "@tailwindcss/vite": "^4.1.2",
+    "@types/node": "^22.14.0",
+    "@vitest/coverage-v8": "^3.1.1",
+    "@vitest/ui": "^3.1.1",
+    "eslint": "^9.23.0",
+    "eslint-plugin-vue": "^9.33.0",
     "husky": "^9.1.7",
-    "sass": "^1.83.4",
-    "sass-loader": "^16.0.4",
-    "tailwindcss": "^4.0.0",
-    "typescript": "5.7.3",
-    "typescript-eslint": "^8.22.0",
+    "sass": "^1.86.3",
+    "sass-loader": "^16.0.5",
+    "tailwindcss": "^4.1.2",
+    "typescript": "5.8.2",
+    "typescript-eslint": "^8.29.0",
     "vite-svg-loader": "^5.1.0",
-    "vitest": "^3.0.4"
+    "vitest": "^3.1.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.9.0",
-    "nuxt": "^3.15.3",
-    "pinia": "^2.3.1"
+    "@pinia/nuxt": "^0.10.1",
+    "nuxt": "^3.16.2",
+    "pinia": "^3.0.1"
   },
   "packageManager": "yarn@4.6.0"
 }

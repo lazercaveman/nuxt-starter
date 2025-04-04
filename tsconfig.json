@@ -1,29 +1,45 @@
 {
-  // https://v3.nuxtjs.org/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ],
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ES2022",
-    "moduleResolution": "Node",
+    "target": "ES2018",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "lib": [
       "ESNext",
       "ESNext.AsyncIterable",
       "DOM"
     ],
-    "jsx": "preserve",
     "importHelpers": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "allowJs": true,
+    "checkJs": false,
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
     "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
     "types": [
       "@types/node",
-      "@pinia/nuxt",
-    ]
-  },
+      "@pinia/nuxt"
+    ],
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true
+  }
 }
