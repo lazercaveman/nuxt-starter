@@ -7,7 +7,7 @@
       {{ Store.sampleData }}
     </p>
     <button
-      class="px-3 py-2 w-fit bg-custom-900 text-white"
+      class="px-3 py-2 w-fit bg-custom-900 text-white cursor-pointer"
       @click="changeSampleStoreData('🥳 State has changed!')"
     >
       Change state
@@ -25,6 +25,7 @@
     Store.setSampleData(testString);
   }
 </script>
+
 
 <style lang="scss" scoped>
 
