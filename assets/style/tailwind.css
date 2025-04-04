@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  /* // NOTE: Now that the tailwind.config is obsolete in TW 4.0, we can use the theme function to define our own theme in CSS*/
+  --color-custom-900: #111827;
+}
