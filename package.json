@@ -22,7 +22,7 @@
     "@types/node": "^22.14.0",
     "@vitest/coverage-v8": "^3.1.1",
     "@vitest/ui": "^3.1.1",
-    "eslint": "^9.23.0",
+    "eslint": "^9.24.0",
     "eslint-plugin-vue": "^9.33.0",
     "husky": "^9.1.7",
     "sass": "^1.86.3",
