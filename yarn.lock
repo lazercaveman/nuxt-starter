@@ -1971,14 +1971,14 @@ __metadata:
   linkType: hard
 
 "@unhead/vue@npm:^2.0.2":
-  version: 2.0.3
-  resolution: "@unhead/vue@npm:2.0.3"
+  version: 2.0.5
+  resolution: "@unhead/vue@npm:2.0.5"
   dependencies:
     hookable: "npm:^5.5.3"
-    unhead: "npm:2.0.3"
+    unhead: "npm:2.0.5"
   peerDependencies:
     vue: ">=3.5.13"
-  checksum: 10/d44efa29d90adabf7ad6e9ea3b75343a9eedeaad6e7620f9771a6c61a46b3ebbdac358ae879bb41d90834a678916e76776796439201dd71268730ac61f5e3a88
+  checksum: 10/219d020014c07b11d4550b85b86a19630019d20a4855e4c1361684a2e31a0e6b248395e7b7508f030273a42f2cb7ea781201b5732dcb69a0f04cdda746365baf
   languageName: node
   linkType: hard
 
@@ -2781,9 +2781,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001688, caniuse-lite@npm:^1.0.30001702":
-  version: 1.0.30001710
-  resolution: "caniuse-lite@npm:1.0.30001710"
-  checksum: 10/8e496924c5cf91f844945f6ab675c89edf9e7a55be880c718ca99bf4e1afeeff3d11d743558fcfa001c60eaf60e7489037fa6c2d9cba1e56a53d1a7b25544282
+  version: 1.0.30001712
+  resolution: "caniuse-lite@npm:1.0.30001712"
+  checksum: 10/1831ac3260b9657c5a0236d21c02bea6a6b88fd67a451a0ff166d27da17c95ab398c5721e08aeb24f766bced1d38f562f07c8de84e91a10a065808e83835e89e
   languageName: node
   linkType: hard
 
@@ -3429,9 +3429,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.132
-  resolution: "electron-to-chromium@npm:1.5.132"
-  checksum: 10/ff50f38e26c5acdce1010703197a1cd1b9d9d789160ee1d4a2fc9f5dff6a030632ab36893156147d7360e891dd7151e156c6003ca271d4acbb4e501788ff22bd
+  version: 1.5.134
+  resolution: "electron-to-chromium@npm:1.5.134"
+  checksum: 10/9a8b8407cde0431cd4f3281bb35f9af2b190f31a8e039e5bb711e0c4ccef2de72d79a2d90e42c1d1daee35115402d7c029f22db4b32245233a62542ec1694d2d
   languageName: node
   linkType: hard
 
@@ -7543,9 +7543,9 @@ __metadata:
   linkType: hard
 
 "ufo@npm:^1.1.2, ufo@npm:^1.5.4":
-  version: 1.5.4
-  resolution: "ufo@npm:1.5.4"
-  checksum: 10/a885ed421e656aea6ca64e9727b8118a9488715460b6f1a0f0427118adfe2f2830fe7c1d5bd9c5c754a332e6807516551cd663ea67ce9ed6a4e3edc739916335
+  version: 1.6.1
+  resolution: "ufo@npm:1.6.1"
+  checksum: 10/088a68133b93af183b093e5a8730a40fe7fd675d3dc0656ea7512f180af45c92300c294f14d4d46d4b2b553e3e52d3b13d4856b9885e620e7001edf85531234e
   languageName: node
   linkType: hard
 
@@ -7595,12 +7595,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unhead@npm:2.0.3":
-  version: 2.0.3
-  resolution: "unhead@npm:2.0.3"
+"unhead@npm:2.0.5":
+  version: 2.0.5
+  resolution: "unhead@npm:2.0.5"
   dependencies:
     hookable: "npm:^5.5.3"
-  checksum: 10/424fd56f32a51e07e7fde61baaac410286a768557edef4351211ae390763d0190099820ceb589e5c9e117f47bd91696955e00ad6f358672105d93c9bae9350a7
+  checksum: 10/87284986d76d40fd4515605069823908b1e3ff73512c763b428275ad47af2dd36bb6844faf4c51f5c52e2e5c9a911023c6a71fc95f2d4542fc651a9f101d77df
   languageName: node
   linkType: hard
 
@@ -7612,8 +7612,8 @@ __metadata:
   linkType: hard
 
 "unimport@npm:^4.1.2, unimport@npm:^4.1.3":
-  version: 4.1.3
-  resolution: "unimport@npm:4.1.3"
+  version: 4.2.0
+  resolution: "unimport@npm:4.2.0"
   dependencies:
     acorn: "npm:^8.14.1"
     escape-string-regexp: "npm:^5.0.0"
@@ -7629,7 +7629,7 @@ __metadata:
     tinyglobby: "npm:^0.2.12"
     unplugin: "npm:^2.2.2"
     unplugin-utils: "npm:^0.2.4"
-  checksum: 10/f1b15daa1fbe7d7e46e29452d7063adae6052546ce934a7b5b38c3ba920682fdcea80de7543f0c80caee3294cef8a3f32b5252976188e5d5afea7280d170c5cb
+  checksum: 10/3538372084e67488dac855d15d098869add49a2920a47a32aeb3d69dffd4789e89da7bb54798991021caf1ff42f5279f5c4a0b9cd9700193a0a6ed107155be0d
   languageName: node
   linkType: hard
 
