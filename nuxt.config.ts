@@ -29,8 +29,8 @@ export default defineNuxtConfig({
   },
 
   css: [
+    '~/assets/style/animations.scss',
     '~/assets/style/tailwind.css',
-    '~/assets/style/main.scss',
   ],
 
   vite: {

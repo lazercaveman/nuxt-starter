@@ -1,0 +1,85 @@
+@use 'sass:map';
+
+:root {
+  --gradient-orange-pink: linear-gradient(45deg, #ff6a00, #ee0979);
+  --gradient-orange-yellow: linear-gradient(45deg, #ff6a00, #ffdd00);
+  --gradient-yellow-pink: linear-gradient(45deg, #ffdd00, #ee0979);
+  --gradient-pink-orange: linear-gradient(45deg, #ee0979, #ff6a00);
+
+  --neon: rgba(0, 255, 164, 1);
+  --neon05: rgba(0, 255, 164, 0.05);
+  --neon02: rgba(0, 255, 164, 0.02);
+  --neon01: rgba(0, 255, 164, 0.01);
+  --neon50: rgba(0, 255, 164, 0.5);
+  --neon20: rgba(0, 255, 164, 0.2);
+  --neon10: rgba(0, 255, 164, 0.1);
+  --highlight-bg: rgba(0, 255, 164, 0.025);
+}
+
+
+@mixin shadow($a, $b, $c) {
+  box-shadow:
+    0 0 48px $a,
+    0 0 172px $b,
+    0 0 396px $c;
+}
+
+@mixin gradient($name) {
+  background: var(--gradient-#{$name});
+}
+
+
+@keyframes glowUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+    box-shadow: none;
+  }
+
+  30% {
+    opacity: 1;
+    transform: scale(1);
+    @include shadow(var(--neon05), var(--neon02), var(--neon01));
+  }
+
+  60% {
+    transform: scale(1.1);
+    background-color: var(--highlight-bg);
+    @include shadow(var(--neon50), var(--neon20), var(--neon10));
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+@keyframes stateUpdateAnimation {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    @include gradient('orange-pink');
+  }
+  20% {
+    opacity: 1;
+    filter: blur(0);
+    @include gradient('orange-yellow');
+  }
+  40% {
+    @include gradient('yellow-pink');
+  }
+  60% {
+    @include gradient('pink-orange');
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  }
+  80% {
+    @include gradient('orange-yellow');
+    filter: blur(8px);
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    @include gradient('yellow-pink');
+  }
+}

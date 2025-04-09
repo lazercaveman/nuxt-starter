@@ -3,8 +3,10 @@ import { defineStore } from 'pinia';
 export const useSampleStore = defineStore('sampleStore', {
   state: (): {
     sampleData: string,
+    stateUpdatedAnimation: string,
   } => ({
-    sampleData: '🍍 Hello from sample Pinia as well.',
+    sampleData: '🏗️ ESLint, 🧪 Vitest, 🐶 Husky, 💅 Tailwind CSS, 👩‍🎤 Sass, 🍍 Pinia, 🤌 TypeScript',
+    stateUpdatedAnimation: '',
   }),
   getters: {
     getSampleData: state => state.sampleData,
@@ -12,6 +14,7 @@ export const useSampleStore = defineStore('sampleStore', {
   actions: {
     setSampleData (testString: string) {
       this.sampleData = testString;
+      this.stateUpdatedAnimation = 'stateUpdateAnimation';
     },
   },
 });
