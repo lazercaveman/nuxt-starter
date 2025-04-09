@@ -1321,14 +1321,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.10.1":
-  version: 0.10.1
-  resolution: "@pinia/nuxt@npm:0.10.1"
+"@pinia/nuxt@npm:^0.11.0":
+  version: 0.11.0
+  resolution: "@pinia/nuxt@npm:0.11.0"
   dependencies:
     "@nuxt/kit": "npm:^3.9.0"
   peerDependencies:
-    pinia: ^3.0.1
-  checksum: 10/5269e328127d53a73413e755f8d2b8a3f26078f48b678ca3157def86a49a23d8bab30aabc9aff2b10cc979c0c653c7b0cbd5a30c1bd4b6a7df921fa20f266c6b
+    pinia: ^3.0.2
+  checksum: 10/3e052376bd25cf3022577ad6e3eb4bc83945650a86bb98b944528d399af6f9b171e916c8511fcf1f79e8685c6ee2431497b9336fb97418ca431c9768b7a2e024
   languageName: node
   linkType: hard
 
@@ -6005,9 +6005,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "pinia@npm:3.0.1"
+"pinia@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "pinia@npm:3.0.2"
   dependencies:
     "@vue/devtools-api": "npm:^7.7.2"
   peerDependencies:
@@ -6016,7 +6016,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/de4fc63d128b2eac8729eac7f028a3e3e670ea3bb865c56d9264a52d92b9d9ff18b920116309452df18db74374ca241907850cfb87ea60f769025061c1473d99
+  checksum: 10/e59f1a54c7f05db5b80d9e0d4f292aac48ba8de778560beb0043c1f091f50c60ed4f965f273573fc3d2af04a1b347f2a7a7b6aa13ef9008a5b3a36a842c68b4c
   languageName: node
   linkType: hard
 
@@ -6733,7 +6733,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@nuxt/devtools": "npm:^2.3.2"
-    "@pinia/nuxt": "npm:^0.10.1"
+    "@pinia/nuxt": "npm:^0.11.0"
     "@tailwindcss/vite": "npm:^4.1.3"
     "@types/node": "npm:^22.14.0"
     "@vitest/coverage-v8": "npm:^3.1.1"
@@ -6742,7 +6742,7 @@ __metadata:
     eslint-plugin-vue: "npm:^10.0.0"
     husky: "npm:^9.1.7"
     nuxt: "npm:^3.16.2"
-    pinia: "npm:^3.0.1"
+    pinia: "npm:^3.0.2"
     sass: "npm:^1.86.3"
     sass-loader: "npm:^16.0.5"
     tailwindcss: "npm:^4.1.3"
