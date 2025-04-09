@@ -1,4 +1,6 @@
-# Nuxt 3 Starter
+![Release Badge](https://img.shields.io/github/v/release/lazercaveman/nuxt-starter)
+
+# Nuxt 3 Starter 
 Get ready to supercharge your development with this fully configured Nuxt 3 Starter Kit! Built on Vue 3 and powered by TypeScript, this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. No more wrestling with configurations—jump straight into building amazing projects! 🙌
 
 --
@@ -36,7 +38,7 @@ Tailwind CSS is a highly effective utility-first CSS framework that greatly enha
 [learn more](https://tailwindcss.com).
 
 ### 👩‍🎤 Sass
-For flexibility in styling. Use SCSS alongside Tailwind to add custom styles when needed - using SASS is an option for stuff like animations or other things that are not solvable convenient using Tailwind.
+For flexibility in styling. Use SCSS to add custom styles when needed - SCSS definitions should not use @apply (more information can be found within the [tailwind documentation](https://tailwindcss.com/docs/compatibility#sass-less-and-stylus)). However using SCSS alongside Tailwind can be an option for stuff like animations or other things that are not solvable convenient using Tailwind (or of course instead of tailwind if this is what you prefer).
 [learn more](https://sass-lang.com/).
 
 ### 🍍 Pinia
