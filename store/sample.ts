@@ -8,9 +8,11 @@ export const useSampleStore = defineStore('sampleStore', {
     sampleData: '🏗️ ESLint, 🧪 Vitest, 🐶 Husky, 💅 Tailwind CSS, 👩‍🎤 Sass, 🍍 Pinia, 🤌 TypeScript',
     stateUpdatedAnimation: '',
   }),
+
   getters: {
     getSampleData: state => state.sampleData,
   },
+
   actions: {
     setSampleData (testString: string) {
       this.sampleData = testString;

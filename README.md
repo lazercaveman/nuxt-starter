@@ -1,6 +1,8 @@
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/nuxt-starter)
 
 # Nuxt 3 Starter 
+![Screenshot](./assets/img/screenshot.png)
+
 Get ready to supercharge your development with this fully configured Nuxt 3 Starter Kit! Built on Vue 3 and powered by TypeScript, this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. No more wrestling with configurations—jump straight into building amazing projects! 🙌
 
 --

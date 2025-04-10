@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center drop-shadow-2xl">
+    <span class="text-8xl mb-8">🙌</span>
     <div class="flex justify-center items-end mb-6">
       <svg
         width="256"
@@ -33,7 +34,7 @@
         -Starter
       </h1>
     </div>
-    <p class="text-2xl text-center text-white mb-6 max-w-xl">
+    <p class="text-2xl text-center text-white mb-6">
       Get ready to supercharge your development with this fully configured Nuxt 3 Starter Kit!
     </p>
     <p :class="`max-w-md text-2xl text-center text-white ${Store.stateUpdatedAnimation}`">

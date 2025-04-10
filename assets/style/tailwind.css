@@ -4,48 +4,29 @@
 // However SCSS can be use full in addition in some cases (or of course instead of tailwind if this is what you prefer)
 */
 
-
 @theme {
   /* You can overwrite exiting tailwind utility classes */
-  --color-gray-900: #020420;
+  --color-gray-900: hsla(235, 90%, 7%, .5);
   /* Or add new ones */
-  --color-nuxt-green: #00dc82;
+  --color-nuxt-green: hsla(152, 100%, 43%, 1);
+  --drop-shadow-2xl: 0 0 48px rgba(0, 0, 0, 1);
 }
-
 
 @layer utilities {
   /* In Tailwind v3, any custom classes you defined within @layer utilities or @layer components would get picked up by Tailwind as a true utility class and would automatically work with variants like hover, focus, or lg with the difference being that @layer components would always come first in the generated stylesheet. */
-  .glow-up-animation {
-    animation-name: glowUpAnimation;
-    animation-duration: 1.25s;
+  .thousand-generated-frames-animation {
+    animation-name: thousandGeneratedFramesAnimation;
+    animation-delay: 0;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
   .state-update-animation {
     animation-name: stateUpdateAnimation;
-    animation-duration: 1.25s;
-  }
-
-  .tv-flicker-animation {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .tv-flicker-animation::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.75) 0px,
-      rgba(126, 126, 126, 0.5) 1px,
-      transparent 1px,
-      transparent 2px
-    );
-    animation: tvFlickerAnimation .01s infinite;
-    mix-blend-mode: overlay;
+    animation-duration: .4s;
   }
 }
-
 
 @utility scale-up-transition {
   /* In v4 we are using native cascade layers and no longer hijacking the @layer at-rule, so we've introduced the @utility API as a replacement: */
