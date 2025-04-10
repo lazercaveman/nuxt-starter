@@ -2,7 +2,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start-clean": "node scripts/clean-project.js",
+    "start-clean": "node scripts/clean-project.js && rm -rf node_modules yarn.lock .nuxt .output && yarn cache clean && yarn && yarn dev",
     "dev": "TAILWIND_MODE='watch' nuxi dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
@@ -14,7 +14,6 @@
     "test:coverage": "vitest run --coverage",
     "analyze": "npx nuxi analyze",
     "project-info": "npx nuxi info",
-    "project-hard-reset": "rm -rf node_modules yarn.lock .nuxt .output && yarn cache clean && yarn && yarn dev",
     "prepare": "husky"
   },
   "devDependencies": {
