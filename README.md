@@ -7,16 +7,22 @@ Get ready to supercharge your development with this fully configured Nuxt 3 Star
 
 --
 
-🚀 Getting Started
+## 🚀 Getting Started
 1. Clone or download this repository
 2. Ensure you have Node version v22.13.0 up an running
 3. Make sure you have yarn version 4.6.0. (running `corepack enable` should do the trick - using the package manager of your choice should also work 😉).
 4. Run `yarn` or `yarn install` to install dependencies
 5. Run `yarn dev` to start the local development environment
 
+
+### 🧹 Optional Auto-Clean Setup
+Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `yarn start-clean` - this command offers an easy, one-step process to prepare your Nuxt 3 project for a fresh start.
+- It clears Example Contents: It empties the contents of ./components, ./tests, and ./store while keeping the directories intact and completely deletes the .assets/img folder, containing the project screenshot.
+- The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples.
+
 --
 
-### 🚀 What's Inside?
+## 🚀 What's Inside?
 This starter kit is packed with carefully chosen dependencies to handle real-world scenarios. Here’s why they’re included:
 
 ### ⚡️ Vite

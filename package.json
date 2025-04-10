@@ -2,6 +2,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "start-clean": "node scripts/clean-project.js",
     "dev": "TAILWIND_MODE='watch' nuxi dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
