@@ -9,6 +9,6 @@
 
 
 <script setup>
-  import NuxtStarter from '~/components/NuxtStarter.vue';
-  import StarterButton from '~/components/StarterButton.vue';
+  import NuxtStarter from '~/components/nuxt-starter/NuxtStarter.vue';
+  import StarterButton from '~/components/start-button/StarterButton.vue';
 </script>
