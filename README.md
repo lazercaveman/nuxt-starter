@@ -17,8 +17,10 @@ Get ready to supercharge your development with this fully configured Nuxt 3 Star
 
 ### 🧹 Optional Auto-Clean Setup
 Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `yarn start-clean` - this command offers an easy, one-step process to prepare your Nuxt 3 project for a fresh start.
-- It clears Example Contents: It empties the contents of ./components, ./tests, and ./store while keeping the directories intact and completely deletes the .assets/img folder, containing the project screenshot.
-- The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples.
+- It empties the contents of './components', './tests' and ./store while keeping the directories intact.
+- It completely deletes the './.assets/img', './coverage', './.github', './.vscode', './.git' folder, and all its contents. 🚨 Since the .git folder will be deleted your project will be disconnected from this repository.
+- The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples - therefor it will delete the script file as well as the npm script 'start-clean' from the package.json file.
+- It wil delete the node_modules, .nuxt and .output folders, empty the yarn-cache and reinstall everything from scratch.
 
 --
 

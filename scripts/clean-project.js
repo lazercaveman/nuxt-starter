@@ -50,8 +50,7 @@ function cleanProject() {
   const directoriesToEmpty = ['./components', './tests', './store'];
   directoriesToEmpty.forEach(emptyDirectory);
 
-  // TODO: add './.git',
-  const assetsDirToDelete = ['./.assets/img', './coverage', './.github', './.vscode'];
+  const assetsDirToDelete = ['./.assets/img', './coverage', './.github', './.vscode', './.git'];
   directoriesToEmpty.forEach(removeDirectory);
 
   removeStartCleanScript();
