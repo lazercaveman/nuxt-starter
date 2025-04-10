@@ -1,38 +1,63 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = path.dirname(__filename);
 
-const keepDirs = ['./components', './tests', './store', './coverage', './.github', './.nuxt', './.output', './.git', './.vscode'];
-const removeDir = './assets/img';
-const thisFile = __filename;
+const packageJsonPath = path.resolve(process.cwd(), 'package.json');
 
-function emptyDir(dirPath) {
-  if (!fs.existsSync(dirPath)) return;
+function removeStartCleanScript() {
+  try {
+    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
+    if (packageJson.scripts && packageJson.scripts['start-clean']) {
+      delete packageJson.scripts['start-clean'];
+      fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
+      console.log('Removed "start-clean" script from package.json.');
+    } else {
+      console.log('"start-clean" script not found in package.json.');
+    }
+  } catch (error) {
+    console.error('Error reading or writing package.json:', error);
+  }
+}
 
-  for (const file of fs.readdirSync(dirPath)) {
-    const fullPath = path.join(dirPath, file);
+function emptyDirectory(directory) {
+  if (!fs.existsSync(directory)) {
+    console.log(`Directory ${directory} does not exist.`);
+    return;
+  }
+  const items = fs.readdirSync(directory);
+  for (const item of items) {
+    const fullPath = path.join(directory, item);
     fs.rmSync(fullPath, { recursive: true, force: true });
   }
-  console.log(`✅ Inhalte aus "${dirPath}" gelöscht`);
+  console.log(`Deleted contents of ${directory}`);
 }
 
-function removeDirectory(dirPath) {
-  if (fs.existsSync(dirPath)) {
-    fs.rmSync(dirPath, { recursive: true, force: true });
-    console.log(`❌ Ordner "${dirPath}" gelöscht`);
+function removeDirectory(directory) {
+  if (fs.existsSync(directory)) {
+    fs.rmSync(directory, { recursive: true, force: true });
+    console.log(`Deleted directory ${directory}`);
   } else {
-    console.log(`⚠️ Ordner "${dirPath}" nicht gefunden`);
+    console.log(`Directory ${directory} does not exist.`);
   }
 }
 
-keepDirs.forEach(emptyDir);
-removeDirectory(removeDir);
+function cleanProject() {
+  console.log('Cleaning project...');
 
-setTimeout(() => {
-  fs.rmSync(thisFile, { force: true });
-  console.log(`🧼 Script "${thisFile}" wurde gelöscht`);
-}, 100);
+  const directoriesToEmpty = ['./components', './tests', './store'];
+  directoriesToEmpty.forEach(emptyDirectory);
+
+  // TODO: add './.git',
+  const assetsDirToDelete = ['./.assets/img', './coverage', './.github', './.nuxt', './.output', './.vscode'];
+  directoriesToEmpty.forEach(removeDirectory);
+
+  removeStartCleanScript();
+
+  fs.rmSync(__filename, { force: true });
+  console.log(`Deleted clean-project.js script itself.`);
+}
+
+cleanProject();
