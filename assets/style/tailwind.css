@@ -1,9 +1,9 @@
+@import "tailwindcss";
 /*
 // Tailwind 4 should not be used with SASS, therefor SASS definitions should not use @apply: https://tailwindcss.com/docs/compatibility#sass-less-and-stylus
 // However SCSS can be use full in addition in some cases (or of course instead of tailwind if this is what you prefer)
 */
 
-@import "tailwindcss";
 
 @theme {
   /* You can overwrite exiting tailwind utility classes */
@@ -12,19 +12,42 @@
   --color-nuxt-green: #00dc82;
 }
 
+
 @layer utilities {
   /* In Tailwind v3, any custom classes you defined within @layer utilities or @layer components would get picked up by Tailwind as a true utility class and would automatically work with variants like hover, focus, or lg with the difference being that @layer components would always come first in the generated stylesheet. */
-  .glowUp {
-    animation-name: glowUp;
+  .glow-up-animation {
+    animation-name: glowUpAnimation;
     animation-duration: 1.25s;
   }
-  .stateUpdateAnimation {
+
+  .state-update-animation {
     animation-name: stateUpdateAnimation;
     animation-duration: 1.25s;
   }
+
+  .tv-flicker-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tv-flicker-animation::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.75) 0px,
+      rgba(126, 126, 126, 0.5) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    animation: tvFlickerAnimation .01s infinite;
+    mix-blend-mode: overlay;
+  }
 }
 
-@utility interactiveAnimation {
+
+@utility scale-up-transition {
   /* In v4 we are using native cascade layers and no longer hijacking the @layer at-rule, so we've introduced the @utility API as a replacement: */
   transform: scale(1.1);
   box-shadow:

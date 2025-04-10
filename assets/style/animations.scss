@@ -1,5 +1,6 @@
 @use 'sass:map';
 
+
 :root {
   --gradient-orange-pink: linear-gradient(45deg, #ff6a00, #ee0979);
   --gradient-orange-yellow: linear-gradient(45deg, #ff6a00, #ffdd00);
@@ -29,7 +30,7 @@
 }
 
 
-@keyframes glowUp {
+@keyframes glowUpAnimation {
   0% {
     opacity: 0;
     transform: scale(0.8);
@@ -83,3 +84,81 @@
     @include gradient('yellow-pink');
   }
 }
+
+@keyframes tvFlickerAnimation {
+  0% {
+    filter: brightness(1) contrast(1) saturate(1);
+    transform: skewX(0deg) translateX(0);
+  }
+  5% {
+    transform: skewX(0deg) translateX(2px);
+  }
+  10% {
+    filter: brightness(1.1) contrast(1.2);
+    transform: skewX(0deg) translateX(-2px);
+  }
+  15% {
+    transform: skewX(0deg) translateX(0);
+  }
+  20% {
+    filter: brightness(0.9) contrast(0.95);
+    transform: skewX(-0.3deg) translateX(3px);
+  }
+  25% {
+    transform: skewX(-0.3deg) translateX(-3px);
+  }
+  30% {
+    filter: brightness(1.05) contrast(1.1);
+    transform: skewX(0deg) translateX(0);
+  }
+  35% {
+    transform: skewX(0deg) translateX(2px);
+  }
+  40% {
+    filter: brightness(1) contrast(1);
+    transform: skewX(0.2deg) translateX(-2px);
+  }
+  45% {
+    transform: skewX(0.2deg) translateX(0);
+  }
+  50% {
+    filter: brightness(1.15) contrast(1.3) saturate(1.2);
+    transform: skewX(0deg) translateX(0);
+  }
+  55% {
+    transform: skewX(0deg) translateX(4px);
+  }
+  60% {
+    filter: brightness(0.85) contrast(0.9);
+    transform: skewX(-0.1deg) translateX(-4px);
+  }
+  65% {
+    transform: skewX(-0.1deg) translateX(0);
+  }
+  70% {
+    filter: brightness(1.05) contrast(1.1);
+    transform: skewX(0deg) translateX(2px);
+  }
+  75% {
+    transform: skewX(0deg) translateX(-2px);
+  }
+  80% {
+    filter: brightness(1) contrast(1);
+    transform: skewX(0deg) translateX(0);
+  }
+  85% {
+    transform: skewX(0deg) translateX(3px);
+  }
+  90% {
+    filter: brightness(1.1) contrast(1.2);
+    transform: skewX(0deg) translateX(-3px);
+  }
+  95% {
+    transform: skewX(0deg) translateX(0);
+  }
+  100% {
+    filter: brightness(1) contrast(1);
+    transform: skewX(0deg) translateX(0);
+  }
+}
+

@@ -14,7 +14,7 @@ export const useSampleStore = defineStore('sampleStore', {
   actions: {
     setSampleData (testString: string) {
       this.sampleData = testString;
-      this.stateUpdatedAnimation = 'stateUpdateAnimation';
+      this.stateUpdatedAnimation = 'state-update-animation';
     },
   },
 });
