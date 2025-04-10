@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start-clean": "node scripts/clean-project.js && rm -rf node_modules yarn.lock .nuxt .output && yarn cache clean && yarn && yarn dev",
-    "dev": "TAILWIND_MODE='watch' nuxi dev",
+    "dev": "nuxi dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
