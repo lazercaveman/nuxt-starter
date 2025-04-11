@@ -8,10 +8,10 @@
 ## 🥸 Why this template?  
 Get ready to supercharge your development with this fully configured Nuxt 3 Starter Kit! Built on Vue 3 and powered by TypeScript and many other technologies (for more information see down-below or checkout package.json for even more), this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. 🙌 No more wrestling with configurations—jump straight into building amazing projects! 
 
-✅ **Clean up project in seconds:**  Using the `yarn script:cleanup` command in your terminal, will clean up the project, remove demo contents - the Starter Kit is designed so that developers can start working immediately without having to spend time setting up basic structures and configurations.  <br>
-✅ **Up to date:**  Using up to date dependencies and tools to ensure a smooth development experience. (at least I try ^^) <br>
-✅ **Batteries-Included** he Starter Kit uses lots of well kind of "standard dependencies" fully configured and ready to go. <br>
-✅ **MIT License:** Allows commercial use, modification, distribution, and of course private use as well  - for more read the [MIT License](LICENSE).
+- **Clean up project in seconds:**  Using the `yarn script:cleanup` command in your terminal, will clean up the project, remove demo contents - the Starter Kit is designed so that developers can start working immediately without having to spend time setting up basic structures and configurations.
+- **Up to date:**  Using up to date dependencies and tools to ensure a smooth development experience. (at least I try ^^)
+- **Batteries-Included** he Starter Kit uses lots of well kind of "standard dependencies" fully configured and ready to go.
+- **MIT License:** Allows commercial use, modification, distribution, and of course private use as well  - for more read the [MIT License](LICENSE).
 
 --
 
