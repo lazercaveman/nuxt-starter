@@ -1,9 +1,17 @@
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/nuxt-starter)
+[![MIT License](https://img.shields.io/github/license/lazercaveman/nuxt-starter)](LICENSE)
+[![Nuxt 3](https://img.shields.io/badge/Nuxt-3.16.2-00DC82?logo=nuxt.js)](https://nuxt.com)
 
 # Nuxt 3 Starter 
 ![Screenshot](./assets/img/screenshot.png)
 
-Get ready to supercharge your development with this fully configured Nuxt 3 Starter Kit! Built on Vue 3 and powered by TypeScript, this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. No more wrestling with configurations—jump straight into building amazing projects! 🙌
+## 🥸 Why this template?  
+Get ready to supercharge your development with this fully configured Nuxt 3 Starter Kit! Built on Vue 3 and powered by TypeScript and many other technologies (for more information see down-below or checkout package.json for even more), this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. 🙌 No more wrestling with configurations—jump straight into building amazing projects! 
+
+✅ **Clean up project in seconds:**  Using the `yarn script:cleanup` command in your terminal, will clean up the project, remove demo contents - the Starter Kit is designed so that developers can start working immediately without having to spend time setting up basic structures and configurations.  <br>
+✅ **Up to date:**  Using up to date dependencies and tools to ensure a smooth development experience. (at least I try ^^) <br>
+✅ **Batteries-Included** he Starter Kit uses lots of well kind of "standard dependencies" fully configured and ready to go. <br>
+✅ **MIT License:** Allows commercial use, modification, distribution, and of course private use as well  - for more read the [MIT License](LICENSE).
 
 --
 
@@ -14,12 +22,11 @@ Get ready to supercharge your development with this fully configured Nuxt 3 Star
 4. Run `yarn` or `yarn install` to install dependencies
 5. Run `yarn dev` to start the local development environment
 
-
-### 🧹 Optional Auto-Clean Setup
-Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `yarn start-clean` - this command offers an easy, one-step process to prepare your Nuxt 3 project for a fresh start.
+### 🧹 Comes with Auto-Clean-Script
+Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `yarn script:cleanup` - this command offers an easy, one-step process to prepare your Nuxt 3 project for a fresh start.
 - It empties the contents of './components', './tests' and ./store while keeping the directories intact.
 - It completely deletes the './.assets/img', './coverage', './.github', './.vscode', './.git' folder, and all its contents. 🚨 Since the .git folder will be deleted your project will be disconnected from this repository.
-- The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples - therefor it will delete the script file as well as the npm script 'start-clean' from the package.json file.
+- The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples - therefor it will delete the script file as well as the npm script 'script:cleanup' from the package.json file.
 - It wil delete the node_modules, .nuxt and .output folders, empty the yarn-cache and reinstall everything from scratch.
 
 --
