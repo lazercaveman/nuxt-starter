@@ -1,21 +1,23 @@
 # Security Policy
 
-## Supported Versions
+**Private Disclosure Process:**
+- **Contact:** hello@alisoueidan.com (encryption preferred)
+- **Response Time:** Within 48 hours
+- **Patch Timeline:** 7-14 days after validation and always ASAP
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+**Guidelines:**
+- 🚫 Do **NOT** disclose vulnerabilities via public issues/pull requests
+- MIT License disclaimer applies: *No warranty, use at your own risk*
 
-## Reporting a Vulnerability
+**Critical Note for Forks:**  
+If you fork this template, you become responsible for:  
+- Maintaining dependency updates
+- Monitoring security advisories
+- Applying patches to your derived projects
 
-Use this section to tell people how to report a vulnerability.
+---
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+**License Notice:**  
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.  
+*Please note that the software is provided without any warranty. The authors accept no liability for any security gaps or damage that may arise from the use of the software.*
