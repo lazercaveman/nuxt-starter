@@ -7,15 +7,15 @@ const __dirname = path.dirname(__filename);
 
 const packageJsonPath = path.resolve(process.cwd(), 'package.json');
 
-function removeStartCleanScript() {
+function removeCleanupScript() {
   try {
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
-    if (packageJson.scripts && packageJson.scripts['start-clean']) {
-      delete packageJson.scripts['start-clean'];
+    if (packageJson.scripts && packageJson.scripts['script:cleanup']) {
+      delete packageJson.scripts['script:cleanup'];
       fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
-      console.log('Removed "start-clean" script from package.json.');
+      console.log('Removed "script:cleanup" script from package.json.');
     } else {
-      console.log('"start-clean" script not found in package.json.');
+      console.log('"script:cleanup" script not found in package.json.');
     }
   } catch (error) {
     console.error('Error reading or writing package.json:', error);
@@ -53,7 +53,7 @@ function cleanProject() {
   const assetsDirToDelete = ['./.assets/img', './coverage', './.github', './.vscode', './.git'];
   directoriesToEmpty.forEach(removeDirectory);
 
-  removeStartCleanScript();
+  removeCleanupScript();
 
   fs.rmSync(__filename, { force: true });
   console.log(`Deleted clean-project.js script itself.`);
