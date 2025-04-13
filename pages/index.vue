@@ -11,4 +11,11 @@
 <script setup>
   import NuxtStarter from '~/components/nuxt-starter/NuxtStarter.vue';
   import StarterButton from '~/components/start-button/StarterButton.vue';
+
+  const config = useRuntimeConfig()
+
+  if (import.meta.server) {
+    if (config.apiSecret) console.log('API secret:', config.apiSecret)
+    if (config.public.apiBase) console.log('API public:', config.public.apiBase)
+  }
 </script>

@@ -22,12 +22,6 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
   ],
 
-  runtimeConfig: {
-    public: {
-      API_KEY: process.env.API_KEY
-    }
-  },
-
   css: [
     '~/assets/style/animations.scss',
     '~/assets/style/tailwind.css',
@@ -46,9 +40,11 @@ export default defineNuxtConfig({
     assetsInclude: ['**/*.mdx'],
     css: {
       preprocessorOptions: {
+        // Use sass
         sass: {
           api: 'modern',
         },
+        // Or use scss
         scss: {
           api: 'modern',
         },
@@ -59,6 +55,14 @@ export default defineNuxtConfig({
 	devtools: {
 		enabled: true,
 	},
+
+  runtimeConfig: {
+    // NOTE: runtime-config is for demo purposes - more information about how to handle these can be found within the nuxt docs of course: https://nuxt.com/docs/guide/going-further/runtime-config#example - also pay attention to the naming conventions to take fully profit.
+    apiSecret: '', // can be overridden by NUXT_API_SECRET environment variable
+    public: {
+      apiBase: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
+    }
+  },
 
   compatibilityDate: '2024-12-05',
 });
