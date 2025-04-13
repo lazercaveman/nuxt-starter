@@ -6,16 +6,17 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const packageJsonPath = path.resolve(process.cwd(), 'package.json');
+const indexVuePath = path.resolve(process.cwd(), './pages/index.vue');
 
-function removeStartCleanScript() {
+function removeCleanupScript() {
   try {
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
-    if (packageJson.scripts && packageJson.scripts['start-clean']) {
-      delete packageJson.scripts['start-clean'];
+    if (packageJson.scripts && packageJson.scripts['script:cleanup']) {
+      delete packageJson.scripts['script:cleanup'];
       fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
-      console.log('Removed "start-clean" script from package.json.');
+      console.log('Removed "script:cleanup" script from package.json.');
     } else {
-      console.log('"start-clean" script not found in package.json.');
+      console.log('"script:cleanup" script not found in package.json.');
     }
   } catch (error) {
     console.error('Error reading or writing package.json:', error);
@@ -44,16 +45,27 @@ function removeDirectory(directory) {
   }
 }
 
+function replaceIndexVueContent() {
+  try {
+    const newContent = `<template> 🚀 Here we go! </template>\n`;
+    fs.writeFileSync(indexVuePath, newContent, 'utf-8');
+    console.log('Replaced content of ./pages/index.vue');
+  } catch (error) {
+    console.error('Error updating ./pages/index.vue:', error);
+  }
+}
+
 function cleanProject() {
   console.log('Cleaning project...');
 
   const directoriesToEmpty = ['./components', './tests', './store'];
   directoriesToEmpty.forEach(emptyDirectory);
 
-  const assetsDirToDelete = ['./.assets/img', './coverage', './.github', './.vscode', './.git'];
-  directoriesToEmpty.forEach(removeDirectory);
+  const assetsDirToDelete = ['./.assets/img', './coverage', './.github', './.vscode', './.git', './SECURITY.md', './LICENSE'];
+  assetsDirToDelete.forEach(removeDirectory);
 
-  removeStartCleanScript();
+  removeCleanupScript();
+  replaceIndexVueContent();
 
   fs.rmSync(__filename, { force: true });
   console.log(`Deleted clean-project.js script itself.`);
