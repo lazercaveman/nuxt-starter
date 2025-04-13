@@ -66,7 +66,7 @@ To manage app state easily. Pinia is modern, simple, and works perfectly with Vu
 TypeScript enhances the JavaScript language by adding optional static typing and other features, for safer, smarter code - helping avoiding errors and catching bugs early in development.
 [learn more](https://www.typescriptlang.org/).
 
-### 📚 Storybook (not yet integrated!)
+### 📚 Storybook (☝️ not yet integrated!)
 **What are we waiting for adding storybook?**
 1. Also Nuxt-Storybook (which is the official Storybook integration for Nuxt) is still in version 8.3.3, which has problems running with current vite version of Nuxt 3 ([See related GitHub issue](https://github.com/storybookjs/storybook/pull/30511)) - this however is solved with Storybook v8.5.4 ([See related release notes](https://github.com/storybookjs/storybook/releases/tag/v8.5.4))
 2. Tailwind CSS v4 brings new features and an alternative API for utility classes, but even in a Vite/Storybook environment - at least as long as no other solution is implemented - a PostCSS configuration is still required to implement these new at-rules correctly.
