@@ -2,7 +2,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "script:cleanup": "node scripts/clean-project.js && rm -rf node_modules yarn.lock .nuxt .output && yarn cache clean && yarn && yarn dev",
+    "script:cleanup": "node clean-project.js && rm -rf node_modules yarn.lock .nuxt .output && yarn cache clean && yarn && yarn dev",
     "dev": "nuxi dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
