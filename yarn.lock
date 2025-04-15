@@ -4919,7 +4919,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsdom@npm:^26.0.0":
+"jsdom@npm:^26.1.0":
   version: 26.1.0
   resolution: "jsdom@npm:26.1.0"
   dependencies:
@@ -7017,7 +7017,7 @@ __metadata:
     eslint: "npm:^9.24.0"
     eslint-plugin-vue: "npm:^10.0.0"
     husky: "npm:^9.1.7"
-    jsdom: "npm:^26.0.0"
+    jsdom: "npm:^26.1.0"
     nuxt: "npm:^3.16.2"
     pinia: "npm:^3.0.2"
     sass: "npm:^1.86.3"

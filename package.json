@@ -27,7 +27,7 @@
     "eslint": "^9.24.0",
     "eslint-plugin-vue": "^10.0.0",
     "husky": "^9.1.7",
-    "jsdom": "^26.0.0",
+    "jsdom": "^26.1.0",
     "sass": "^1.86.3",
     "sass-loader": "^16.0.5",
     "tailwindcss": "^4.1.4",
