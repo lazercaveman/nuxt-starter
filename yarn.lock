@@ -3134,12 +3134,12 @@ __metadata:
   linkType: hard
 
 "ast-kit@npm:^1.0.1, ast-kit@npm:^1.4.0":
-  version: 1.4.2
-  resolution: "ast-kit@npm:1.4.2"
+  version: 1.4.3
+  resolution: "ast-kit@npm:1.4.3"
   dependencies:
-    "@babel/parser": "npm:^7.26.9"
+    "@babel/parser": "npm:^7.27.0"
     pathe: "npm:^2.0.3"
-  checksum: 10/6f879c8f5e36c21cad503034645f52a29112f71fad96fb6c6a75fbd4548225baeca8d6955cce983bf3f6312b3e0c01ffea9d5164be2bf24604b58dc121b4aa2e
+  checksum: 10/d275cfdc534585f643b057e15f08ecbd10cb49839c3e8d140bb081fab52268b2e60f31090b69b95276488a1b4d519de90be766396190ab040dff62f69a9d6cea
   languageName: node
   linkType: hard
 
