@@ -34,18 +34,21 @@
         -Starter
       </h1>
     </div>
-    <p class="text-2xl text-center text-white mb-6 max-w-xl">
-      Get ready to supercharge your development with this fully configured Nuxt 3 Starter Kit!
+    <p class="mb-6 max-w-xl text-center text-2xl text-white ">
+      Get ready to supercharge your development with this fully configured Nuxt 4 Starter Kit!
     </p>
-    <p :class="`max-w-md text-2xl text-center text-white ${Store.stateUpdatedAnimation}`">
+    <p :class="`mb-6 max-w-md text-center text-2xl text-white ${Store.stateUpdatedAnimation}`">
       {{ Store.sampleData }}
+    </p>
+    <p class="text-white">
+      {{ Store.apiGreeting }}
     </p>
   </div>
 </template>
 
 
 <script setup>
-import { useSampleStore } from '~/store/sample';
+import { useSampleStore } from '~/app/store/sample';
 
 const Store = useSampleStore();
 </script>

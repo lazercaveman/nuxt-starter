@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// TODO: cleanup script should respect new folder structures
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -58,10 +60,10 @@ function replaceIndexVueContent() {
 function cleanProject() {
   console.log('Cleaning project...');
 
-  const directoriesToEmpty = ['./components', './tests', './store'];
+  const directoriesToEmpty = ['./app/components', './app/tests', './app/store', './app/middleware', './server/middleware', './server/api'];
   directoriesToEmpty.forEach(emptyDirectory);
 
-  const assetsDirToDelete = ['./.assets/img', './coverage', './.github', './.vscode', './.git', './SECURITY.md', './LICENSE'];
+  const assetsDirToDelete = ['./app/.assets/img', './coverage', './.github', './.vscode', './.git', './SECURITY.md', './LICENSE'];
   assetsDirToDelete.forEach(removeDirectory);
 
   removeCleanupScript();

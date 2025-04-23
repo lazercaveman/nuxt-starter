@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { mount } from '@vue/test-utils';
 import { createTestingPinia } from '@pinia/testing';
-import StarterButton from '~/components/start-button/StarterButton.vue';
+import NuxtStarter from './NuxtStarter.vue';
 
 
-describe('StartButton unit test', () => {
+describe('NuxtStarter unit test', () => {
   it('renders with required properties', () => {
-    const wrapper = mount(StarterButton, {
+    const wrapper = mount(NuxtStarter, {
       props: {},
       global: {
         plugins: [createTestingPinia()],
