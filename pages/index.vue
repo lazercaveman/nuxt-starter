@@ -3,6 +3,12 @@
     <div class="flex flex-col gap-12 items-center p-12 rounded-4xl drop-shadow-2xl bg-gray-900">
       <NuxtStarter />
       <StarterButton class="transition-all hover:scale-up-transition" />
+      <p class="hidden">
+        This is a secret env - it won't get exposed to the client: {{ config.apiSecret }}
+      </p>
+      <p class="hidden">
+        And this is a public variable - it can be found within the DOM: {{ config.public.apiBase }}
+      </p>
     </div>
   </div>
 </template>
@@ -13,9 +19,4 @@
   import StarterButton from '~/components/start-button/StarterButton.vue';
 
   const config = useRuntimeConfig()
-
-  if (import.meta.server) {
-    if (config.apiSecret) console.log('API secret:', config.apiSecret)
-    if (config.public.apiBase) console.log('API public:', config.public.apiBase)
-  }
 </script>
