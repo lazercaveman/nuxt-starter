@@ -2,7 +2,11 @@
 [![Nuxt 3](https://img.shields.io/badge/Nuxt-3.16.2-00DC82?logo=nuxt.js)](https://nuxt.com)
 [![MIT License](https://img.shields.io/github/license/lazercaveman/nuxt-starter)](LICENSE)
 
-# Nuxt 3 Starter 
+# Nuxt 3 Starter / (will soon switch to [Nuxt 4](https://github.com/lazercaveman/nuxt-starter/tree/update/v.2.0.0) Starter)
+
+> ### ⚡ **This repo will switch to Nuxt 4** as soon as it is officially released.  
+> ### 🔥 You can already preview and already download the Nuxt 4 version [here](https://github.com/lazercaveman/nuxt-starter/tree/update/v.2.0.0).
+
 ![Screenshot](./assets/img/screenshot.png)
 
 ## 🥸 Why this template?  
@@ -10,7 +14,7 @@ Get ready to supercharge your development with this fully configured Nuxt 3 Star
 
 - **Clean up project in seconds:**  Using the `yarn script:cleanup` command in your terminal, will clean up the project, remove demo contents - the Starter Kit is designed so that developers can start working immediately without having to spend time setting up basic structures and configurations.
 - **Up to date:**  Using up to date dependencies and tools to ensure a smooth development experience. (at least I try ^^)
-- **Batteries-Included** he Starter Kit uses lots of well kind of "standard dependencies" fully configured and ready to go.
+- **Batteries-Included** The Starter Kit uses lots of well kind of "standard dependencies" fully configured and ready to go.
 - **MIT License:** Allows commercial use, modification, distribution, and of course private use as well  - for more read the [MIT License](LICENSE).
 
 --
@@ -27,7 +31,7 @@ Nuxt-Starter is delivered with a range of example content – including sample c
 - It empties the contents of './components', './tests' and ./store while keeping the directories intact.
 - It completely deletes the './.assets/img', './coverage', './.github', './.vscode', './.git' folder, and all its contents. 🚨 Since the .git folder will be deleted your project will be disconnected from this repository.
 - The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples - therefor it will delete the script file as well as the npm script 'script:cleanup' from the package.json file.
-- It wil delete the node_modules, .nuxt and .output folders, empty the yarn-cache and reinstall everything from scratch.
+- It will delete the node_modules, .nuxt and .output folders, empty the yarn-cache and reinstall everything from scratch.
 
 --
 
@@ -65,6 +69,12 @@ To manage app state easily. Pinia is modern, simple, and works perfectly with Vu
 ### 🤌 TypeScript
 TypeScript enhances the JavaScript language by adding optional static typing and other features, for safer, smarter code - helping avoiding errors and catching bugs early in development.
 [learn more](https://www.typescriptlang.org/).
+
+## 🤝 Contributing
+Feel free to fork this project and submit pull requests — contributions are very welcome!
+
+## 📜 License
+Licensed under the [MIT License](LICENSE).
 
 <!-- ### Storybook
 Storybook streamlines the UI development process by allowing for isolated development of individual components. It provides better visualization and collaboration, making it easier for teams to work together and create a better end product.
