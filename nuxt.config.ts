@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.BASE_URL,
     head: {
-      title: 'Nuxt 3 starter',
+      title: 'Nuxt 4 starter',
       link: [
         {
           rel: 'icon',
@@ -17,14 +17,19 @@ export default defineNuxtConfig({
     },
   },
 
+  // NOTE: this allows the usage of Nuxt v4:
+  future: {
+    compatibilityVersion: 4,
+  },
+
   modules: [
     '@pinia/nuxt',
     '@nuxt/devtools',
   ],
 
   css: [
-    '~/assets/style/animations.scss',
-    '~/assets/style/tailwind.css',
+    '~/app/assets/style/animations.scss',
+    '~/app/assets/style/tailwind.css',
   ],
 
   vite: {
