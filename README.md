@@ -2,7 +2,7 @@
 [![Nuxt 3](https://img.shields.io/badge/Nuxt-3.16.2-00DC82?logo=nuxt.js)](https://nuxt.com)
 [![MIT License](https://img.shields.io/github/license/lazercaveman/nuxt-starter)](LICENSE)
 
-# Nuxt 3 Starter / (will soon switch to [Nuxt 4](https://github.com/lazercaveman/nuxt-starter/tree/update/v.2.0.0) Starter)
+# Nuxt 3 Starter / (will switch to [Nuxt 4](https://github.com/lazercaveman/nuxt-starter/tree/update/v.2.0.0) Starter ASAP)
 
 > ### ⚡ **This repo will switch to Nuxt 4** as soon as it is officially released.  
 > ### 🔥 You can already preview and already download the Nuxt 4 version [here](https://github.com/lazercaveman/nuxt-starter/tree/update/v.2.0.0).
