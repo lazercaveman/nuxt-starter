@@ -13,4 +13,8 @@ const props = defineProps({
   },
 });
 
+onMounted (() => {
+  console.error(props.error)
+})
+
 </script>

@@ -40,9 +40,10 @@ export default typescriptEslint.config(
 				'error',
 				{
 					ignores: [
+						'index',
+						'demo',
 						'default',
 						'error',
-						'index',
 						'[id]',
 					],
 				},
