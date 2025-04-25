@@ -6,15 +6,12 @@ import typescriptEslint from 'typescript-eslint';
 export default typescriptEslint.config(
 	{
 		ignores: [
-			'dist/*',
-			'coverage/*',
-			'.output/*',
-			'.nuxt/*',
-			'**/dist',
-			'**/node_modules',
-			'**/.output',
-			'**/.yarn',
-			'**/.nuxt',
+      'node_modules',
+      'dist',
+      'coverage',
+      '.output',
+      '.nuxt',
+      '.yarn',
 		],
 	},
 	{
