@@ -1,6 +1,7 @@
 <template>
   <div class="flex justify-center items-center p-10 w-screen h-screen thousand-generated-frames-animation">
     <div class="flex flex-col gap-12 items-center p-12 rounded-4xl drop-shadow-2xl bg-gray-900">
+      <!-- // TODO: instead of having a single module add the content of the readme.md and extend it by adding interactive components that do stuff, to explain what is happening and why.  -->
       <NuxtStarter />
       <StarterButton />
       <p class="hidden">
