@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const packageJsonPath = path.resolve(process.cwd(), 'package.json');
-const indexVuePath = path.resolve(process.cwd(), './pages/index.vue');
+const indexVuePath = path.resolve(process.cwd(), './app/pages/index.vue');
 
 function removeCleanupScript() {
   try {
@@ -51,9 +51,9 @@ function replaceIndexVueContent() {
   try {
     const newContent = `<template> 🚀 Here we go! </template>\n`;
     fs.writeFileSync(indexVuePath, newContent, 'utf-8');
-    console.log('Replaced content of ./pages/index.vue');
+    console.log('Replaced content of ./app/pages/index.vue');
   } catch (error) {
-    console.error('Error updating ./pages/index.vue:', error);
+    console.error('Error updating ./app/pages/index.vue:', error);
   }
 }
 
