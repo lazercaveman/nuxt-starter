@@ -63,7 +63,7 @@ function cleanProject() {
   const directoriesToEmpty = ['./app/components', './app/tests', './app/store', './app/middleware', './server/middleware', './server/api'];
   directoriesToEmpty.forEach(emptyDirectory);
 
-  const assetsDirToDelete = ['./app/.assets/img', './coverage', './.github', './.vscode', './.git', './SECURITY.md', './LICENSE'];
+  const assetsDirToDelete = ['./app/.assets/img','./app/pages/demo', './coverage', './.github', './.vscode', './.git', './SECURITY.md', './LICENSE'];
   assetsDirToDelete.forEach(removeDirectory);
 
   removeCleanupScript();

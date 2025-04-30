@@ -18,7 +18,7 @@ export default defineConfig({
       'app/components/**/*.test.ts',
       'tests/**/*.test.ts',
     ],
-    setupFiles: ['tests/setup.ts'],
+    setupFiles: ['app/tests/setup.ts'],
   },
   resolve: {
     alias: {
