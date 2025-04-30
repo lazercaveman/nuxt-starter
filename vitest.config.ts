@@ -16,7 +16,7 @@ export default defineConfig({
     env: loadEnv('', process.cwd(), ''),
     include: [
       'app/components/**/*.test.ts',
-      'tests/**/*.test.ts',
+      'app/tests/**/*.test.ts',
     ],
     setupFiles: ['app/tests/setup.ts'],
   },
