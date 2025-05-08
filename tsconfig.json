@@ -7,8 +7,8 @@
   ],
   "compilerOptions": {
     "target": "ES2018",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "lib": [
       "ESNext",
       "ESNext.AsyncIterable",
