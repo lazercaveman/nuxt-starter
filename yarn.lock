@@ -2938,12 +2938,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.15.19":
-  version: 22.15.19
-  resolution: "@types/node@npm:22.15.19"
+"@types/node@npm:^22.15.21":
+  version: 22.15.21
+  resolution: "@types/node@npm:22.15.21"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/02311c2b5dbf2e9e2c17497dc27858bcefbe12a81af0d9b81f865613d8d014726e0eb6cbebfbdb84a327c1b9f9da1347a65a7699ac58c8854fb4daf447031149
+  checksum: 10/cb4189587cca445bfb8166c0ed39f9344d743f37f3da892f2999a99bbabda45dc773237e61ecb7d1dc83dd95718cb1b5715b0be5dd7953565b19019e36a7cf39
   languageName: node
   linkType: hard
 
@@ -9880,7 +9880,7 @@ __metadata:
     "@pinia/nuxt": "npm:^0.11.0"
     "@pinia/testing": "npm:^1.0.1"
     "@tailwindcss/vite": "npm:^4.1.7"
-    "@types/node": "npm:^22.15.19"
+    "@types/node": "npm:^22.15.21"
     "@vitest/coverage-v8": "npm:^3.1.4"
     "@vitest/ui": "npm:^3.1.4"
     "@vue/test-utils": "npm:^2.4.6"
