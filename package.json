@@ -21,7 +21,7 @@
     "@pinia/testing": "^1.0.1",
     "@tailwindcss/vite": "^4.1.7",
     "@types/node": "^22.15.19",
-    "@vitest/coverage-v8": "^3.1.4",
+    "@vitest/coverage-v8": "^3.2.0",
     "@vitest/ui": "^3.1.4",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.27.0",

@@ -3211,13 +3211,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:^3.1.4":
-  version: 3.1.4
-  resolution: "@vitest/coverage-v8@npm:3.1.4"
+"@vitest/coverage-v8@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@vitest/coverage-v8@npm:3.2.0"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@bcoe/v8-coverage": "npm:^1.0.2"
-    debug: "npm:^4.4.0"
+    ast-v8-to-istanbul: "npm:^0.3.3"
+    debug: "npm:^4.4.1"
     istanbul-lib-coverage: "npm:^3.2.2"
     istanbul-lib-report: "npm:^3.0.1"
     istanbul-lib-source-maps: "npm:^5.0.6"
@@ -3228,12 +3229,12 @@ __metadata:
     test-exclude: "npm:^7.0.1"
     tinyrainbow: "npm:^2.0.0"
   peerDependencies:
-    "@vitest/browser": 3.1.4
-    vitest: 3.1.4
+    "@vitest/browser": 3.2.0
+    vitest: 3.2.0
   peerDependenciesMeta:
     "@vitest/browser":
       optional: true
-  checksum: 10/93680edce574bf698b32d2c2e3f6804384a097c6d32c89edcea1468ee735fb18b43005b27ab68b43701e48d87783e22d1bde835e6f6882a2fa46765a26e24224
+  checksum: 10/3efc2898a67754551ad2c1b8f2278b5defe48cd21a39411de01a4273af18dee32312552e4feaee7a40f87d91c2b400798c930a88c0096fc3f9a44defe0894ecb
   languageName: node
   linkType: hard
 
@@ -3871,6 +3872,17 @@ __metadata:
   version: 5.0.0
   resolution: "ast-module-types@npm:5.0.0"
   checksum: 10/188a0c331929962c7ea0d9174b31393d31b0f9d5cc3bb3ad1dcb6f94c611eddfff10194104f247f1cba03f0bb9a2b5c757e619f5a5940333f60b8a12a7db244d
+  languageName: node
+  linkType: hard
+
+"ast-v8-to-istanbul@npm:^0.3.3":
+  version: 0.3.3
+  resolution: "ast-v8-to-istanbul@npm:0.3.3"
+  dependencies:
+    "@jridgewell/trace-mapping": "npm:^0.3.25"
+    estree-walker: "npm:^3.0.3"
+    js-tokens: "npm:^9.0.1"
+  checksum: 10/edcb926214833227e1eee0b7324c6160536879f922e055461d76a364c72d0199895c1b985f72d73359cef00586b6d800b81174a6b5efa7e571c6a82c2fe6f572
   languageName: node
   linkType: hard
 
@@ -9881,7 +9893,7 @@ __metadata:
     "@pinia/testing": "npm:^1.0.1"
     "@tailwindcss/vite": "npm:^4.1.7"
     "@types/node": "npm:^22.15.19"
-    "@vitest/coverage-v8": "npm:^3.1.4"
+    "@vitest/coverage-v8": "npm:^3.2.0"
     "@vitest/ui": "npm:^3.1.4"
     "@vue/test-utils": "npm:^2.4.6"
     eslint: "npm:^9.27.0"
