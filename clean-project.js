@@ -2,11 +2,13 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+// TODO: cleanup script should respect new folder structures
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const packageJsonPath = path.resolve(process.cwd(), 'package.json');
-const indexVuePath = path.resolve(process.cwd(), './pages/index.vue');
+const indexVuePath = path.resolve(process.cwd(), './app/pages/index.vue');
 
 function removeCleanupScript() {
   try {
@@ -49,19 +51,19 @@ function replaceIndexVueContent() {
   try {
     const newContent = `<template> 🚀 Here we go! </template>\n`;
     fs.writeFileSync(indexVuePath, newContent, 'utf-8');
-    console.log('Replaced content of ./pages/index.vue');
+    console.log('Replaced content of ./app/pages/index.vue');
   } catch (error) {
-    console.error('Error updating ./pages/index.vue:', error);
+    console.error('Error updating ./app/pages/index.vue:', error);
   }
 }
 
 function cleanProject() {
   console.log('Cleaning project...');
 
-  const directoriesToEmpty = ['./components', './tests', './store'];
+  const directoriesToEmpty = ['./app/components', './app/tests', './app/store', './app/middleware', './server/middleware', './server/api'];
   directoriesToEmpty.forEach(emptyDirectory);
 
-  const assetsDirToDelete = ['./.assets/img', './coverage', './.github', './.vscode', './.git', './SECURITY.md', './LICENSE'];
+  const assetsDirToDelete = ['./app/assets/img','./app/pages/demo.vue', './coverage', './.github', './.vscode', './.git', './SECURITY.md', './LICENSE'];
   assetsDirToDelete.forEach(removeDirectory);
 
   removeCleanupScript();

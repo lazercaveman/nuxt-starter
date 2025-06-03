@@ -7,8 +7,8 @@ export default typescriptEslint.config(
 	{
 		ignores: [
       'node_modules',
-      'dist',
       'coverage',
+      'dist',
       '.output',
       '.nuxt',
       '.yarn',
@@ -37,9 +37,10 @@ export default typescriptEslint.config(
 				'error',
 				{
 					ignores: [
+						'index',
+						'demo',
 						'default',
 						'error',
-						'index',
 						'[id]',
 					],
 				},
