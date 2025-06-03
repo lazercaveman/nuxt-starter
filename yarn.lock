@@ -6215,6 +6215,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"globals@npm:^16.2.0":
+  version: 16.2.0
+  resolution: "globals@npm:16.2.0"
+  checksum: 10/37fc33502973ebbee5a44b58939aa8574abc00ca1fc4c1d4ec0571a2c6620843ae647eff8bd082adf6bb5975ad221a887522b9a7961125764f0cb6dfab0b7483
+  languageName: node
+  linkType: hard
+
 "globby@npm:^14.1.0":
   version: 14.1.0
   resolution: "globby@npm:14.1.0"
@@ -9625,6 +9632,7 @@ __metadata:
     "@vue/test-utils": "npm:^2.4.6"
     eslint: "npm:^9.28.0"
     eslint-plugin-vue: "npm:^10.1.0"
+    globals: "npm:^16.2.0"
     husky: "npm:^9.1.7"
     jsdom: "npm:^26.1.0"
     nuxt: "npm:^3.17.4"
