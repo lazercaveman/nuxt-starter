@@ -1706,14 +1706,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "@pinia/nuxt@npm:0.11.0"
+"@pinia/nuxt@npm:^0.11.1":
+  version: 0.11.1
+  resolution: "@pinia/nuxt@npm:0.11.1"
   dependencies:
     "@nuxt/kit": "npm:^3.9.0"
   peerDependencies:
-    pinia: ^3.0.2
-  checksum: 10/3e052376bd25cf3022577ad6e3eb4bc83945650a86bb98b944528d399af6f9b171e916c8511fcf1f79e8685c6ee2431497b9336fb97418ca431c9768b7a2e024
+    pinia: ^3.0.3
+  checksum: 10/65fa7470d1b19d293294b6f15368aeffadf51d71d561fc17d5484e10b11924b41d5272c20b2797c31466142723b9640de5d1f36e9604e8f239d682307cb1a80a
   languageName: node
   linkType: hard
 
@@ -8583,7 +8583,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@nuxt/devtools": "npm:^2.4.1"
-    "@pinia/nuxt": "npm:^0.11.0"
+    "@pinia/nuxt": "npm:^0.11.1"
     "@pinia/testing": "npm:^1.0.1"
     "@tailwindcss/vite": "npm:^4.1.8"
     "@types/node": "npm:^22.15.29"
