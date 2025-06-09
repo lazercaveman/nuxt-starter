@@ -1717,12 +1717,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/testing@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@pinia/testing@npm:1.0.1"
+"@pinia/testing@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@pinia/testing@npm:1.0.2"
   peerDependencies:
-    pinia: ">=3.0.2"
-  checksum: 10/ea9b8197e75a600939f1fc95a617fc3d1b9d48d958db268467063e60c695fe57e3f630217fa51d0b5e6c89e6a7e9eb77f86db35708850dadacb443cf5a58b5f0
+    pinia: ">=3.0.3"
+  checksum: 10/1a5c2118b362f88cc8fcbd585f25c05cd7ddf9be8c01b351d59186172b389cc1f278cdab124b3e280976a0b3e53e0f52ba3fc46fd51bf74ed9ea003d5252e346
   languageName: node
   linkType: hard
 
@@ -8584,7 +8584,7 @@ __metadata:
   dependencies:
     "@nuxt/devtools": "npm:^2.4.1"
     "@pinia/nuxt": "npm:^0.11.0"
-    "@pinia/testing": "npm:^1.0.1"
+    "@pinia/testing": "npm:^1.0.2"
     "@tailwindcss/vite": "npm:^4.1.8"
     "@types/node": "npm:^22.15.29"
     "@vitest/coverage-v8": "npm:^3.2.0"
