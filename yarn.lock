@@ -2723,9 +2723,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-v8@npm:^3.2.3":
-  version: 3.2.3
-  resolution: "@vitest/coverage-v8@npm:3.2.3"
+"@vitest/coverage-v8@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "@vitest/coverage-v8@npm:3.2.4"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@bcoe/v8-coverage": "npm:^1.0.2"
@@ -2741,12 +2741,12 @@ __metadata:
     test-exclude: "npm:^7.0.1"
     tinyrainbow: "npm:^2.0.0"
   peerDependencies:
-    "@vitest/browser": 3.2.3
-    vitest: 3.2.3
+    "@vitest/browser": 3.2.4
+    vitest: 3.2.4
   peerDependenciesMeta:
     "@vitest/browser":
       optional: true
-  checksum: 10/7d3ee1cd98e64be1725cf9d3b9f25faec18def7be93996ef6f963cbd0b52f96854d88d5e324ab2134bfcb7325fda6fd486e05cda1c8a03dfddc3484d4b3d2682
+  checksum: 10/5a5940c78eabbb36efafb9ecc50408785614768b3f74f5f88e6dd32db59a21d39e15e7cf52fae961cc2cd75e0390c8568cdb9aef35aa8593ccd057edce539ee4
   languageName: node
   linkType: hard
 
@@ -8802,7 +8802,7 @@ __metadata:
     "@pinia/testing": "npm:^1.0.2"
     "@tailwindcss/vite": "npm:^4.1.8"
     "@types/node": "npm:^22.15.31"
-    "@vitest/coverage-v8": "npm:^3.2.3"
+    "@vitest/coverage-v8": "npm:^3.2.4"
     "@vitest/ui": "npm:^3.2.3"
     "@vue/test-utils": "npm:^2.4.6"
     eslint: "npm:^9.28.0"
