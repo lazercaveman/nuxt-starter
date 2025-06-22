@@ -16,19 +16,27 @@ export default typescriptEslint.config(
 	},
 	{
 		extends: [
-			eslint.configs.recommended,
-			...typescriptEslint.configs.recommended,
-			...eslintPluginVue.configs['flat/recommended'],
+      eslint.configs.recommended,
+      ...typescriptEslint.configs.recommended,
+      ...typescriptEslint.configs.recommendedTypeCheckedOnly,
+      ...eslintPluginVue.configs['flat/recommended'],
 		],
 		files: ['**/*.{ts,vue}'],
-		languageOptions: {
-			ecmaVersion: 'latest',
-			sourceType: 'module',
-			globals: globals.browser,
-			parserOptions: {
-				parser: typescriptEslint.parser,
-			},
-		},
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: globals.browser,
+      parserOptions: {
+        project: './tsconfig.json',
+        tsconfigRootDir: __dirname,
+        extraFileExtensions: ['.vue'],
+        parser: typescriptEslint.parser,
+        vueFeatures: {
+          filter: true,
+          interpolationAsNonHTML: false,
+        },
+      },
+    },
 		rules: {
       // place your rules here!
       // For example:
@@ -47,4 +55,11 @@ export default typescriptEslint.config(
 			],
     },
 	},
+  {
+    files: ['nuxt.config.ts'],
+    rules: {
+      // For some reason the tailwind plugin currently has problems with this rule
+      '@typescript-eslint/no-unsafe-call': 'off',
+    },
+  },
 );

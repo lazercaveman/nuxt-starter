@@ -14,7 +14,7 @@
     </button>
     <button
       class="px-6 py-3 w-fit rounded-sm bg-nuxt-green cursor-pointer transition-all hover:scale-up-transition"
-      @click="callTestApi(`🥳 So let's go - create some epic stuff that will change the world!`)"
+      @click="callTestApi()"
     >
       ☎️ Call Api
     </button>
@@ -22,16 +22,16 @@
 </template>
 
 
-<script setup>
+<script lang="ts" setup>
 import { useSampleStore } from '~/app/store/sample';
 
 const Store = useSampleStore();
 
-function changeSampleStoreData(testString) {
+function changeSampleStoreData(testString: string) {
   Store.setSampleData(testString);
 }
 
-function callTestApi() {
-  Store.callTestApi();
+async function callTestApi() {
+  await Store.callTestApi();
 }
 </script>
