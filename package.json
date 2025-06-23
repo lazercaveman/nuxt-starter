@@ -22,7 +22,7 @@
     "@tailwindcss/vite": "^4.1.8",
     "@types/node": "^22.15.31",
     "@vitest/coverage-v8": "^3.2.3",
-    "@vitest/ui": "^3.2.3",
+    "@vitest/ui": "^3.2.4",
     "@vue/test-utils": "^2.4.6",
     "eslint": "^9.28.0",
     "eslint-plugin-vue": "^10.2.0",
