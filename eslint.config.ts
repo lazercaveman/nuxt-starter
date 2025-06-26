@@ -40,6 +40,7 @@ export default typescriptEslint.config(
 		rules: {
       // place your rules here!
       // For example:
+      "@typescript-eslint/no-unsafe-assignment": "off",
 			'@typescript-eslint/no-unused-vars': 'error',
 			'vue/multi-word-component-names': [
 				'error',

@@ -6,14 +6,10 @@
     "dist"
   ],
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
-    ],
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "es2022",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
@@ -26,16 +22,12 @@
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
+      "~/*": [ "./*"],
+      "@/*": ["*"],
     },
     "types": [
       "@types/node",
-      "@pinia/nuxt"
+      "@pinia/nuxt",
     ],
     "jsx": "preserve",
     "jsxImportSource": "vue",

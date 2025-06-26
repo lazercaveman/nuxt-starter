@@ -1,31 +1,47 @@
-import { defineStore } from 'pinia';
+// ~/app/store/sample.ts
+import { defineStore } from 'pinia'
+import { ref, computed } from 'vue'
 
-export const useSampleStore = defineStore('sampleStore', {
-  state: (): {
-    sampleData: string,
-    stateUpdatedAnimation: string,
-    apiGreeting: string,
-  } => ({
-    sampleData: '🏗️ ESLint, 🧪 Vitest, 🐶 Husky, 💅 Tailwind CSS, 👩‍🎤 Sass, 🍍 Pinia, 🤌 TypeScript',
-    stateUpdatedAnimation: '',
-    apiGreeting: '',
-  }),
+interface ApiResponse {
+  greeting: string
+}
 
-  getters: {
-    getSampleData: state => state.sampleData,
-  },
+export const useSampleStore = defineStore('sampleStore', () => {
+  const sampleData = ref<string>('🏗️ ESLint, 🧪 Vitest, 🐶 Husky, 💅 Tailwind CSS, 👩‍🎤 Sass, 🍍 Pinia, 🤌 TypeScript')
+  const stateUpdatedAnimation = ref<string>('')
+  const apiGreeting = ref<string>('')
 
-  actions: {
-    setSampleData (testString: string) {
-      this.sampleData = testString;
-      this.stateUpdatedAnimation = 'state-update-animation';
-    },
-    async callTestApi () {
-      const { data: greeting } = await useAsyncData(async () => {
-        return await $fetch(`/api/test`)
-      })
+  const getSampleData = computed(() => sampleData.value)
 
-      this.apiGreeting = greeting;
+  function setSampleData(testString: string) {
+    sampleData.value = testString
+    stateUpdatedAnimation.value = 'state-update-animation'
+  }
+
+  async function callTestApi() {
+    try {
+      const { data, error } = await useAsyncData<ApiResponse>('testApi', () => $fetch<ApiResponse>('/api/test'))
+
+      if (error.value) {
+        throw error.value
+      }
+
+      apiGreeting.value = data.value?.greeting ?? ''
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        apiGreeting.value = err.message
+      } else {
+        apiGreeting.value = String(err)
+      }
     }
-  },
-});
+  }
+
+  return {
+    sampleData,
+    stateUpdatedAnimation,
+    apiGreeting,
+    getSampleData,
+    setSampleData,
+    callTestApi,
+  }
+})
