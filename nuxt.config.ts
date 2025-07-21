@@ -33,15 +33,15 @@ export default defineNuxtConfig({
   ],
 
   vite: {
+    plugins: [
+      svgLoader(),
+      tailwindcss(),
+    ],
     resolve: {
       alias: {
         '~': fileURLToPath(new URL('./', import.meta.url)),
       },
     },
-    plugins: [
-      svgLoader(),
-      tailwindcss(),
-    ],
     assetsInclude: ['**/*.mdx'],
     css: {
       preprocessorOptions: {
