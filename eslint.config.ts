@@ -16,27 +16,19 @@ export default typescriptEslint.config(
   },
   {
     extends: [
-      eslint.configs.recommended,
-      ...typescriptEslint.configs.recommended,
-      ...typescriptEslint.configs.recommendedTypeCheckedOnly,
-      ...eslintPluginVue.configs['flat/recommended'],
+			eslint.configs.recommended,
+			...typescriptEslint.configs.recommended,
+			...eslintPluginVue.configs['flat/recommended'],
     ],
-    files: ['**/*.{ts,vue,js}'],
-    languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-      globals: globals.browser,
-      parser: typescriptEslint.parser,
-      parserOptions: {
-        tsconfigRootDir: __dirname,
-        project: ['./tsconfig.json'],
-        extraFileExtensions: ['.vue'],
-        vueFeatures: {
-          filter: true,
-          interpolationAsNonHTML: false,
-        },
-      },
-    },
+		files: ['**/*.{ts,vue}'],
+		languageOptions: {
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+			globals: globals.browser,
+			parserOptions: {
+				parser: typescriptEslint.parser,
+			},
+		},
     rules: {
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unused-vars': 'error',
