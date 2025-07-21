@@ -33,26 +33,22 @@ export default defineNuxtConfig({
   ],
 
   vite: {
+    plugins: [
+      svgLoader(),
+      tailwindcss(),
+    ],
     resolve: {
       alias: {
         '~': fileURLToPath(new URL('./', import.meta.url)),
       },
     },
-    plugins: [
-      svgLoader(),
-      tailwindcss(),
-    ],
     assetsInclude: ['**/*.mdx'],
     css: {
       preprocessorOptions: {
         // Use sass
-        sass: {
-          api: 'modern',
-        },
+        sass: { api: 'modern' },
         // Or use scss
-        scss: {
-          api: 'modern',
-        },
+        scss: { api: 'modern' },
       },
     },
   },
