@@ -5,11 +5,16 @@
     "build",
     "dist"
   ],
+  "include": [
+    "nuxt.config.ts",
+    "server/**/*.ts",
+    "types/**/*.d.ts"
+  ],
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2022", "DOM"],
     "module": "es2022",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "importHelpers": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
@@ -20,17 +25,15 @@
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [ "./*"],
-      "@/*": ["*"],
-    },
     "types": [
       "@types/node",
       "@pinia/nuxt",
     ],
-    "jsx": "preserve",
-    "jsxImportSource": "vue",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
     "isolatedModules": true,
     "verbatimModuleSyntax": true
   }

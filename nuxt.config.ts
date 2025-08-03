@@ -17,11 +17,6 @@ export default defineNuxtConfig({
     },
   },
 
-  // NOTE: this allows the usage of Nuxt v4:
-  future: {
-    compatibilityVersion: 4,
-  },
-
   modules: [
     '@pinia/nuxt',
     '@nuxt/devtools',
@@ -40,6 +35,7 @@ export default defineNuxtConfig({
     resolve: {
       alias: {
         '~': fileURLToPath(new URL('./', import.meta.url)),
+        '@': fileURLToPath(new URL('./', import.meta.url)),
       },
     },
     assetsInclude: ['**/*.mdx'],
@@ -63,6 +59,11 @@ export default defineNuxtConfig({
     public: {
       apiBase: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
     }
+  },
+
+  devServer: {
+    port: 8080,
+    host: 'localhost',
   },
 
   compatibilityDate: '2024-12-05',
