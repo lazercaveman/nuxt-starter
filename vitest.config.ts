@@ -22,9 +22,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, '.'),
       '#imports': resolve(__dirname, './.nuxt/imports.d.ts'),
-      '~': fileURLToPath(new URL('./', import.meta.url)),
+      '@': fileURLToPath(new URL('./app', import.meta.url)),
     },
   },
   assetsInclude: ['**/*.mdx'],
