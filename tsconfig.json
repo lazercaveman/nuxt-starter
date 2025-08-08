@@ -8,6 +8,10 @@
   "include": [
     "nuxt.config.ts",
     "server/**/*.ts",
+    "types/**/*.d.ts",
+    "app/**/*.ts",
+    "app/**/*.vue",
+    "server/**/*.ts",
     "types/**/*.d.ts"
   ],
   "compilerOptions": {
@@ -31,7 +35,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["./app/*"],
       "~/*": ["./server/*"],
     },
     "isolatedModules": true,
