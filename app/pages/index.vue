@@ -17,8 +17,8 @@
 
 <script setup>
   // NOTE: now that Nuxt 4 uses an app directory import routes for Nitro need to be configured specifically, in the current configuration one should use '~' to refer to the server directory, and '@' to refer to the app directory.
-  import NuxtStarter from '@/app/components/nuxt-starter/NuxtStarter.vue';
-  import StarterButton from '@/app/components/start-button/StarterButton.vue';
+  import NuxtStarter from '@/components/nuxt-starter/NuxtStarter.vue';
+  import StarterButton from '@/components/start-button/StarterButton.vue';
 
   definePageMeta({
     middleware: ['demo'],

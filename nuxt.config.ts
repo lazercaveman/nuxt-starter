@@ -26,8 +26,8 @@ export default defineNuxtConfig({
   ],
 
   css: [
-    '@/app/assets/style/animations.scss',
-    '@/app/assets/style/tailwind.css',
+    '@/assets/style/animations.scss',
+    '@/assets/style/tailwind.css',
   ],
 
   vite: {
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
     ],
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./', import.meta.url)),
+        '@': fileURLToPath(new URL('./app/', import.meta.url)),
       },
     },
     assetsInclude: ['**/*.mdx'],

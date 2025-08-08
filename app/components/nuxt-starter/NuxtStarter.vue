@@ -48,7 +48,7 @@
 
 
 <script setup>
-import { useSampleStore } from '@/app/store/sample';
+import { useSampleStore } from '@/store/sample';
 
 const Store = useSampleStore();
 </script>
