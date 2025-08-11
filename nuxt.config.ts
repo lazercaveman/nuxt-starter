@@ -3,6 +3,9 @@ import svgLoader from 'vite-svg-loader';
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  alias: {
+    '@server': './server'
+  },
   app: {
     baseURL: process.env.BASE_URL,
     head: {
@@ -17,19 +20,14 @@ export default defineNuxtConfig({
     },
   },
 
-  // NOTE: this allows the usage of Nuxt v4:
-  future: {
-    compatibilityVersion: 4,
-  },
-
   modules: [
     '@pinia/nuxt',
     '@nuxt/devtools',
   ],
 
   css: [
-    '~/app/assets/style/animations.scss',
-    '~/app/assets/style/tailwind.css',
+    '@/assets/style/animations.scss',
+    '@/assets/style/tailwind.css',
   ],
 
   vite: {
@@ -39,7 +37,7 @@ export default defineNuxtConfig({
     ],
     resolve: {
       alias: {
-        '~': fileURLToPath(new URL('./', import.meta.url)),
+        '@': fileURLToPath(new URL('./app/', import.meta.url)),
       },
     },
     assetsInclude: ['**/*.mdx'],
@@ -53,6 +51,13 @@ export default defineNuxtConfig({
     },
   },
 
+   nitro: {
+    // NOTE: now that Nuxt 4 uses an app directory import routes for Nitro need to be configured specifically
+    alias: {
+      '~': fileURLToPath(new URL('./server/', import.meta.url)),
+    },
+  },
+
 	devtools: {
 		enabled: true,
 	},
@@ -63,6 +68,11 @@ export default defineNuxtConfig({
     public: {
       apiBase: '', // can be overridden by NUXT_PUBLIC_API_BASE environment variable
     }
+  },
+
+  devServer: {
+    port: 8080,
+    host: 'localhost',
   },
 
   compatibilityDate: '2024-12-05',

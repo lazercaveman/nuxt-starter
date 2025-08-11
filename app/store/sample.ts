@@ -2,9 +2,6 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 
-interface ApiResponse {
-  greeting: string
-}
 
 export const useSampleStore = defineStore('sampleStore', () => {
   const sampleData = ref<string>('🏗️ ESLint, 🧪 Vitest, 🐶 Husky, 💅 Tailwind CSS, 👩‍🎤 Sass, 🍍 Pinia, 🤌 TypeScript')
@@ -20,13 +17,11 @@ export const useSampleStore = defineStore('sampleStore', () => {
 
   async function callTestApi() {
     try {
-      const { data, error } = await useAsyncData<ApiResponse>('testApi', () => $fetch<ApiResponse>('/api/test'))
+      const data = await $fetch<string>('/api/test')
 
-      if (error.value) {
-        throw error.value
-      }
+      console.log('😅', data)
 
-      apiGreeting.value = data.value?.greeting ?? ''
+      apiGreeting.value = data ?? ''
     } catch (err: unknown) {
       if (err instanceof Error) {
         apiGreeting.value = err.message

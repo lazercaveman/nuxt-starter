@@ -15,8 +15,8 @@
 
 
 <script setup>
-  import NuxtStarter from '~/app/components/nuxt-starter/NuxtStarter.vue';
-  import StarterButton from '~/app/components/start-button/StarterButton.vue';
+  import NuxtStarter from '@/components/nuxt-starter/NuxtStarter.vue';
+  import StarterButton from '@/components/start-button/StarterButton.vue';
 
   const config = useRuntimeConfig()
 </script>
