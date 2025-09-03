@@ -1,12 +1,8 @@
-import { URL, fileURLToPath } from 'url';
 import svgLoader from 'vite-svg-loader';
 import tailwindcss from "@tailwindcss/vite";
 
 
 export default defineNuxtConfig({
-  alias: {
-    '@server': './server'
-  },
   app: {
     baseURL: process.env.BASE_URL,
     head: {
@@ -36,20 +32,14 @@ export default defineNuxtConfig({
       svgLoader(),
       tailwindcss(),
     ],
-    resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('./app/', import.meta.url)),
-      },
-    },
+    resolve: {},
     assetsInclude: ['**/*.mdx'],
     css: {},
   },
 
    nitro: {
     // NOTE: now that Nuxt 4 uses an app directory import routes for Nitro need to be configured specifically
-    alias: {
-      '~': fileURLToPath(new URL('./server/', import.meta.url)),
-    },
+    alias: {},
   },
 
 	devtools: {
