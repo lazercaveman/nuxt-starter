@@ -1,18 +1,23 @@
 {
-  "extends": "./.nuxt/tsconfig.json",
+  "files": [],
   "exclude": [
     "node_modules",
     "build",
     "dist"
   ],
-  "include": [
-    "nuxt.config.ts",
-    "server/**/*.ts",
-    "types/**/*.d.ts",
-    "app/**/*.ts",
-    "app/**/*.vue",
-    "server/**/*.ts",
-    "types/**/*.d.ts"
+  "references": [
+    {
+      "path": "./.nuxt/tsconfig.app.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.server.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.shared.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.node.json"
+    }
   ],
   "compilerOptions": {
     "target": "ES2022",
@@ -35,7 +40,6 @@
     "types": [
       "@types/node",
       "@pinia/nuxt",
-      "nuxt"
     ],
     "baseUrl": ".",
     "paths": {
