@@ -16,7 +16,10 @@
   ],
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2022", "DOM"],
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
     "module": "es2022",
     "moduleResolution": "Bundler",
     "importHelpers": true,
@@ -32,11 +35,16 @@
     "types": [
       "@types/node",
       "@pinia/nuxt",
+      "nuxt"
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./app/*"],
-      "~/*": ["./server/*"],
+      "@/*": [
+        "./app/*"
+      ],
+      "~/*": [
+        "./server/*"
+      ],
     },
     "isolatedModules": true,
     "verbatimModuleSyntax": true

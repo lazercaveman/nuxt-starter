@@ -2,6 +2,7 @@ import { URL, fileURLToPath } from 'url';
 import svgLoader from 'vite-svg-loader';
 import tailwindcss from "@tailwindcss/vite";
 
+
 export default defineNuxtConfig({
   alias: {
     '@server': './server'
