@@ -42,14 +42,7 @@ export default defineNuxtConfig({
       },
     },
     assetsInclude: ['**/*.mdx'],
-    css: {
-      preprocessorOptions: {
-        // Use sass
-        sass: { api: 'modern' },
-        // Or use scss
-        scss: { api: 'modern' },
-      },
-    },
+    css: {},
   },
 
    nitro: {
