@@ -1,5 +1,5 @@
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/nuxt-starter)
-[![Nuxt 4](https://img.shields.io/badge/Nuxt-3.16.2-00DC82?logo=nuxt.js)](https://nuxt.com)
+[![Nuxt 4](https://img.shields.io/badge/Nuxt-4.1.0-00DC82?logo=nuxt.js)](https://nuxt.com)
 [![MIT License](https://img.shields.io/github/license/lazercaveman/nuxt-starter)](LICENSE)
 
 # Nuxt 4 Starter
