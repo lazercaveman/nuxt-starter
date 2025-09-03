@@ -1,5 +1,4 @@
 // <reference types="vitest" />
-import { resolve } from 'path';
 import { fileURLToPath, URL } from 'url';
 import { loadEnv } from 'vite';
 import { defineConfig } from 'vitest/config';
@@ -13,8 +12,8 @@ export default defineConfig({
     environment: 'jsdom',
     env: loadEnv('', process.cwd(), ''),
     include: [
-      'app/components/**/*.test.ts',
-      'app/testing/**/*.test.ts',
+      './app/components/**/*.test.ts',
+      './app/testing/**/*.test.ts',
     ],
     setupFiles: ['./app/testing/setup.ts'],
     deps: { inline: ['@vue', 'vue'] },
@@ -23,12 +22,7 @@ export default defineConfig({
     vue(),
     svgLoader(),
   ],
-  resolve: {
-    alias: {
-      '#imports': resolve(__dirname, './.nuxt/imports.d.ts'),
-      '@': fileURLToPath(new URL('./app', import.meta.url)),
-    },
-  },
+  resolve: { alias: { '@': fileURLToPath(new URL('./app', import.meta.url)) } },
   assetsInclude: ['**/*.mdx'],
   css: {},
 });
