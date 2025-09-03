@@ -16,7 +16,6 @@ export default defineConfig({
       './app/testing/**/*.test.ts',
     ],
     setupFiles: ['./app/testing/setup.ts'],
-    deps: { inline: ['@vue', 'vue'] },
   },
   plugins: [
     vue(),
