@@ -1,6 +1,18 @@
-echo "Husky ===> 🧪 Executing EsLint ..."
-yarn lint
-echo "Husky ===> 🎉 Lint fix complete! "
-echo "Husky ===> 🧪 Executing test:coverage ..."
-yarn test:coverage
-echo "Husky ===> 🎉 Pushing to git successfully - thank you for contributing!"
+  # 1. Force Prettier Structure
+  echo "🐶 Husky: 🌊 Enforcing TypeScript Types Check ..."
+  yarn type-check || { echo "🐶 Husky: ❌ Enforcing Types Check. Aborting push."; exit 1; }
+  echo "🐶 Husky: 🎉 TypeScript found no rule violations ..."
+
+  # 2. Linting
+  echo "🐶 Husky: 👮‍♂️ Executing EsLint ..."
+  yarn lint:eslint || { echo "🐶 Husky: ❌ ESLint found issues. Aborting push."; exit 1; }
+  echo "🐶 Husky: 🎉 Linter found no rule violations ..."
+
+  # 4. Unit-Testing
+  echo "🐶 Husky: 🧪 Executing test:coverage ..."
+  yarn test:coverage || { echo "🐶 Husky: ❌ Tests failed. Aborting push."; exit 1; }
+  echo "🐶 Husky: 🎉 All tests passed successfully!"
+
+  # 6. Success
+  echo "🐶 Husky: 🎉 Pushing to git successfully - thank you for contributing!"
+  exit 0

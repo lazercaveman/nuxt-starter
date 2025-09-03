@@ -1,22 +1,30 @@
 {
-  "extends": "./.nuxt/tsconfig.json",
+  "files": [],
   "exclude": [
     "node_modules",
     "build",
     "dist"
   ],
-  "include": [
-    "nuxt.config.ts",
-    "server/**/*.ts",
-    "types/**/*.d.ts",
-    "app/**/*.ts",
-    "app/**/*.vue",
-    "server/**/*.ts",
-    "types/**/*.d.ts"
+  "references": [
+    {
+      "path": "./.nuxt/tsconfig.app.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.server.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.shared.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.node.json"
+    }
   ],
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2022", "DOM"],
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
     "module": "es2022",
     "moduleResolution": "Bundler",
     "importHelpers": true,
@@ -35,8 +43,12 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./app/*"],
-      "~/*": ["./server/*"],
+      "@/*": [
+        "./app/*"
+      ],
+      "~/*": [
+        "./server/*"
+      ],
     },
     "isolatedModules": true,
     "verbatimModuleSyntax": true

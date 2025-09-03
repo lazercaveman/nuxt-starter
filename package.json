@@ -9,9 +9,11 @@
     "preview": "nuxt preview",
     "start": "node .output/server/index.mjs",
     "lint": "eslint . --cache",
+    "lint:eslint": "eslint . --fix",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
+    "type-check": "vue-tsc --build",
     "analyze": "npx nuxi analyze",
     "project-info": "npx nuxi info",
     "prepare": "husky"
@@ -30,18 +32,19 @@
     "globals": "^16.3.0",
     "husky": "^9.1.7",
     "jsdom": "^26.1.0",
-    "sass": "^1.91.0",
+    "sass": "^1.92.0",
     "sass-loader": "^16.0.5",
     "tailwindcss": "^4.1.12",
     "typescript": "5.9.2",
-    "typescript-eslint": "^8.41.0",
+    "typescript-eslint": "^8.42.0",
     "vite-svg-loader": "^5.1.0",
     "vitest": "^3.2.4",
-    "vue-eslint-parser": "^10.2.0"
+    "vue-eslint-parser": "^10.2.0",
+    "vue-tsc": "^3.0.6"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.11.2",
-    "nuxt": "^4.0.3",
+    "nuxt": "^4.1.0",
     "pinia": "^3.0.3"
   },
   "packageManager": "yarn@4.9.1"

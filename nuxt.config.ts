@@ -2,6 +2,7 @@ import { URL, fileURLToPath } from 'url';
 import svgLoader from 'vite-svg-loader';
 import tailwindcss from "@tailwindcss/vite";
 
+
 export default defineNuxtConfig({
   alias: {
     '@server': './server'
@@ -41,14 +42,7 @@ export default defineNuxtConfig({
       },
     },
     assetsInclude: ['**/*.mdx'],
-    css: {
-      preprocessorOptions: {
-        // Use sass
-        sass: { api: 'modern' },
-        // Or use scss
-        scss: { api: 'modern' },
-      },
-    },
+    css: {},
   },
 
    nitro: {
