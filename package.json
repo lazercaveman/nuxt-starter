@@ -32,7 +32,7 @@
     "globals": "^16.3.0",
     "husky": "^9.1.7",
     "jsdom": "^26.1.0",
-    "sass": "^1.92.0",
+    "sass": "^1.92.1",
     "sass-loader": "^16.0.5",
     "tailwindcss": "^4.1.12",
     "typescript": "5.9.2",

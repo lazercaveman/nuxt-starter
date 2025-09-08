@@ -7644,7 +7644,7 @@ __metadata:
     jsdom: "npm:^26.1.0"
     nuxt: "npm:^4.1.0"
     pinia: "npm:^3.0.3"
-    sass: "npm:^1.92.0"
+    sass: "npm:^1.92.1"
     sass-loader: "npm:^16.0.5"
     tailwindcss: "npm:^4.1.12"
     typescript: "npm:5.9.2"
@@ -7726,9 +7726,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.92.0":
-  version: 1.92.0
-  resolution: "sass@npm:1.92.0"
+"sass@npm:^1.92.1":
+  version: 1.92.1
+  resolution: "sass@npm:1.92.1"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -7739,7 +7739,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/dedc6e7a591ad6d1733564422c569a19e14e5b446c4ee59fea8f71fd496b1f65e67641004ac584e6ec73f5595d2446b3a262799eb3e42b84d901b0b11f108642
+  checksum: 10/ded47fd238d20a826bf3c5d129b4849100abae6fafe525a082d936b5793d7fd59a914134a302f0a6780efb5b26fdc2d1f1bfa37d8a9302ba632cad5e67675eec
   languageName: node
   linkType: hard
 
