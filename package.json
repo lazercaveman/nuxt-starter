@@ -22,7 +22,7 @@
     "@nuxt/devtools": "^2.6.3",
     "@pinia/testing": "^1.0.2",
     "@tailwindcss/vite": "^4.1.13",
-    "@types/node": "^24.5.1",
+    "@types/node": "^24.6.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vitest/coverage-v8": "^3.2.4",
     "@vitest/ui": "^3.2.4",
