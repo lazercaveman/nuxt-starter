@@ -70,7 +70,7 @@ TypeScript enhances the JavaScript language by adding optional static typing and
 Feel free to fork this project and submit pull requests — contributions are very welcome!
 
 ## 📜 License
-Licensed under the [MIT License](LICENSE).
+Licensed under the [MIT License](LICENSE), by [Ali Soueidan](https://alisoueidan.com).
 
 <!-- ### Storybook
 Storybook streamlines the UI development process by allowing for isolated development of individual components. It provides better visualization and collaboration, making it easier for teams to work together and create a better end product.
