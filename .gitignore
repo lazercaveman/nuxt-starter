@@ -3,10 +3,11 @@
 .output
 .eslintcache
 .env
-.yarn/*
+nuxt.d.ts
+.yarn/cache
+.yarn/tmp
 !.yarn/releases
 !.yarn/plugins
-nuxt.d.ts
 
 # compiled output
 /dist
