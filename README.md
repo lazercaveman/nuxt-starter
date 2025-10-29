@@ -3,7 +3,7 @@
 [![MIT License](https://img.shields.io/github/license/lazercaveman/nuxt-starter)](LICENSE)
 
 # Nuxt 4 Starter
-![Screenshot](./app/assets/img/screenshot.png)
+![Screenshot](./app/assets/img/screenshot.jpg)
 
 ## 🥸 Why this template?  
 Get ready to supercharge your development with this fully configured Nuxt 4 Starter Kit! Built on Vue 3 and powered by TypeScript and many other technologies (for more information see down-below or checkout package.json for even more), this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. 🙌 No more wrestling with configurations—jump straight into building amazing projects! 
