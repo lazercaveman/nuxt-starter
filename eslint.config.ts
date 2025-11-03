@@ -11,7 +11,6 @@ export default typescriptEslint.config(
       'dist',
       '.output',
       '.nuxt',
-      '.yarn',
     ],
   },
   {
