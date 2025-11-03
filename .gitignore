@@ -4,10 +4,6 @@
 .eslintcache
 .env
 nuxt.d.ts
-.yarn/cache
-.yarn/tmp
-!.yarn/releases
-!.yarn/plugins
 
 # compiled output
 /dist
@@ -19,8 +15,6 @@ logs
 *.log
 npm-debug.log*
 pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 lerna-debug.log*
 
 # OS

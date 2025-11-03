@@ -8,7 +8,7 @@
 ## 🥸 Why this template?  
 Get ready to supercharge your development with this fully configured Nuxt 4 Starter Kit! Built on Vue 3 and powered by TypeScript and many other technologies (for more information see down-below or checkout package.json for even more), this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. 🙌 No more wrestling with configurations—jump straight into building amazing projects! 
 
-- **Clean up project in seconds:**  Using the `yarn script:cleanup` command in your terminal, will clean up the project, remove demo contents - the Starter Kit is designed so that developers can start working immediately without having to spend time setting up basic structures and configurations.
+- **Clean up project in seconds:**  Using the `pnpm script:cleanup` command in your terminal, will clean up the project, remove demo contents - the Starter Kit is designed so that developers can start working immediately without having to spend time setting up basic structures and configurations.
 - **Up to date:**  Using up to date dependencies and tools to ensure a smooth development experience. (at least I try ^^)
 - **Batteries-Included** The Starter Kit uses lots of well kind of "standard dependencies" fully configured and ready to go.
 - **MIT License:** Allows commercial use, modification, distribution, and of course private use as well  - for more read the [MIT License](LICENSE).
@@ -18,16 +18,16 @@ Get ready to supercharge your development with this fully configured Nuxt 4 Star
 ## 🚀 Getting Started
 1. Clone or download this repository
 2. Ensure you have Node version v22.13.0 up an running
-3. Make sure you have yarn version 4.6.0. (running `corepack enable` should do the trick - using the package manager of your choice should also work 😉).
-4. Run `yarn` or `yarn install` to install dependencies
-5. Run `yarn dev` to start the local development environment
+3. Make sure you have pnpm version mentioned in the package json in use (or use the package manager of your choice it should also work).
+4. Run `pnpm install` to install dependencies
+5. Run `pnpm dev` to start the local development environment
 
 ### 🧹 Comes with Auto-Clean-Script
-Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `yarn script:cleanup` - this command offers an easy, one-step process to prepare your Nuxt 4 project for a fresh start.
+Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `pnpm script:cleanup` - this command offers an easy, one-step process to prepare your Nuxt 4 project for a fresh start.
 - It empties the contents of './components', './tests' and ./store while keeping the directories intact.
 - It completely deletes the './.assets/img', './coverage', './.github', './.vscode', './.git' folder, and all its contents. 🚨 Since the .git folder will be deleted your project will be disconnected from this repository.
 - The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples - therefor it will delete the script file as well as the npm script 'script:cleanup' from the package.json file.
-- It will delete the node_modules, .nuxt and .output folders, empty the yarn-cache and reinstall everything from scratch.
+- It will delete the node_modules, .nuxt and .output folders, empty the pnpm-cache and reinstall everything from scratch.
 
 --
 
