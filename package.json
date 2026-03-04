@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^3.0.1",
+    "@nuxt/test-utils": "^4.0.0",
     "@pinia/testing": "^1.0.2",
     "@tailwindcss/vite": "^4.1.16",
     "@types/node": "^24.10.0",
