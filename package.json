@@ -19,7 +19,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^3.2.2",
+    "@nuxt/devtools": "^3.2.3",
     "@nuxt/test-utils": "^4.0.0",
     "@pinia/testing": "^1.0.3",
     "@tailwindcss/vite": "^4.2.1",
