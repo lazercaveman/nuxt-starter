@@ -29,9 +29,7 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
-      // @ts-expect-error - Nuxt and Vite plugin type mismatch
       svgLoader(),
-      // @ts-expect-error - Nuxt and Vite plugin type mismatch
       tailwindcss(),
     ],
     resolve: {},
