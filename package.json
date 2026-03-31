@@ -19,6 +19,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@nuxt/devtools": "^4.0.0-alpha.3",
     "@nuxt/test-utils": "^4.0.0",
     "@pinia/testing": "^1.0.3",
