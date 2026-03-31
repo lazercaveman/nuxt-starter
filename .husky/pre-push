@@ -1,16 +1,16 @@
   # 1. Force Prettier Structure
   echo "🐶 Husky: 🌊 Enforcing TypeScript Types Check ..."
-  pnpm type-check || { echo "🐶 Husky: ❌ Enforcing Types Check. Aborting push."; exit 1; }
+  yarn type-check || { echo "🐶 Husky: ❌ Enforcing Types Check. Aborting push."; exit 1; }
   echo "🐶 Husky: 🎉 TypeScript found no rule violations ..."
 
   # 2. Linting
   echo "🐶 Husky: 👮‍♂️ Executing EsLint ..."
-  pnpm lint:eslint || { echo "🐶 Husky: ❌ ESLint found issues. Aborting push."; exit 1; }
+  yarn lint:eslint || { echo "🐶 Husky: ❌ ESLint found issues. Aborting push."; exit 1; }
   echo "🐶 Husky: 🎉 Linter found no rule violations ..."
 
   # 4. Unit-Testing
   echo "🐶 Husky: 🧪 Executing test:coverage ..."
-  pnpm test:coverage || { echo "🐶 Husky: ❌ Tests failed. Aborting push."; exit 1; }
+  yarn test:coverage || { echo "🐶 Husky: ❌ Tests failed. Aborting push."; exit 1; }
   echo "🐶 Husky: 🎉 All tests passed successfully!"
 
   # 6. Success

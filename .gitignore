@@ -1,8 +1,13 @@
+# Logs
 *.log
+logs
+lerna-debug.log*
+*storybook.log
+/server/_logs
+
+# Nuxt/Vue build artifacts
 .nuxt
 .output
-.eslintcache
-.env
 nuxt.d.ts
 
 # compiled output
@@ -10,12 +15,20 @@ nuxt.d.ts
 /storybook-static
 /node_modules
 
-# Logs
-logs
-*.log
+# Cache files
+.eslintcache
+
+# Package managers
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+yarn-debug.log*
+yarn-error.log*
 npm-debug.log*
 pnpm-debug.log*
-lerna-debug.log*
+
+# Environment & secrets
+.env
 
 # OS
 .DS_Store
@@ -23,6 +36,8 @@ lerna-debug.log*
 # Tests
 /coverage
 /.nyc_output
+*/testing/snapshots/current
+*/testing/snapshots/difference
 
 # IDEs and editors
 /.idea
@@ -33,6 +48,3 @@ lerna-debug.log*
 .settings/
 *.sublime-workspace
 *.code-workspace
-
-# IDE - VSCode
-.vercel

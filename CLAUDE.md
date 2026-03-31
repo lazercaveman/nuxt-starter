@@ -10,7 +10,7 @@ MIT-licensed, maintained by Ali Soueidan (@lazercaveman).
 - **Framework:** Nuxt 4 (Vue 3, `app/` directory structure)
 - **Language:** TypeScript (strict mode)
 - **Build:** Vite (native Nuxt integration)
-- **Package Manager:** pnpm (see version in `package.json`)
+- **Package Manager:** yarn (see version in `package.json`)
 - **Node:** v22.13.0 (pinned in `.nvmrc`)
 - **State:** Pinia (`@pinia/nuxt`)
 - **Styling:** Tailwind CSS v4 (`@tailwindcss/vite`) + SCSS (Sass)
@@ -42,18 +42,18 @@ MIT-licensed, maintained by Ali Soueidan (@lazercaveman).
 ## Commands
 
 ```bash
-pnpm install              # Install dependencies
-pnpm dev                  # Start dev server
-pnpm build                # Production build
-pnpm lint                 # Run ESLint
-pnpm lint:fix             # Run ESLint with auto-fix
-pnpm test                 # Run Vitest
-pnpm test:ui              # Run Vitest with browser UI
-pnpm test:coverage        # Run Vitest with v8 coverage
-pnpm script:cleanup       # Remove demo content (one-time, self-deleting)
+yarn install              # Install dependencies
+yarn dev                  # Start dev server
+yarn build                # Production build
+yarn lint                 # Run ESLint
+yarn lint:fix             # Run ESLint with auto-fix
+yarn test                 # Run Vitest
+yarn test:ui              # Run Vitest with browser UI
+yarn test:coverage        # Run Vitest with v8 coverage
+yarn script:cleanup       # Remove demo content (one-time, self-deleting)
 ```
 
-Run `pnpm lint` and `pnpm test` to verify changes before committing — Husky enforces this on pre-push.
+Run `yarn lint` and `yarn test` to verify changes before committing — Husky enforces this on pre-push.
 
 ## Critical Rules
 
@@ -64,7 +64,7 @@ Run `pnpm lint` and `pnpm test` to verify changes before committing — Husky en
 5. **Vue 3 Composition API + `<script setup lang="ts">`.** Do not use Options API.
 6. **Pinia for state.** No other state management. Stores go in `app/stores/`.
 7. **Tests next to code or in `app/tests/`.** Use Vitest, not Jest. Test files use `.test.ts` or `.spec.ts` suffix.
-8. **pnpm only.** Do not use npm or yarn. Lock file is `pnpm-lock.yaml`.
+8. **yarn only.** Do not use npm or pnpm. Lock file is `yarn.lock`.
 
 ## Styling Guidelines
 
@@ -77,7 +77,7 @@ Run `pnpm lint` and `pnpm test` to verify changes before committing — Husky en
 
 - Vitest config is in `vitest.config.ts` — check there for aliases and setup.
 - Coverage provider is `v8`, not Istanbul.
-- Run `pnpm test` to verify nothing is broken before finishing any task.
+- Run `yarn test` to verify nothing is broken before finishing any task.
 
 ## Gotchas
 
