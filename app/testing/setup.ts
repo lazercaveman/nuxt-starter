@@ -11,7 +11,10 @@ config.global.components = {
   },
 };
 
-vi.stubGlobal('scrollTo', vi.fn((x: number, y: number) => ({
-  x,
-  y,
-})));
+vi.stubGlobal(
+  'scrollTo',
+  vi.fn((x: number, y: number) => ({
+    x,
+    y,
+  })),
+);

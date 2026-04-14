@@ -1,0 +1,47 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "vue"],
+  "env": {
+    "browser": true,
+  },
+  "ignorePatterns": ["node_modules", "coverage", "dist", ".output", ".nuxt", "clean-project.js"],
+  /*
+    I consider these rules essential for this project.
+    Feel free to remove any that you find unnecessary
+    and/or extend the ruleset with additional ones as needed.
+    Documentation: https://oxc.rs/docs/guide/usage/linter/rules
+  */
+  "rules": {
+    "typescript/no-explicit-any": ["warn", { "fixToUnknown": true }],
+    "typescript/no-non-null-assertion": "warn",
+    "typescript/consistent-type-imports": "error",
+    "vue/no-export-in-script-setup": "error",
+    "vue/no-deprecated-destroyed-lifecycle": "error",
+    "vue/prefer-import-from-vue": "error",
+    "vue/define-props-declaration": ["error", "type-based"],
+    "vue/require-typed-ref": "warn",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-debugger": "error",
+    "eqeqeq": "error",
+    "prefer-const": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "all",
+        "argsIgnorePattern": "^(_|instance)",
+        "caughtErrors": "none",
+        "destructuredArrayIgnorePattern": "^_",
+        "varsIgnorePattern": "^(prop|pending|key)$",
+        "ignoreRestSiblings": true,
+      },
+    ],
+  },
+  "overrides": [
+    {
+      "files": ["nuxt.config.ts"],
+      "rules": {
+        "typescript/no-unsafe-call": "off",
+      },
+    },
+  ],
+}

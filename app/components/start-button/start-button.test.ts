@@ -20,6 +20,6 @@ describe('StartButton unit test', () => {
       },
     });
 
-    expect(wrapper.exists()).toBe(true)
+    expect(wrapper.exists()).toBe(true);
   });
 });

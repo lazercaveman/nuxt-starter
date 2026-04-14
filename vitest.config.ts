@@ -5,10 +5,7 @@ export default defineVitestConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    include: [
-      './app/components/**/*.test.ts',
-      './app/testing/**/*.test.ts',
-    ],
+    include: ['./app/components/**/*.test.ts', './app/testing/**/*.test.ts'],
     setupFiles: ['./app/testing/setup.ts'],
   },
   plugins: [svgLoader()],

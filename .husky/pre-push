@@ -1,18 +1,23 @@
-  # 1. Force Prettier Structure
-  echo "🐶 Husky: 🌊 Enforcing TypeScript Types Check ..."
-  yarn type-check || { echo "🐶 Husky: ❌ Enforcing Types Check. Aborting push."; exit 1; }
-  echo "🐶 Husky: 🎉 TypeScript found no rule violations ..."
+# 1. TypeScript
+echo "🐶 Husky: 🌊 Enforcing TypeScript types check ..."
+yarn type-check || { echo "🐶 Husky: ❌ Enforcing types check failed. Aborting push."; exit 1; }
+echo "🐶 Husky: 🎉 TypeScript found no rule violations ..."
 
-  # 2. Linting
-  echo "🐶 Husky: 👮‍♂️ Executing EsLint ..."
-  yarn lint:eslint || { echo "🐶 Husky: ❌ ESLint found issues. Aborting push."; exit 1; }
-  echo "🐶 Husky: 🎉 Linter found no rule violations ..."
+# 2. Linting
+echo "🐶 Husky: 👮‍♂️ Executing Oxlint ..."
+yarn lint:fix || { echo "🐶 Husky: ❌ Oxlint found issues. Aborting push - you should install the Oxc extension!"; exit 1; }
+echo "🐶 Husky: 🎉 Linter found no rule violations ..."
 
-  # 4. Unit-Testing
-  echo "🐶 Husky: 🧪 Executing test:coverage ..."
-  yarn test:coverage || { echo "🐶 Husky: ❌ Tests failed. Aborting push."; exit 1; }
-  echo "🐶 Husky: 🎉 All tests passed successfully!"
+# 3. Formatting
+echo "🐶 Husky: 🍰 Executing OxFmt ..."
+yarn format || { echo "🐶 Husky: ❌ OxFmt found issues. Aborting push - you should install the Oxc extension!"; exit 1; }
+echo "🐶 Husky: 🎉 Formatter found no rule violations ..."
 
-  # 6. Success
-  echo "🐶 Husky: 🎉 Pushing to git successfully - thank you for contributing!"
-  exit 0
+# 4. Unit-Testing
+echo "🐶 Husky: 🧪 Executing test:coverage ..."
+yarn test:coverage || { echo "🐶 Husky: ❌ Tests failed. Aborting push."; exit 1; }
+echo "🐶 Husky: 🎉 All unit-tests passed successfully!"
+
+# 6. Success
+echo "🐶 Husky: 🎉 Pushing to git successfully - thank you for contributing!"
+exit 0
