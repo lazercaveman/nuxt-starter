@@ -32,6 +32,12 @@ export default defineNuxtConfig({
       svgLoader(),
       tailwindcss(),
     ],
+     optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ]
+    },
     resolve: {},
     assetsInclude: ['**/*.mdx'],
     css: {},

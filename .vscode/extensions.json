@@ -4,7 +4,8 @@
 
   // List of extensions which should be recommended for users of this workspace.
   "recommendations": [
-    "dbaeumer.vscode-eslint",
+    "oxc.oxc-vscode",
+    "oxc.oxfmt",
     "gruntfuggly.todo-tree",
     "vue.volar",
     "bradlc.vscode-tailwindcss",

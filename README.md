@@ -6,7 +6,7 @@
 ![Screenshot](./app/assets/img/screenshot.png)
 
 ## 🥸 Why this template?  
-Get ready to supercharge your development with this fully configured Nuxt 4 Starter Kit! Built on Vue 3 and powered by TypeScript and many other technologies (for more information see down-below or checkout package.json for even more), this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. 🙌 No more wrestling with configurations—jump straight into building amazing projects! 
+Get ready to supercharge your development with this fully configured Nuxt 4 Starter Kit! Built on Vue 3, AI ready (including configured CLAUDE.md), powered by TypeScript and many other technologies (for more information see down-below or checkout package.json for even more), this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. 🙌 No more wrestling with configurations—jump straight into building amazing projects! 
 
 - **Clean up project in seconds:**  Using the `yarn script:cleanup` command in your terminal, will clean up the project, remove demo contents - the Starter Kit is designed so that developers can start working immediately without having to spend time setting up basic structures and configurations.
 - **Up to date:**  Using up to date dependencies and tools to ensure a smooth development experience. (at least I try ^^)
@@ -38,9 +38,13 @@ This starter kit is packed with carefully chosen dependencies to handle real-wor
 Why? Because it’s blazing fast. Vite ensures instant builds and on-demand compilation, making both development and production smoother and quicker.
 [learn more](https://vitejs.dev/).
 
-### 🏗️ ESLint
-ESLint V9 with a "Flat Config setup" tailored for TypeScript and Vue 3 or Nuxt 4 - it is configured to use best practices integrating some plugins (eslint:recommended, typescript-eslint, and eslint-plugin-vue) - wanna change them!? just add some custom rules to meet your team's needs to ensure clean, maintainable, and standard-compliant code quality.
-[learn more](https://eslint.org/blog/2024/04/eslint-v9.0.0-released/).
+### 🏗️ Oxlint
+Blazing-fast Rust-based linter for JavaScript and TypeScript (including Vue `<script>` blocks), with 695+ built-in rules. Ships pre-configured in `.oxlintrc.json` with the `typescript` and `vue` plugins enabled — just add your own rules on top.
+[learn more](https://oxc.rs/docs/guide/usage/linter).
+
+### 💎 Oxfmt
+High-performance code formatter from the OXC project, matching Prettier's output for JS, TS, Vue, CSS, JSON, YAML, and more. Configured in `.oxfmtrc.json`. Format-on-save is enabled out of the box via the VS Code extension (`oxc.oxfmt`).
+[learn more](https://oxc.rs/docs/guide/usage/formatter).
 
 ### 🧪 Vitest
 To test smarter and faster. Vitest is a lightweight, Jest-compatible testing framework that ensures code reliability and helps you catching bugs early. 
@@ -65,6 +69,10 @@ To manage app state easily. Pinia is modern, simple, and works perfectly with Vu
 ### 🤌 TypeScript
 TypeScript enhances the JavaScript language by adding optional static typing and other features, for safer, smarter code - helping avoiding errors and catching bugs early in development.
 [learn more](https://www.typescriptlang.org/).
+
+### 🤖 Claude Code
+This starter ships with a pre-configured `CLAUDE.md` file — the instruction file read by [Claude Code](https://claude.ai/code) (Anthropic's AI coding assistant). It documents the full project setup: tech stack, directory layout, commands, critical rules, and gotchas. Any Claude Code session in this repo will pick it up automatically, so the AI already knows the conventions, the correct tools (`oxlint`, `oxfmt`, Vitest, yarn), and what not to do — no manual briefing required.
+[learn more](https://docs.anthropic.com/en/docs/claude-code/memory).
 
 ## 🤝 Contributing
 Feel free to fork this project and submit pull requests — contributions are very welcome!

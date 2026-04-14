@@ -1,0 +1,18 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "singleAttributePerLine": true,
+  "printWidth": 160,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "insertFinalNewline": true,
+  "embeddedLanguageFormatting": "auto",
+  "ignorePatterns": ["node_modules", "coverage", "dist", ".output", ".github", ".nuxt", ".yarn", "**/*.md", "**/*.mdx"],
+  "sortTailwindcss": {
+    "stylesheet": "./app/assets/style/tailwind.css",
+  },
+}

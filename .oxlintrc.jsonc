@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "vue"],
+  "env": {
+    "browser": true
+  },
+  "ignorePatterns": ["node_modules", "coverage", "dist", ".output", ".nuxt"],
+  "rules": {
+    "typescript/no-unused-vars": "error",
+    "vue/multi-word-component-names": [
+      "error",
+      { "ignores": ["index", "demo", "default", "error", "[id]"] }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["nuxt.config.ts"],
+      "rules": {
+        "typescript/no-unsafe-call": "off"
+      }
+    }
+  ]
+}
