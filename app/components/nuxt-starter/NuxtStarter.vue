@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col items-center drop-shadow-2xl w-3xl">
-    <span class="text-8xl mb-8">🙌</span>
-    <div class="flex justify-center items-end mb-6">
+  <div class="flex w-3xl flex-col items-center drop-shadow-2xl">
+    <span class="mb-8 text-8xl">🙌</span>
+    <div class="mb-6 flex items-end justify-center">
       <svg
         width="256"
         height="64"
@@ -30,13 +30,9 @@
           fill="white"
         />
       </svg>
-      <h1 class="text-white text-6xl font-bold leading-[0.75]">
-        -Starter
-      </h1>
+      <h1 class="text-6xl leading-[0.75] font-bold text-white">-Starter</h1>
     </div>
-    <p class="mb-6 max-w-xl text-center text-2xl text-white ">
-      Get ready to supercharge your development with this fully configured Nuxt 4 Starter Kit!
-    </p>
+    <p class="mb-6 max-w-xl text-center text-2xl text-white">Get ready to supercharge your development with this fully configured Nuxt 4 Starter Kit!</p>
     <p :class="`mb-6 max-w-md text-center text-2xl text-white ${Store.stateUpdatedAnimation}`">
       {{ Store.sampleData }}
     </p>
@@ -45,7 +41,6 @@
     </p>
   </div>
 </template>
-
 
 <script setup>
 import { useSampleStore } from '@/store/sample';

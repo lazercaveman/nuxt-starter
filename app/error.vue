@@ -10,8 +10,7 @@ const props = withDefaults(defineProps<{ error?: NuxtError }>(), {
   error: () => ({}) as NuxtError,
 });
 
-onMounted (() => {
-  console.error(props.error)
-})
-
+onMounted(() => {
+  console.error(props.error);
+});
 </script>

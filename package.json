@@ -1,6 +1,6 @@
 {
-  "type": "module",
   "private": true,
+  "type": "module",
   "scripts": {
     "script:cleanup": "node clean-project.js && rm -rf node_modules yarn.lock .nuxt .output && yarn cache clean && yarn install && yarn dev",
     "dev": "nuxi dev",
@@ -19,6 +19,11 @@
     "analyze": "npx nuxi analyze",
     "project-info": "npx nuxi info",
     "prepare": "husky"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.3",
+    "nuxt": "^4.4.2",
+    "pinia": "^3.0.4"
   },
   "devDependencies": {
     "@nuxt/devtools": "^4.0.0-alpha.3",
@@ -41,11 +46,6 @@
     "vite-svg-loader": "^5.1.1",
     "vitest": "^4.1.2",
     "vue-tsc": "^3.2.6"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "^0.11.3",
-    "nuxt": "^4.4.2",
-    "pinia": "^3.0.4"
   },
   "engines": {
     "node": "24.14.0"

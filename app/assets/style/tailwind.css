@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 /*
 // Tailwind 4 should not be used with SASS, therefor SASS definitions should not use @apply: https://tailwindcss.com/docs/compatibility#sass-less-and-stylus
 // However SCSS can be use full in addition in some cases (or of course instead of tailwind if this is what you prefer)
@@ -6,7 +6,7 @@
 
 @theme {
   /* You can overwrite exiting tailwind utility classes */
-  --color-gray-900: hsla(235, 90%, 7%, .5);
+  --color-gray-900: hsla(235, 90%, 7%, 0.5);
   /* Or add new ones */
   --color-nuxt-green: hsla(152, 100%, 43%, 1);
   --drop-shadow-2xl: 0 0 48px rgba(0, 0, 0, 1);
@@ -24,7 +24,7 @@
 
   .state-update-animation {
     animation-name: stateUpdateAnimation;
-    animation-duration: .4s;
+    animation-duration: 0.4s;
   }
 }
 

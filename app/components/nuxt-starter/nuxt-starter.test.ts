@@ -3,7 +3,6 @@ import { mount } from '@vue/test-utils';
 import { createTestingPinia } from '@pinia/testing';
 import NuxtStarter from './NuxtStarter.vue';
 
-
 describe('NuxtStarter unit test', () => {
   it('renders with required properties', () => {
     const wrapper = mount(NuxtStarter, {
@@ -13,6 +12,6 @@ describe('NuxtStarter unit test', () => {
       },
     });
 
-    expect(wrapper.exists()).toBe(true)
+    expect(wrapper.exists()).toBe(true);
   });
 });

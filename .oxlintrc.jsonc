@@ -2,7 +2,7 @@
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["typescript", "vue"],
   "env": {
-    "browser": true
+    "browser": true,
   },
   "ignorePatterns": ["node_modules", "coverage", "dist", ".output", ".nuxt", "clean-project.js"],
   /*
@@ -40,8 +40,8 @@
     {
       "files": ["nuxt.config.ts"],
       "rules": {
-        "typescript/no-unsafe-call": "off"
-      }
-    }
-  ]
+        "typescript/no-unsafe-call": "off",
+      },
+    },
+  ],
 }
