@@ -19,7 +19,7 @@ export const useSampleStore = defineStore('sampleStore', () => {
     try {
       const data = await $fetch<string>('/api/test')
 
-      console.log('😅', data)
+      console.warn('😅', data)
 
       apiGreeting.value = data ?? ''
     } catch (err: unknown) {
