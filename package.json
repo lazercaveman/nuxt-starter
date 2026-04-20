@@ -44,7 +44,7 @@
     "tailwindcss": "^4.2.2",
     "typescript": "6.0.2",
     "vite-svg-loader": "^5.1.1",
-    "vitest": "^4.1.2",
+    "vitest": "^4.1.4",
     "vue-tsc": "^3.2.6"
   },
   "engines": {
