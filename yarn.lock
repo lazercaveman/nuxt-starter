@@ -3332,6 +3332,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitest/pretty-format@npm:4.1.4":
+  version: 4.1.4
+  resolution: "@vitest/pretty-format@npm:4.1.4"
+  dependencies:
+    tinyrainbow: "npm:^3.1.0"
+  checksum: 10/e06d63ce4f797ad578ee19aeec996f72835a7274ee2eb75dce12d7b45debcda72d054f58b6f4e5dac4424681dc13dbad7ac023c6017fc60406cabea5a352e4c3
+  languageName: node
+  linkType: hard
+
 "@vitest/runner@npm:4.1.2":
   version: 4.1.2
   resolution: "@vitest/runner@npm:4.1.2"
@@ -3361,11 +3370,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "@vitest/ui@npm:4.1.2"
+"@vitest/ui@npm:^4.1.4":
+  version: 4.1.4
+  resolution: "@vitest/ui@npm:4.1.4"
   dependencies:
-    "@vitest/utils": "npm:4.1.2"
+    "@vitest/utils": "npm:4.1.4"
     fflate: "npm:^0.8.2"
     flatted: "npm:^3.4.2"
     pathe: "npm:^2.0.3"
@@ -3373,8 +3382,8 @@ __metadata:
     tinyglobby: "npm:^0.2.15"
     tinyrainbow: "npm:^3.1.0"
   peerDependencies:
-    vitest: 4.1.2
-  checksum: 10/ce53323d553fb08a228e29c3d162aefbc78a20cb90635d92ea40f3482d7c15a2962a65c50ead858272b2871dde84f71667dc618cf160189f06238a36498b50af
+    vitest: 4.1.4
+  checksum: 10/3e9c0d4377d759cacd7752e32d6c83af1878e914c2e1a04f81585385b17b4dd42bd28da488f0c96d9a4be32e6bae3e7bbe00726ee32e3523477776a42241074d
   languageName: node
   linkType: hard
 
@@ -3386,6 +3395,17 @@ __metadata:
     convert-source-map: "npm:^2.0.0"
     tinyrainbow: "npm:^3.1.0"
   checksum: 10/854decf0eb639758d012c9aa53c3d7aed547e37c05ece6704d5f53035be77f704a24973ed95089926e1768c0b55902d42c4438660788e7a0f0e80d0fda1c713b
+  languageName: node
+  linkType: hard
+
+"@vitest/utils@npm:4.1.4":
+  version: 4.1.4
+  resolution: "@vitest/utils@npm:4.1.4"
+  dependencies:
+    "@vitest/pretty-format": "npm:4.1.4"
+    convert-source-map: "npm:^2.0.0"
+    tinyrainbow: "npm:^3.1.0"
+  checksum: 10/f599ae744f0ff45edda90d0c52eea9809b7367adca39fc985f85880322236d089dfdf6625f04913f03a25a160eccbbc0b16dd3201ccc0ae48087992b1ea755d5
   languageName: node
   linkType: hard
 
@@ -8417,7 +8437,7 @@ __metadata:
     "@types/node": "npm:^25.5.2"
     "@vitejs/plugin-vue": "npm:^6.0.5"
     "@vitest/coverage-v8": "npm:^4.1.2"
-    "@vitest/ui": "npm:^4.1.2"
+    "@vitest/ui": "npm:^4.1.4"
     "@vue/test-utils": "npm:^2.4.6"
     husky: "npm:^9.1.7"
     jsdom: "npm:^29.0.2"
