@@ -70,16 +70,6 @@ To manage app state easily. Pinia is modern, simple, and works perfectly with Vu
 TypeScript enhances the JavaScript language by adding optional static typing and other features, for safer, smarter code - helping avoiding errors and catching bugs early in development.
 [learn more](https://www.typescriptlang.org/).
 
-### 🤖 Claude Code
-This starter ships with a pre-configured `CLAUDE.md` file — the instruction file read by [Claude Code](https://claude.ai/code) (Anthropic's AI coding assistant). It documents the full project setup: tech stack, directory layout, commands, critical rules, and gotchas. Any Claude Code session in this repo will pick it up automatically, so the AI already knows the conventions, the correct tools (`oxlint`, `oxfmt`, Vitest, yarn), and what not to do — no manual briefing required.
-[learn more](https://docs.anthropic.com/en/docs/claude-code/memory).
-
-## 🤝 Contributing
-Feel free to fork this project and submit pull requests — contributions are very welcome!
-
-## 📜 License
-Licensed under the [MIT License](LICENSE), by [Ali Soueidan](https://alisoueidan.com).
-
 ### 📚 Storybook
 Storybook streamlines the UI development process by allowing for isolated development of individual components. It provides better visualization and collaboration, making it easier for teams to work together and create a better end product.
 [learn more](https://storybook.js.org/docs/vue/get-started/introduction).
@@ -96,3 +86,13 @@ or via an environment variable (useful for CI):
 CHROMATIC_PROJECT_TOKEN=your-chromatic-project-token
 ```
 [learn more](https://www.chromatic.com/docs/).
+
+### 🤖 Claude Code Ready
+This starter ships with a pre-configured `CLAUDE.md` file — the instruction file read by [Claude Code](https://claude.ai/code) (Anthropic's AI coding assistant). It documents the full project setup: tech stack, directory layout, commands, critical rules, and gotchas. Any Claude Code session in this repo will pick it up automatically, so the AI already knows the conventions, the correct tools (`oxlint`, `oxfmt`, Vitest, yarn), and what not to do — no manual briefing required.
+[learn more](https://docs.anthropic.com/en/docs/claude-code/memory).
+
+## 🤝 Contributing
+Feel free to fork this project and submit pull requests — contributions are very welcome!
+
+## 📜 License
+Licensed under the [MIT License](LICENSE), by [Ali Soueidan](https://alisoueidan.com).
