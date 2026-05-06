@@ -5,12 +5,12 @@ echo "🐶 Husky: 🎉 TypeScript found no rule violations ..."
 
 # 2. Linting
 echo "🐶 Husky: 👮‍♂️ Executing Oxlint ..."
-yarn lint:fix || { echo "🐶 Husky: ❌ Oxlint found issues. Aborting push - you should install the Oxc extension!"; exit 1; }
+yarn lint || { echo "🐶 Husky: ❌ Oxlint found issues. Aborting push - you should install the Oxc extension!"; exit 1; }
 echo "🐶 Husky: 🎉 Linter found no rule violations ..."
 
 # 3. Formatting
 echo "🐶 Husky: 🍰 Executing OxFmt ..."
-yarn format || { echo "🐶 Husky: ❌ OxFmt found issues. Aborting push - you should install the Oxc extension!"; exit 1; }
+yarn format:check || { echo "🐶 Husky: ❌ OxFmt found issues. Aborting push - you should install the Oxc extension!"; exit 1; }
 echo "🐶 Husky: 🎉 Formatter found no rule violations ..."
 
 # 4. Unit-Testing

@@ -1,0 +1,6 @@
+{
+  "$schema": "https://www.chromatic.com/config-file.schema.json",
+  "projectId": "CHROMATIC_PROJECT_TOKEN",
+  "zip": true,
+  "onlyChanged": true
+}
