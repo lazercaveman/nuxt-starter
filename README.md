@@ -80,6 +80,19 @@ Feel free to fork this project and submit pull requests — contributions are ve
 ## 📜 License
 Licensed under the [MIT License](LICENSE), by [Ali Soueidan](https://alisoueidan.com).
 
-<!-- ### Storybook
+### 📚 Storybook
 Storybook streamlines the UI development process by allowing for isolated development of individual components. It provides better visualization and collaboration, making it easier for teams to work together and create a better end product.
-[learn more](https://storybook.js.org/docs/vue/get-started/introduction). -->
+[learn more](https://storybook.js.org/docs/vue/get-started/introduction).
+
+### 📸 Chromatic
+Chromatic is a cloud-based visual testing and review platform built for Storybook. It automatically captures screenshots of every story on each push, diffs them against the baseline, and flags visual regressions for review — catching UI bugs before they reach production. It also hosts your published Storybook so the whole team can browse and review components without a local setup.
+
+To connect your project, set your project token either in `chromatic.config.json`:
+```json
+{ "projectId": "your-chromatic-project-token" }
+```
+or via an environment variable (useful for CI):
+```bash
+CHROMATIC_PROJECT_TOKEN=your-chromatic-project-token
+```
+[learn more](https://www.chromatic.com/docs/).
