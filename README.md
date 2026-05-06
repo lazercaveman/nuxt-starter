@@ -15,22 +15,6 @@ Get ready to supercharge your development with this fully configured Nuxt 4 Star
 
 --
 
-## 🚀 Getting Started
-1. Clone or download this repository
-2. Ensure you have Node version v22.13.0 up an running
-3. Make sure you have yarn version mentioned in the package json in use (or use the package manager of your choice it should also work - in case remove the `.npmrc` file and execute e.g. `corepack use yarn@4.10.3`).
-4. Run `yarn install` to install dependencies
-5. Run `yarn dev` to start the local development environment
-
-### 🧹 Comes with Auto-Clean-Script
-Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `yarn script:cleanup` - this command offers an easy, one-step process to prepare your Nuxt 4 project for a fresh start.
-- It empties the contents of './components', './tests' and ./store while keeping the directories intact.
-- It completely deletes the './.assets/img', './coverage', './.github', './.vscode', './.git' folder, and all its contents. 🚨 Since the .git folder will be deleted your project will be disconnected from this repository.
-- The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples - therefor it will delete the script file as well as the npm script 'script:cleanup' from the package.json file.
-- It will delete the node_modules, .nuxt and .output folders, empty the yarn-cache and reinstall everything from scratch.
-
---
-
 ## 🚀 What's Inside?
 This starter kit is packed with carefully chosen dependencies to handle real-world scenarios. Here’s why they’re included:
 
@@ -90,6 +74,24 @@ CHROMATIC_PROJECT_TOKEN=your-chromatic-project-token
 ### 🤖 Claude Code Ready
 This starter ships with a pre-configured `CLAUDE.md` file — the instruction file read by [Claude Code](https://claude.ai/code) (Anthropic's AI coding assistant). It documents the full project setup: tech stack, directory layout, commands, critical rules, and gotchas. Any Claude Code session in this repo will pick it up automatically, so the AI already knows the conventions, the correct tools (`oxlint`, `oxfmt`, Vitest, yarn), and what not to do — no manual briefing required.
 [learn more](https://docs.anthropic.com/en/docs/claude-code/memory).
+
+--
+
+## 🚀 Getting Started
+1. Clone or download this repository
+2. Ensure you have Node version v22.13.0 up an running
+3. Make sure you have yarn version mentioned in the package json in use (or use the package manager of your choice it should also work - in case remove the `.npmrc` file and execute e.g. `corepack use yarn@4.10.3`).
+4. Run `yarn install` to install dependencies
+5. Run `yarn dev` to start the local development environment
+
+### 🧹 Comes with Auto-Clean-Script
+Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `yarn script:cleanup` - this command offers an easy, one-step process to prepare your Nuxt 4 project for a fresh start.
+- It empties the contents of './components', './tests' and ./store while keeping the directories intact.
+- It completely deletes the './.assets/img', './coverage', './.github', './.vscode', './.git' folder, and all its contents. 🚨 Since the .git folder will be deleted your project will be disconnected from this repository.
+- The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples - therefor it will delete the script file as well as the npm script 'script:cleanup' from the package.json file.
+- It will delete the node_modules, .nuxt and .output folders, empty the yarn-cache and reinstall everything from scratch.
+
+--
 
 ## 🤝 Contributing
 Feel free to fork this project and submit pull requests — contributions are very welcome!
