@@ -4340,9 +4340,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/test-utils@npm:^2.4.9":
-  version: 2.4.9
-  resolution: "@vue/test-utils@npm:2.4.9"
+"@vue/test-utils@npm:^2.4.10":
+  version: 2.4.10
+  resolution: "@vue/test-utils@npm:2.4.10"
   dependencies:
     js-beautify: "npm:^1.14.9"
     vue-component-type-helpers: "npm:^3.0.0"
@@ -4353,7 +4353,7 @@ __metadata:
   peerDependenciesMeta:
     "@vue/server-renderer":
       optional: true
-  checksum: 10/5a1268e853d8b6f4bee493614cdede3cfffd8d660b43091f10e65ffc7acee37af1e284605dbfabed9521ed30810ded79cbebe65f2b3fdbdd34658135f118ebcd
+  checksum: 10/c0cc6d9134c069ce18f23e8443436d39da3ba6d9124260ae674f9eb0d726d6e38de297095ee6b721313b7cc166000e0bdde7599fb89a6296365f09f700ec4f8f
   languageName: node
   linkType: hard
 
@@ -9744,7 +9744,7 @@ __metadata:
     "@vitejs/plugin-vue": "npm:^6.0.6"
     "@vitest/coverage-v8": "npm:^4.1.5"
     "@vitest/ui": "npm:^4.1.5"
-    "@vue/test-utils": "npm:^2.4.9"
+    "@vue/test-utils": "npm:^2.4.10"
     husky: "npm:^9.1.7"
     jsdom: "npm:^29.1.0"
     nuxt: "npm:^4.4.2"
