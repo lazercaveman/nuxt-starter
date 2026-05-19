@@ -51,7 +51,7 @@
     "sass": "^1.99.0",
     "sass-loader": "^16.0.7",
     "storybook": "10.3.6",
-    "tailwindcss": "^4.2.4",
+    "tailwindcss": "^4.3.0",
     "typescript": "6.0.3",
     "unplugin-auto-import": "^21.0.0",
     "vite-svg-loader": "^5.1.1",

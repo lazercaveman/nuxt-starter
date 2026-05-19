@@ -9754,7 +9754,7 @@ __metadata:
     sass: "npm:^1.99.0"
     sass-loader: "npm:^16.0.7"
     storybook: "npm:10.3.6"
-    tailwindcss: "npm:^4.2.4"
+    tailwindcss: "npm:^4.3.0"
     typescript: "npm:6.0.3"
     unplugin-auto-import: "npm:^21.0.0"
     vite-svg-loader: "npm:^5.1.1"
@@ -10374,10 +10374,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.2.4, tailwindcss@npm:^4.2.4":
+"tailwindcss@npm:4.2.4":
   version: 4.2.4
   resolution: "tailwindcss@npm:4.2.4"
   checksum: 10/54734efe725d1717fb9064940d705852448fb91a7fc78399a2d4263dc0fd4c260017baa13362f13f604bbfd4a0a882b83253c0cd6f14fe80454fd916966e8d72
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "tailwindcss@npm:4.3.0"
+  checksum: 10/3a7dde8a0ccd31ef02e6b45a1257e0040fd8372584a94e930445400f4e5c50a101022f99951cf5c0a12b3936e23489d9c55d342e7d597a806c7a0f139ba8c0dd
   languageName: node
   linkType: hard
 
