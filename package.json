@@ -29,7 +29,7 @@
     "pinia": "^3.0.4"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^5.1.2",
+    "@chromatic-com/storybook": "^5.2.1",
     "@nuxt/devtools": "^4.0.0-alpha.4",
     "@nuxt/test-utils": "^4.0.3",
     "@pinia/testing": "^1.0.3",
