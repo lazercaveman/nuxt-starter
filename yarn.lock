@@ -3669,12 +3669,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^25.6.0":
-  version: 25.6.0
-  resolution: "@types/node@npm:25.6.0"
+"@types/node@npm:^25.9.1":
+  version: 25.9.1
+  resolution: "@types/node@npm:25.9.1"
   dependencies:
-    undici-types: "npm:~7.19.0"
-  checksum: 10/99b18690a4be55904cbf8f6a6ac8eed5ec5b8d791fdd8ee2ae598b46c0fa9b83cda7b70dd7f00dbfb18189dcfc67648fdc7fdd3fcced2619a5a6453d9aec107d
+    undici-types: "npm:>=7.24.0 <7.24.7"
+  checksum: 10/8a1ccf60f0c0ca856d3324a690ee35776f26dfc1d51c3763aecdf246a3246a7971a0156bf6eb3239aa22dfa940eb361d048212f5c3204264d31ef4c41d17416a
   languageName: node
   linkType: hard
 
@@ -9740,7 +9740,7 @@ __metadata:
     "@storybook/addon-vitest": "npm:10.3.6"
     "@storybook/vue3-vite": "npm:10.3.6"
     "@tailwindcss/vite": "npm:^4.2.4"
-    "@types/node": "npm:^25.6.0"
+    "@types/node": "npm:^25.9.1"
     "@vitejs/plugin-vue": "npm:^6.0.6"
     "@vitest/coverage-v8": "npm:^4.1.5"
     "@vitest/ui": "npm:^4.1.5"
@@ -10724,10 +10724,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~7.19.0":
-  version: 7.19.2
-  resolution: "undici-types@npm:7.19.2"
-  checksum: 10/05c34c63444c8caca7137f122b29ed50c1d7d05d1e0b2337f423575d3264054c4a0139e47e82e65723d09b97fcad6d8b0223b3550430a9006cc00e72a1e035bf
+"undici-types@npm:>=7.24.0 <7.24.7":
+  version: 7.24.6
+  resolution: "undici-types@npm:7.24.6"
+  checksum: 10/defc9538b952e3c15b8526596c591f7c1f0c7605ad27a2b7feddbea7ef2e3003f3eda2cdb051a3cb1a2185e3893100fd9cb925c799db99d48131ea63b5233d10
   languageName: node
   linkType: hard
 
