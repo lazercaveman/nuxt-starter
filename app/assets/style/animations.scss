@@ -4,7 +4,7 @@
 @mixin animate-gradient-frames($name, $animationSteps) {
   @keyframes #{$name} {
     @for $i from 0 through $animationSteps {
-      #{ math.div($i, $animationSteps) * 100% } {
+      #{math.div($i, $animationSteps) * 100%} {
         background: linear-gradient(
           60deg + $i * 3,
           hsla(250 + $i * 3, 40%, 50%, 1) (-100% + $i) * 2,
