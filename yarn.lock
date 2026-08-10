@@ -4789,6 +4789,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"acorn@npm:^8.18.0":
+  version: 8.18.0
+  resolution: "acorn@npm:8.18.0"
+  bin:
+    acorn: bin/acorn
+  checksum: 10/7fddbe1f80f596c2d82a08adaa966949c9782a0250956f0a469e8cc8ec81e2ff46ed0a4f338eb2544b99d74cca521c197af4fc12d8b7e85bf38359a3d8d63de5
+  languageName: node
+  linkType: hard
+
 "agent-base@npm:^7.1.2":
   version: 7.1.4
   resolution: "agent-base@npm:7.1.4"
@@ -10287,7 +10296,7 @@ __metadata:
     storybook: "npm:10.5.5"
     tailwindcss: "npm:^4.3.3"
     typescript: "npm:6.0.3"
-    unplugin-auto-import: "npm:^21.0.0"
+    unplugin-auto-import: "npm:^21.1.0"
     vite-svg-loader: "npm:^5.1.1"
     vitest: "npm:^4.1.10"
     vue-tsc: "npm:^3.3.8"
@@ -10816,6 +10825,15 @@ __metadata:
   dependencies:
     js-tokens: "npm:^9.0.1"
   checksum: 10/6eb00906a1c343a1050579d1d6023e067a2d72152edb92e64cad49535115beb2e77905ace24aa459f29b66e75edba75ef9d8eca90575b0322640d64a5d37e131
+  languageName: node
+  linkType: hard
+
+"strip-literal@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "strip-literal@npm:4.0.0"
+  dependencies:
+    js-tokens: "npm:^10.0.0"
+  checksum: 10/5f04ebc21ba3f7e258942c2c3887b14bebcc1bcf33179277b29d409e90f68ebcd6df296d14925740c781deb8f3880577db297a5804a789bd4e6ff0da3d52ca42
   languageName: node
   linkType: hard
 
@@ -11349,28 +11367,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unimport@npm:^5.6.0":
-  version: 5.7.0
-  resolution: "unimport@npm:5.7.0"
-  dependencies:
-    acorn: "npm:^8.16.0"
-    escape-string-regexp: "npm:^5.0.0"
-    estree-walker: "npm:^3.0.3"
-    local-pkg: "npm:^1.1.2"
-    magic-string: "npm:^0.30.21"
-    mlly: "npm:^1.8.0"
-    pathe: "npm:^2.0.3"
-    picomatch: "npm:^4.0.3"
-    pkg-types: "npm:^2.3.0"
-    scule: "npm:^1.3.0"
-    strip-literal: "npm:^3.1.0"
-    tinyglobby: "npm:^0.2.15"
-    unplugin: "npm:^2.3.11"
-    unplugin-utils: "npm:^0.3.1"
-  checksum: 10/3933e7dfe9b1ca6be638d878cf113bfc049619b1fa93165bba46b99d8a4887c273ea1bd65e8131273db8d1782674d5a732eed19928657b7acba1e84677d5051f
-  languageName: node
-  linkType: hard
-
 "unimport@npm:^6.2.0":
   version: 6.2.0
   resolution: "unimport@npm:6.2.0"
@@ -11428,6 +11424,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unimport@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "unimport@npm:6.4.0"
+  dependencies:
+    acorn: "npm:^8.18.0"
+    escape-string-regexp: "npm:^5.0.0"
+    estree-walker: "npm:^3.0.3"
+    local-pkg: "npm:^1.2.1"
+    magic-string: "npm:^1.1.0"
+    mlly: "npm:^1.8.2"
+    pathe: "npm:^2.0.3"
+    picomatch: "npm:^4.0.5"
+    pkg-types: "npm:^2.3.1"
+    scule: "npm:^1.3.0"
+    strip-literal: "npm:^4.0.0"
+    tinyglobby: "npm:^0.2.17"
+    unplugin: "npm:^3.3.0"
+    unplugin-utils: "npm:^0.3.2"
+  peerDependencies:
+    oxc-parser: "*"
+    rolldown: ^1.0.0
+  peerDependenciesMeta:
+    oxc-parser:
+      optional: true
+    rolldown:
+      optional: true
+  checksum: 10/4ebf24dbfd75bf16ebe0823bb3ecbc91f6e84ba80f1af4e2ad89cd190227710594d86d45e467fb906fea286456e5959de618b46fd359b6f65e0667aa80b84481
+  languageName: node
+  linkType: hard
+
 "universalify@npm:^2.0.0":
   version: 2.0.1
   resolution: "universalify@npm:2.0.1"
@@ -11435,16 +11461,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-auto-import@npm:^21.0.0":
-  version: 21.0.0
-  resolution: "unplugin-auto-import@npm:21.0.0"
+"unplugin-auto-import@npm:^21.1.0":
+  version: 21.1.0
+  resolution: "unplugin-auto-import@npm:21.1.0"
   dependencies:
-    local-pkg: "npm:^1.1.2"
-    magic-string: "npm:^0.30.21"
-    picomatch: "npm:^4.0.3"
-    unimport: "npm:^5.6.0"
-    unplugin: "npm:^2.3.11"
-    unplugin-utils: "npm:^0.3.1"
+    local-pkg: "npm:^1.2.1"
+    magic-string: "npm:^1.1.0"
+    picomatch: "npm:^4.0.5"
+    unimport: "npm:^6.4.0"
+    unplugin: "npm:^3.3.0"
+    unplugin-utils: "npm:^0.3.2"
   peerDependencies:
     "@nuxt/kit": ^4.0.0
     "@vueuse/core": "*"
@@ -11453,7 +11479,7 @@ __metadata:
       optional: true
     "@vueuse/core":
       optional: true
-  checksum: 10/ead235caf11afcbf97adfcf4c526cc4183897a5eac1b7af5c057bfffb6eca5ef47e9a610689a6d391bf749394d0f869f3e5a63e6493fa10a1f513d157a7474e7
+  checksum: 10/040eef6b9771c784c939113bdb01c6d07380f1cae0dc4784d46429d4eac6d4233eceada769373e587c5a2ac004f8ef8646d264068e1f199f5da269ceedba01c1
   languageName: node
   linkType: hard
 
