@@ -48,3 +48,6 @@ pnpm-debug.log*
 .settings/
 *.sublime-workspace
 *.code-workspace
+
+# Crawler output (local data store)
+/data

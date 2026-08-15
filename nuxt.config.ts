@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.BASE_URL,
     head: {
-      title: 'Nuxt 4 starter',
+      title: 'Auction Grabber',
       link: [
         {
           rel: 'icon',

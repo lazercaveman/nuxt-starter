@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^1.0.1",
+    "cheerio": "^1.2.0",
     "nuxt": "^4.5.1",
     "pinia": "^4.0.2"
   },

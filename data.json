@@ -1,0 +1,189 @@
+[
+  {
+    "id": "ag-bruehl-167641",
+    "title": "Zweifamilienhaus, Garage, Doppelhaushälfte",
+    "address": "Karl-Arnold-Straße 4",
+    "place": "50374 Erftstadt, Lechenich",
+    "cost": 435000,
+    "date": "17.07.2026, 09:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167641&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Brühl"
+  },
+  {
+    "id": "ag-bruehl-167532",
+    "title": "unbebautes Grundstück, Einfamilien-Reihenmittelhaus",
+    "address": "Mittelstraße 7",
+    "place": "50374 Erftstadt, Köttingen",
+    "cost": 234140,
+    "date": "21.07.2026, 10:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167532&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Brühl"
+  },
+  {
+    "id": "ag-bruehl-168021",
+    "title": "Garage, Einfamilienhaus",
+    "address": "Im Grasfeld 21",
+    "place": "50354 Hürth, Efferen",
+    "cost": 777000,
+    "date": "04.09.2026, 10:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=168021&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Brühl"
+  },
+  {
+    "id": "ag-bruehl-167958",
+    "title": "Zweifamilienhaus",
+    "address": "Niederweg 4",
+    "place": "50374 Erftstadt, Friesheim",
+    "cost": 362000,
+    "date": "11.09.2026, 09:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167958&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Brühl"
+  },
+  {
+    "id": "ag-bruehl-167761",
+    "title": "Einfamilienhaus, Doppelhaushälfte",
+    "address": "Roggendorfer Weg 25 A",
+    "place": "50374 Erftstadt, Kierdorf",
+    "cost": 408000,
+    "date": "15.09.2026, 10:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167761&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Brühl"
+  },
+  {
+    "id": "ag-bruehl-167919",
+    "title": "Garage, Einfamilienhaus",
+    "address": "Barbarastraße 9",
+    "place": "50389 Wesseling, Berzdorf",
+    "cost": 420000,
+    "date": "29.09.2026, 10:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167919&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Brühl"
+  },
+  {
+    "id": "ag-bruehl-168026",
+    "title": "Eigentumswohnung (3 bis 4 Zimmer)",
+    "address": "Rodderweg 80, 82, 84, 86/Wittelsbacher Straße",
+    "place": "50321 Brühl, Kierberg",
+    "cost": 190000,
+    "date": "06.10.2026, 10:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=168026&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Brühl"
+  },
+  {
+    "id": "ag-bruehl-168344",
+    "title": "Eigentumswohnung (1 bis 2 Zimmer)",
+    "address": "Schlangenpfad 33",
+    "place": "50354 Hürth, Alt-Hürth",
+    "cost": 153000,
+    "date": "23.10.2026, 09:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=168344&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Brühl"
+  },
+  {
+    "id": "ag-euskirchen-167635",
+    "title": "unbebautes Grundstück",
+    "address": "Villa Rustica und Römerallee",
+    "place": "53909 Zülpich",
+    "cost": 190000,
+    "date": "15.07.2026, 11:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167635&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Euskirchen"
+  },
+  {
+    "id": "ag-euskirchen-167686",
+    "title": "Arrondierungsgrundstück in Innenlage und private Grünfläche (unter Landschaftsschutz)",
+    "address": "Pelzergasse und Filchnerstraße",
+    "place": "53881 Euskichen, Großbüllesheim",
+    "cost": 42500,
+    "date": "05.08.2026, 09:30 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167686&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Euskirchen"
+  },
+  {
+    "id": "ag-euskirchen-168197",
+    "title": "Zweifamilienhaus, Garage",
+    "address": "Lommersummerstraße 39",
+    "place": "53909 Zülpich, Wichterich",
+    "cost": 365300,
+    "date": "30.09.2026, 09:30 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=168197&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Euskirchen"
+  },
+  {
+    "id": "ag-euskirchen-168343",
+    "title": "Grundstück bebaut mit einem Wohnhaus sowie drei unbebaute Grundstücke im Außenbereich",
+    "address": "Der Auel",
+    "place": "53894 Mechernich, Satzvey-Firmenich",
+    "cost": 332400,
+    "date": "30.09.2026, 11:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=168343&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Euskirchen"
+  },
+  {
+    "id": "ag-schleiden-167159",
+    "title": "Wohnhaus mit Nebengebäuden",
+    "address": "Weidenstraße 4",
+    "place": "53937 Schleiden",
+    "cost": 80600,
+    "date": "13.07.2026, 09:30 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167159&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Schleiden"
+  },
+  {
+    "id": "ag-schleiden-167782",
+    "title": "Kfz-Stellplatz, Garage, Einfamilienhaus",
+    "address": "Am Silberberg 1B",
+    "place": "00000",
+    "cost": 540500,
+    "date": "27.07.2026, 09:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167782&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Schleiden"
+  },
+  {
+    "id": "ag-schleiden-167940",
+    "title": "Garage, Einfamilienhaus, keine Innenbesichtigung, Fertighaus der ersten Generation, keine Modernisierung bekannt",
+    "address": "Keltenstraße 31",
+    "place": "53925 Kall",
+    "cost": 170000,
+    "date": "11.09.2026, 09:00 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167940&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Schleiden"
+  },
+  {
+    "id": "ag-schleiden-167961",
+    "title": "Einfamilienhaus mit integrierter Garage und Abstellgebäude",
+    "address": "Höddelbach 12 A",
+    "place": "53937 Schleiden, Olef",
+    "cost": 141200,
+    "date": "11.09.2026, 11:30 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=167961&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Schleiden"
+  },
+  {
+    "id": "ag-rheinbach-168263",
+    "title": "Eigentumswohnung (1 bis 2 Zimmer)",
+    "address": "Stadtpark 19",
+    "place": "53359 Rheinbach",
+    "cost": 220000,
+    "date": "28.09.2026, 09:30 Uhr",
+    "url": "https://www.zvg-portal.de/index.php?button=showZvg&zvg_id=168263&land_abk=nw&sessionId=HL2lRI6S0A",
+    "new": false,
+    "court": "Amtsgericht Rheinbach"
+  }
+]
