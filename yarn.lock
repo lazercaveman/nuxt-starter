@@ -2585,14 +2585,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@pinia/nuxt@npm:1.0.1"
+"@pinia/nuxt@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@pinia/nuxt@npm:1.0.2"
   dependencies:
     "@nuxt/kit": "npm:^4.4.8"
   peerDependencies:
-    pinia: ^4.0.2
-  checksum: 10/f6e7907210ae8607cf966798bc34f4c03a69ab1c2287fb9a69544b04c167ebb30b13ceb8c1da724fad4ac0062a15ee5699e72c88e4007d38dae9fddc1b7d06f3
+    pinia: ^4.0.3
+  checksum: 10/51bb0de8cae9c0c2e353d913dd1c2e94bc7915b4f5d306341c15279fc6929d8504ebefd754975e55154249dd8545fe4807e818e0bfc9cf68685e6d589b0ff7f1
   languageName: node
   linkType: hard
 
@@ -9907,7 +9907,7 @@ __metadata:
     "@chromatic-com/storybook": "npm:^5.2.1"
     "@nuxt/devtools": "npm:^3.4.0"
     "@nuxt/test-utils": "npm:^4.1.0"
-    "@pinia/nuxt": "npm:^1.0.1"
+    "@pinia/nuxt": "npm:^1.0.2"
     "@pinia/testing": "npm:^2.0.1"
     "@storybook/addon-a11y": "npm:10.5.5"
     "@storybook/addon-docs": "npm:10.3.6"
