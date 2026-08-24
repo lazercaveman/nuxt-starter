@@ -8854,9 +8854,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "pinia@npm:4.0.2"
+"pinia@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "pinia@npm:4.0.3"
   dependencies:
     nostics: "npm:^1.1.4"
   peerDependencies:
@@ -8868,7 +8868,7 @@ __metadata:
       optional: false
     typescript:
       optional: true
-  checksum: 10/7360bd9c9cde49db7b188c4180b45cb4775f2a5ed3969a16e0396f8d1dd6335dc820d0aa703c4226f00ec8534bb0158c759eae9dd9c3cd36c8183cf5c03be01f
+  checksum: 10/345ed6db415a4bbd36e1c129817bbe6b2ba207ebeff7229d376486da834b25792115d05411d5be3675f48169308dfcac5640f61929b728d8b707f65f7a56837d
   languageName: node
   linkType: hard
 
@@ -9926,7 +9926,7 @@ __metadata:
     nuxt: "npm:^4.5.1"
     oxfmt: "npm:^0.61.0"
     oxlint: "npm:^1.76.0"
-    pinia: "npm:^4.0.2"
+    pinia: "npm:^4.0.3"
     sass: "npm:^1.102.0"
     sass-loader: "npm:^17.0.0"
     storybook: "npm:10.5.5"

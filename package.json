@@ -27,7 +27,7 @@
     "@pinia/nuxt": "^1.0.1",
     "cheerio": "^1.2.0",
     "nuxt": "^4.5.1",
-    "pinia": "^4.0.2"
+    "pinia": "^4.0.3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.2.1",
