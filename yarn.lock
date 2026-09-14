@@ -9933,7 +9933,7 @@ __metadata:
     tailwindcss: "npm:^4.3.3"
     typescript: "npm:6.0.3"
     unplugin-auto-import: "npm:^21.0.0"
-    vite-svg-loader: "npm:^5.1.1"
+    vite-svg-loader: "npm:^5.1.3"
     vitest: "npm:^4.1.10"
     vue-tsc: "npm:^3.3.8"
   languageName: unknown
@@ -10513,9 +10513,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svgo@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "svgo@npm:3.3.3"
+"svgo@npm:^3.3.5":
+  version: 3.3.5
+  resolution: "svgo@npm:3.3.5"
   dependencies:
     commander: "npm:^7.2.0"
     css-select: "npm:^5.1.0"
@@ -10525,8 +10525,8 @@ __metadata:
     picocolors: "npm:^1.0.0"
     sax: "npm:^1.5.0"
   bin:
-    svgo: ./bin/svgo
-  checksum: 10/f3c1b4d05d1704483e53515d5995af5f06a2718df85e3a8320f57bb256b8dc926b84c87a1a9b98e9d3ca1224314cc0676a803bdd03163508292f2d45c7077096
+    svgo: bin/svgo
+  checksum: 10/5b5f2246f0c7112e4b7c9e0199f0fd69a1bb2d3dd3545b5d4abe8b962e43010c8fbea90a09a03da9441325fbc0dea5eb1f230a4e89ca757d3f90b310be323ab4
   languageName: node
   linkType: hard
 
@@ -11479,15 +11479,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-svg-loader@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "vite-svg-loader@npm:5.1.1"
+"vite-svg-loader@npm:^5.1.3":
+  version: 5.1.3
+  resolution: "vite-svg-loader@npm:5.1.3"
   dependencies:
     debug: "npm:^4.3.4"
-    svgo: "npm:^3.3.3"
+    svgo: "npm:^3.3.5"
   peerDependencies:
     vue: ">=3.2.13"
-  checksum: 10/cf5421dab86b4444abaad6557fe247eed06da6d2d95969369236ac2268da4193e13663a5c2bb62ae1020a3cd90e80fad725ac763e1ec2ce8350cd119a08e45be
+  checksum: 10/4740c487e2ac51b18534aa3050ecb98eed08bc64da37bf495d24adc88955fffd528c9d876643cca289dcb47b0833b86a3e9d6de8cefd9d046eaa4ed9276ab00a
   languageName: node
   linkType: hard
 
