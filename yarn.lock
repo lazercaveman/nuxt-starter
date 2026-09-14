@@ -3255,9 +3255,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-vitest@npm:10.5.5":
-  version: 10.5.5
-  resolution: "@storybook/addon-vitest@npm:10.5.5"
+"@storybook/addon-vitest@npm:10.6.0":
+  version: 10.6.0
+  resolution: "@storybook/addon-vitest@npm:10.6.0"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     "@storybook/icons": "npm:^2.0.2"
@@ -3265,7 +3265,7 @@ __metadata:
     "@vitest/browser": ^3.0.0 || ^4.0.0
     "@vitest/browser-playwright": ^4.0.0
     "@vitest/runner": ^3.0.0 || ^4.0.0
-    storybook: ^10.5.5
+    storybook: ^10.6.0
     vitest: ^3.0.0 || ^4.0.0
   peerDependenciesMeta:
     "@vitest/browser":
@@ -3276,7 +3276,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: 10/5a11f67422558ca261cc2504d98824d018fb6ffdc59bbb749cae2942c2b31ef7224fb45d27a6cbdbba035937fc09451c433290d10849d975ea511d2f699d5dcb
+  checksum: 10/3ea078e2d8541168da8f1fe59196fb8ebfda00913b5dcd3ab3fb10c2bbc5250bb80deac77d659d17f5021e8ebfdcf2ba387ba89d6de4cd03ce3b484617e0b79b
   languageName: node
   linkType: hard
 
@@ -9912,7 +9912,7 @@ __metadata:
     "@storybook/addon-a11y": "npm:10.5.5"
     "@storybook/addon-docs": "npm:10.3.6"
     "@storybook/addon-themes": "npm:^10.5.5"
-    "@storybook/addon-vitest": "npm:10.5.5"
+    "@storybook/addon-vitest": "npm:10.6.0"
     "@storybook/vue3-vite": "npm:10.5.5"
     "@tailwindcss/vite": "npm:^4.3.3"
     "@types/node": "npm:^26.1.2"
