@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.2.1",
-    "@nuxt/devtools": "^3.4.0",
+    "@nuxt/devtools": "^3.4.2",
     "@nuxt/test-utils": "^4.1.0",
     "@pinia/testing": "^2.0.1",
     "@storybook/addon-a11y": "10.5.5",

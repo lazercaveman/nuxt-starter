@@ -1426,6 +1426,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxt/devtools-kit@npm:3.4.2":
+  version: 3.4.2
+  resolution: "@nuxt/devtools-kit@npm:3.4.2"
+  dependencies:
+    "@nuxt/kit": "npm:^4.5.1"
+    execa: "npm:^8.0.1"
+  peerDependencies:
+    vite: ">=6.0"
+  checksum: 10/cb2ef85fd5a641be590941db180032c2c20108095e2dd8c9196c042dbc825257c3108f56ac38baef5d3ce03502ddbda7eae83f25f15a30b1a315dd508d73caab
+  languageName: node
+  linkType: hard
+
 "@nuxt/devtools-kit@npm:^2.7.0":
   version: 2.7.0
   resolution: "@nuxt/devtools-kit@npm:2.7.0"
@@ -1456,7 +1468,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools@npm:^3.4.0, @nuxt/devtools@npm:^3.4.1":
+"@nuxt/devtools-wizard@npm:3.4.2":
+  version: 3.4.2
+  resolution: "@nuxt/devtools-wizard@npm:3.4.2"
+  dependencies:
+    "@clack/prompts": "npm:^1.7.0"
+    consola: "npm:^3.4.2"
+    diff: "npm:^8.0.4"
+    execa: "npm:^8.0.1"
+    magicast: "npm:^0.5.4"
+    pathe: "npm:^2.0.3"
+    pkg-types: "npm:^2.3.1"
+    semver: "npm:^7.8.5"
+  bin:
+    devtools-wizard: ./cli.mjs
+  checksum: 10/478ca615815674d46f6e239f63097d78d45da5e00a0972c455bf5c7e37c4ddb2cf5418988d655a2371894c9136a10dc8d898283fc72812e25152943430fa2d83
+  languageName: node
+  linkType: hard
+
+"@nuxt/devtools@npm:^3.4.1":
   version: 3.4.1
   resolution: "@nuxt/devtools@npm:3.4.1"
   dependencies:
@@ -1502,6 +1532,55 @@ __metadata:
   bin:
     devtools: ./cli.mjs
   checksum: 10/1e81875f2698b6310beddb0ebae4d0d5a610ea39631f10aab543677fde3235e8114c5ba2eba8b3b49092292907d3568e1758227f906d392628130de748225ad9
+  languageName: node
+  linkType: hard
+
+"@nuxt/devtools@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "@nuxt/devtools@npm:3.4.2"
+  dependencies:
+    "@nuxt/devtools-kit": "npm:3.4.2"
+    "@nuxt/devtools-wizard": "npm:3.4.2"
+    "@nuxt/kit": "npm:^4.5.1"
+    "@vue/devtools-core": "npm:^8.2.1"
+    "@vue/devtools-kit": "npm:^8.2.1"
+    birpc: "npm:^4.0.0"
+    consola: "npm:^3.4.2"
+    destr: "npm:^2.0.5"
+    error-stack-parser-es: "npm:^2.0.1"
+    execa: "npm:^8.0.1"
+    fast-npm-meta: "npm:^2.2.0"
+    get-port-please: "npm:^3.2.0"
+    hookable: "npm:^6.1.1"
+    image-meta: "npm:^0.2.2"
+    is-installed-globally: "npm:^1.0.0"
+    launch-editor: "npm:^2.14.1"
+    local-pkg: "npm:^1.2.1"
+    magicast: "npm:^0.5.4"
+    nypm: "npm:^0.6.9"
+    ohash: "npm:^2.0.11"
+    pathe: "npm:^2.0.3"
+    perfect-debounce: "npm:^2.1.0"
+    pkg-types: "npm:^2.3.1"
+    semver: "npm:^7.8.5"
+    simple-git: "npm:^3.36.0"
+    sirv: "npm:^3.0.2"
+    structured-clone-es: "npm:^2.0.1"
+    tinyglobby: "npm:^0.2.17"
+    unstorage: "npm:^1.17.5"
+    vite-plugin-inspect: "npm:^11.4.1"
+    vite-plugin-vue-tracer: "npm:^1.4.0"
+    which: "npm:^6.0.1"
+    ws: "npm:^8.21.1"
+  peerDependencies:
+    "@vitejs/devtools": "*"
+    vite: ">=6.0"
+  peerDependenciesMeta:
+    "@vitejs/devtools":
+      optional: true
+  bin:
+    devtools: ./cli.mjs
+  checksum: 10/eaf5cc4a953fd19de937bcd9ce30e5ff89a8f54fc97b472923e26f6922b156dd187bbf1620cf8fa69ed1ef80aabef20e6d7a16b51143b966507cc18dbb1190f2
   languageName: node
   linkType: hard
 
@@ -9905,7 +9984,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@chromatic-com/storybook": "npm:^5.2.1"
-    "@nuxt/devtools": "npm:^3.4.0"
+    "@nuxt/devtools": "npm:^3.4.2"
     "@nuxt/test-utils": "npm:^4.1.0"
     "@pinia/nuxt": "npm:^1.0.1"
     "@pinia/testing": "npm:^2.0.1"
