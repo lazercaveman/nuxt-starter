@@ -3244,14 +3244,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-themes@npm:^10.5.5":
-  version: 10.5.7
-  resolution: "@storybook/addon-themes@npm:10.5.7"
+"@storybook/addon-themes@npm:^10.6.0":
+  version: 10.6.0
+  resolution: "@storybook/addon-themes@npm:10.6.0"
   dependencies:
     ts-dedent: "npm:^2.0.0"
   peerDependencies:
-    storybook: ^10.5.7
-  checksum: 10/19a935dd5b685ac617bd07b7a379d651b4e2f29ae1157bdd50638789e8c3f7959e5906f62e7f3c3bfd22061daac7b45749d4b80682a1854cddd4d421d3936835
+    storybook: ^10.6.0
+  checksum: 10/22843de98943ac27b0cd71b46f48c751de9acc759821a76ffc78ab2c13bb680f3231f9413b319de736f5440df704b8c9c0a03bc8d1544c7f63e8a2bede9be7d9
   languageName: node
   linkType: hard
 
@@ -9911,7 +9911,7 @@ __metadata:
     "@pinia/testing": "npm:^2.0.1"
     "@storybook/addon-a11y": "npm:10.5.5"
     "@storybook/addon-docs": "npm:10.3.6"
-    "@storybook/addon-themes": "npm:^10.5.5"
+    "@storybook/addon-themes": "npm:^10.6.0"
     "@storybook/addon-vitest": "npm:10.5.5"
     "@storybook/vue3-vite": "npm:10.5.5"
     "@tailwindcss/vite": "npm:^4.3.3"
