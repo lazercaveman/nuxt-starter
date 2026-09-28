@@ -35,7 +35,7 @@
     "@nuxt/test-utils": "^4.1.0",
     "@pinia/testing": "^2.0.1",
     "@storybook/addon-a11y": "10.5.5",
-    "@storybook/addon-docs": "10.3.6",
+    "@storybook/addon-docs": "10.6.0",
     "@storybook/addon-themes": "^10.5.5",
     "@storybook/addon-vitest": "10.5.5",
     "@storybook/vue3-vite": "10.5.5",
