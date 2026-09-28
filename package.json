@@ -44,7 +44,7 @@
     "@vitejs/plugin-vue": "^6.0.8",
     "@vitest/coverage-v8": "^4.1.10",
     "@vitest/ui": "^4.1.10",
-    "@vue/test-utils": "^2.4.11",
+    "@vue/test-utils": "^2.5.1",
     "husky": "^9.1.7",
     "jsdom": "^30.0.1",
     "oxfmt": "^0.61.0",
