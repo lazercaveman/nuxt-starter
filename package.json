@@ -51,7 +51,7 @@
     "oxlint": "^1.76.0",
     "sass": "^1.102.0",
     "sass-loader": "^17.0.0",
-    "storybook": "10.5.5",
+    "storybook": "10.6.0",
     "tailwindcss": "^4.3.3",
     "typescript": "6.0.3",
     "unplugin-auto-import": "^21.0.0",
