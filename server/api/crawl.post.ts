@@ -12,7 +12,7 @@ export default defineEventHandler(async (): Promise<CrawlResult> => {
   running = true;
 
   try {
-    const results = await Promise.allSettled(ZVG_SOURCES.map((source) => fetchZvgPage(source)));
+    const results = await Promise.allSettled(AUCTION_SOURCES.map((source) => source.fetch(source.url, source.state)));
 
     const scraped: Auction[] = [];
     const failures: CrawlResult['failures'] = [];
@@ -24,13 +24,13 @@ export default defineEventHandler(async (): Promise<CrawlResult> => {
       }
 
       failures.push({
-        source: ZVG_SOURCES[index] ?? 'unbekannt',
+        source: AUCTION_SOURCES[index]?.url ?? 'unbekannt',
         message: result.reason instanceof Error ? result.reason.message : String(result.reason),
       });
     });
 
     // Every court failed — nothing to merge, and writing now would be misleading.
-    if (scraped.length === 0 && failures.length === ZVG_SOURCES.length) {
+    if (scraped.length === 0 && failures.length === AUCTION_SOURCES.length) {
       throw createError({ statusCode: 502, statusMessage: 'Keine der Quellen war erreichbar.' });
     }
 

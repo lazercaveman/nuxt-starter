@@ -33,7 +33,7 @@ const SOURCE = 'https://www.ag-bruehl.nrw.de/behoerde/zvg_termine/index.php';
 
 describe('parseZvgPage', () => {
   it('extracts a single auction and skips the table header row', () => {
-    const auctions = parseZvgPage(FIXTURE, SOURCE);
+    const auctions = parseZvgPage(FIXTURE, SOURCE, 'NRW');
 
     expect(auctions).toHaveLength(1);
     expect(auctions[0]).toEqual({
@@ -47,22 +47,23 @@ describe('parseZvgPage', () => {
       new: true,
       updated: false,
       court: 'Amtsgericht Brühl',
+      state: 'NRW',
     });
   });
 
   it('keeps the sessionId — the ZVG portal returns an error page without it', () => {
-    expect(parseZvgPage(FIXTURE, SOURCE)[0]?.url).toContain('sessionId=HL2lRI6S0A');
+    expect(parseZvgPage(FIXTURE, SOURCE, 'NRW')[0]?.url).toContain('sessionId=HL2lRI6S0A');
   });
 
   it('derives the id from zvg_id, so a rotated sessionId does not resurface an object as new', () => {
-    const first = parseZvgPage(FIXTURE, SOURCE);
-    const second = parseZvgPage(FIXTURE.replace('HL2lRI6S0A', 'ZZ9xQQ1a2B'), SOURCE);
+    const first = parseZvgPage(FIXTURE, SOURCE, 'NRW');
+    const second = parseZvgPage(FIXTURE.replace('HL2lRI6S0A', 'ZZ9xQQ1a2B'), SOURCE, 'NRW');
 
     expect(second[0]?.id).toBe(first[0]?.id);
     expect(second[0]?.url).toContain('sessionId=ZZ9xQQ1a2B');
   });
 
   it('returns an empty list when the page has no auction table', () => {
-    expect(parseZvgPage('<html><body><p>Keine Termine</p></body></html>', SOURCE)).toEqual([]);
+    expect(parseZvgPage('<html><body><p>Keine Termine</p></body></html>', SOURCE, 'NRW')).toEqual([]);
   });
 });

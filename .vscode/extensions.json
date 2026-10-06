@@ -9,8 +9,6 @@
     "gruntfuggly.todo-tree",
     "vue.volar",
     "bradlc.vscode-tailwindcss",
-    "syler.sass-indented",
-    "unifiedjs.vscode-mdx",
     "streetsidesoftware.code-spell-checker"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.

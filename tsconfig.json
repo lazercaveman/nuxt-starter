@@ -21,7 +21,7 @@
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
-    "types": ["@types/node", "@pinia/nuxt"],
+    "types": ["@types/node"],
     "baseUrl": ".",
     "isolatedModules": true,
     "verbatimModuleSyntax": true

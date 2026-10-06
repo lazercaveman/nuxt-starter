@@ -6,8 +6,8 @@
         <div>
           <h1 class="text-lg font-semibold">Auction Grabber</h1>
           <p class="text-sm text-slate-500 dark:text-slate-400">
-            <template v-if="auctions.length">
-              {{ auctions.length }} Objekte · {{ courtCount }} Amtsgerichte
+            <template v-if="visibleAuctions.length">
+              {{ visibleAuctions.length }} Objekte · {{ courtCount }} {{ courtCount === 1 ? 'Amtsgericht' : 'Amtsgerichte' }}
               <span
                 v-if="totalNew"
                 class="font-medium text-emerald-600 dark:text-emerald-400"
@@ -21,7 +21,7 @@
                 · {{ totalUpdated }} aktualisiert
               </span>
             </template>
-            <template v-else>Zwangsversteigerungen im Rheinland</template>
+            <template v-else>Zwangsversteigerungen in NRW und Schleswig-Holstein</template>
           </p>
         </div>
 
@@ -56,12 +56,43 @@
         {{ errorMessage }}
       </p>
 
+      <div
+        v-if="auctions.length"
+        role="group"
+        aria-label="Nach Bundesland filtern"
+        class="flex flex-wrap gap-2"
+      >
+        <button
+          v-for="option in stateOptions"
+          :key="option.value ?? 'all'"
+          type="button"
+          :aria-pressed="selectedState === option.value"
+          class="inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm font-medium transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 dark:focus-visible:outline-slate-100"
+          :class="
+            selectedState === option.value
+              ? 'border-slate-900 bg-slate-900 text-white dark:border-slate-100 dark:bg-slate-100 dark:text-slate-900'
+              : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-slate-700'
+          "
+          @click="selectedState = option.value"
+        >
+          {{ option.label }}
+          <span class="text-xs tabular-nums opacity-60">{{ option.count }}</span>
+        </button>
+      </div>
+
       <p
         v-if="!auctions.length"
         class="rounded-xl border border-dashed border-slate-300 px-6 py-16 text-center text-sm text-slate-500 dark:border-slate-700 dark:text-slate-400"
       >
         Noch keine Objekte gespeichert.<br />
         Starte den Crawler, um die Termine der Amtsgerichte abzurufen.
+      </p>
+
+      <p
+        v-else-if="!visibleAuctions.length && selectedState"
+        class="rounded-xl border border-dashed border-slate-300 px-6 py-16 text-center text-sm text-slate-500 dark:border-slate-700 dark:text-slate-400"
+      >
+        Keine Objekte in {{ FEDERAL_STATE_LABELS[selectedState] }} gespeichert.
       </p>
 
       <section
@@ -139,14 +170,29 @@
 
 <script setup lang="ts">
 import AuctionList from '@/components/auction-list/AuctionList.vue';
-import type { Auction, CrawlResult } from '#shared/types/auction';
+import type { Auction, CrawlResult, FederalState } from '#shared/types/auction';
 import { toTimestamp } from '#shared/utils/auction-date';
+import { FEDERAL_STATE_LABELS, FEDERAL_STATES } from '#shared/utils/federal-state';
 
 const { data: auctions } = await useFetch<Auction[]>('/api/auctions', { default: () => [] });
 
 const isCrawling = ref(false);
 const status = ref('');
 const errorMessage = ref('');
+
+/** `null` shows every federal state. */
+const selectedState = ref<FederalState | null>(null);
+
+const visibleAuctions = computed(() => (selectedState.value ? auctions.value.filter((auction) => auction.state === selectedState.value) : auctions.value));
+
+const stateOptions = computed(() => [
+  { value: null, label: 'Alle', count: auctions.value.length },
+  ...FEDERAL_STATES.map((state) => ({
+    value: state,
+    label: FEDERAL_STATE_LABELS[state],
+    count: auctions.value.filter((auction) => auction.state === state).length,
+  })),
+]);
 
 /** New objects first, then updated ones, then by auction date. */
 const byRelevance = (a: Auction, b: Auction): number =>
@@ -155,13 +201,13 @@ const byRelevance = (a: Auction, b: Auction): number =>
 const byDate = (a: Auction, b: Auction): number => toTimestamp(a.date) - toTimestamp(b.date);
 
 /** Everything the last crawl touched — pulled out of its court group until it goes quiet again. */
-const news = computed(() => auctions.value.filter((auction) => auction.new || auction.updated).sort(byRelevance));
+const news = computed(() => visibleAuctions.value.filter((auction) => auction.new || auction.updated).sort(byRelevance));
 
-const totalNew = computed(() => auctions.value.filter((auction) => auction.new).length);
-const totalUpdated = computed(() => auctions.value.filter((auction) => auction.updated).length);
+const totalNew = computed(() => visibleAuctions.value.filter((auction) => auction.new).length);
+const totalUpdated = computed(() => visibleAuctions.value.filter((auction) => auction.updated).length);
 
-// Counted across all records, not across the rendered groups — those skip courts fully in NEWS.
-const courtCount = computed(() => new Set(auctions.value.map((auction) => auction.court)).size);
+// Counted across all visible records, not across the rendered groups — those skip courts fully in NEWS.
+const courtCount = computed(() => new Set(visibleAuctions.value.map((auction) => auction.court)).size);
 
 /** Pastel highlight per city — kept separate from the NEW/UPDATED accents in AuctionList. */
 const CITY_ACCENTS: Record<string, { container: string; badge: string }> = {
@@ -207,7 +253,7 @@ const groupByCity = (courtAuctions: Auction[]) => {
 const groupedByCourt = computed(() => {
   const groups = new Map<string, Auction[]>();
 
-  for (const auction of auctions.value) {
+  for (const auction of visibleAuctions.value) {
     if (auction.new || auction.updated) continue;
 
     const group = groups.get(auction.court) ?? [];

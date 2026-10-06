@@ -2,7 +2,6 @@
 *.log
 logs
 lerna-debug.log*
-*storybook.log
 /server/_logs
 
 # Nuxt/Vue build artifacts
@@ -12,7 +11,6 @@ nuxt.d.ts
 
 # compiled output
 /dist
-/storybook-static
 /node_modules
 
 # Cache files

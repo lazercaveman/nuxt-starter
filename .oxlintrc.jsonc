@@ -4,7 +4,7 @@
   "env": {
     "browser": true,
   },
-  "ignorePatterns": ["node_modules", "coverage", "dist", ".output", ".nuxt", "clean-project.js"],
+  "ignorePatterns": ["node_modules", "coverage", "dist", ".output", ".nuxt"],
   /*
     I consider these rules essential for this project.
     Feel free to remove any that you find unnecessary

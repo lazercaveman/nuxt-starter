@@ -13,6 +13,7 @@ const auction = (overrides: Partial<Auction> = {}): Auction => ({
   new: true,
   updated: false,
   court: 'Amtsgericht Brühl',
+  state: 'NRW',
   ...overrides,
 });
 

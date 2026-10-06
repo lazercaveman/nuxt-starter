@@ -1,5 +1,6 @@
 import * as cheerio from 'cheerio';
-import type { Auction } from '#shared/types/auction';
+import type { Auction, FederalState } from '#shared/types/auction';
+import { fetchHtml } from './fetch-html';
 
 export const ZVG_SOURCES = [
   'https://www.ag-bruehl.nrw.de/behoerde/zvg_termine/index.php',
@@ -52,7 +53,7 @@ const splitLocation = (location: string): { address: string; place: string } => 
   };
 };
 
-export const parseZvgPage = (html: string, sourceUrl: string): Auction[] => {
+export const parseZvgPage = (html: string, sourceUrl: string, state: FederalState): Auction[] => {
   const $ = cheerio.load(html);
   const slug = courtSlug(sourceUrl);
   const court = $('title').text().split(':')[0]?.trim() || COURT_NAMES[slug] || slug;
@@ -91,18 +92,11 @@ export const parseZvgPage = (html: string, sourceUrl: string): Auction[] => {
       new: true,
       updated: false,
       court,
+      state,
     });
   });
 
   return auctions;
 };
 
-export const fetchZvgPage = async (sourceUrl: string): Promise<Auction[]> => {
-  const html = await $fetch<string>(sourceUrl, {
-    responseType: 'text',
-    timeout: 15_000,
-    headers: { 'user-agent': 'auction-grabber/1.0 (+https://github.com/lazercaveman)' },
-  });
-
-  return parseZvgPage(html, sourceUrl);
-};
+export const fetchZvgPage = async (sourceUrl: string, state: FederalState): Promise<Auction[]> => parseZvgPage(await fetchHtml(sourceUrl), sourceUrl, state);

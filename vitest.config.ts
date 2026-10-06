@@ -1,12 +1,15 @@
-import { defineVitestConfig } from '@nuxt/test-utils/config';
-import svgLoader from 'vite-svg-loader';
+import { fileURLToPath } from 'node:url';
+import { defineConfig } from 'vitest/config';
 
-export default defineVitestConfig({
+export default defineConfig({
   test: {
-    globals: true,
-    environment: 'jsdom',
-    include: ['./app/components/**/*.test.ts', './app/testing/**/*.test.ts', './server/**/*.test.ts'],
-    setupFiles: ['./app/testing/setup.ts'],
+    include: ['./app/**/*.test.ts', './server/**/*.test.ts', './shared/**/*.test.ts'],
   },
-  plugins: [svgLoader()],
+  resolve: {
+    // Mirrors the Nuxt aliases, so tests can import the same paths as the app code.
+    alias: {
+      '#shared': fileURLToPath(new URL('./shared', import.meta.url)),
+      '@': fileURLToPath(new URL('./app', import.meta.url)),
+    },
+  },
 });

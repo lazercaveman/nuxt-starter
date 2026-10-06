@@ -3,12 +3,10 @@
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/nuxt-starter)
 
 # Nuxt 4 Starter
-![Screenshot](./app/assets/img/screenshot.png)
 
 ## 🥸 Why this template?  
 Get ready to supercharge your development with this fully configured Nuxt 4 Starter Kit! Built on Vue 3, AI ready (including configured CLAUDE.md), powered by TypeScript and many other technologies (for more information see down-below or checkout package.json for even more), this setup comes preloaded with tools and libraries designed to enhance your workflow, streamline development, and maintain high-quality code. 🙌 No more wrestling with configurations—jump straight into building amazing projects! 
 
-- **Clean up project in seconds:**  Using the `yarn script:cleanup` command in your terminal, will clean up the project, remove demo contents - the Starter Kit is designed so that developers can start working immediately without having to spend time setting up basic structures and configurations.
 - **Up to date:**  Using up to date dependencies and tools to ensure a smooth development experience. (at least I try ^^)
 - **Batteries-Included** The Starter Kit uses lots of well kind of "standard dependencies" fully configured and ready to go.
 - **MIT License:** Allows commercial use, modification, distribution, and of course private use as well  - for more read the [MIT License](LICENSE).
@@ -42,34 +40,9 @@ Husky enforces pre-push hooks, ensuring quality checks are performed before code
 Tailwind CSS is a highly effective utility-first CSS framework that greatly enhances the styling of a Nuxt project. Tailwind's zero-runtime feature further adds to its performance, making it a valuable addition to a Nuxt project looking to achieve high-quality and optimized styling.
 [learn more](https://tailwindcss.com).
 
-### 👩‍🎤 Sass
-For flexibility in styling. Use SCSS to add custom styles when needed - SCSS definitions should not use @apply (more information can be found within the [tailwind documentation](https://tailwindcss.com/docs/compatibility#sass-less-and-stylus)). However using SCSS alongside Tailwind can be an option for stuff like animations or other things that are not solvable convenient using Tailwind (or of course instead of tailwind if this is what you prefer).
-[learn more](https://sass-lang.com/).
-
-### 🍍 Pinia
-To manage app state easily. Pinia is modern, simple, and works perfectly with Vue 3 and Nuxt 4, for scalable state management.
-[learn more](https://pinia.vuejs.org).
-
 ### 🤌 TypeScript
 TypeScript enhances the JavaScript language by adding optional static typing and other features, for safer, smarter code - helping avoiding errors and catching bugs early in development.
 [learn more](https://www.typescriptlang.org/).
-
-### 📚 Storybook
-Storybook streamlines the UI development process by allowing for isolated development of individual components. It provides better visualization and collaboration, making it easier for teams to work together and create a better end product.
-[learn more](https://storybook.js.org/docs/vue/get-started/introduction).
-
-### 📸 Chromatic
-Chromatic is a cloud-based visual testing and review platform built for Storybook. It automatically captures screenshots of every story on each push, diffs them against the baseline, and flags visual regressions for review — catching UI bugs before they reach production. It also hosts your published Storybook so the whole team can browse and review components without a local setup.
-
-To connect your project, set your project token either in `chromatic.config.json`:
-```json
-{ "projectId": "your-chromatic-project-token" }
-```
-or via an environment variable (useful for CI):
-```bash
-CHROMATIC_PROJECT_TOKEN=your-chromatic-project-token
-```
-[learn more](https://www.chromatic.com/docs/).
 
 ### 🤖 Claude Code Ready
 This starter ships with a pre-configured `CLAUDE.md` file — the instruction file read by [Claude Code](https://claude.ai/code) (Anthropic's AI coding assistant). It documents the full project setup: tech stack, directory layout, commands, critical rules, and gotchas. Any Claude Code session in this repo will pick it up automatically, so the AI already knows the conventions, the correct tools (`oxlint`, `oxfmt`, Vitest, yarn), and what not to do — no manual briefing required.
@@ -83,13 +56,6 @@ This starter ships with a pre-configured `CLAUDE.md` file — the instruction fi
 3. Make sure you have yarn version mentioned in the package json in use (or use the package manager of your choice it should also work - in case remove the `.npmrc` file and execute e.g. `corepack use yarn@4.10.3`).
 4. Run `yarn install` to install dependencies
 5. Run `yarn dev` to start the local development environment
-
-### 🧹 Comes with Auto-Clean-Script
-Nuxt-Starter is delivered with a range of example content – including sample components, tests, and store configurations. If you'd prefer to start with a clean setup, simply run the following CLI command in your terminal `yarn script:cleanup` - this command offers an easy, one-step process to prepare your Nuxt 4 project for a fresh start.
-- It empties the contents of './components', './tests' and ./store while keeping the directories intact.
-- It completely deletes the './.assets/img', './coverage', './.github', './.vscode', './.git' folder, and all its contents. 🚨 Since the .git folder will be deleted your project will be disconnected from this repository.
-- The cleaning script is set up to delete itself after execution, ensuring that your project is as lean as possible once you’ve cleaned up the examples - therefor it will delete the script file as well as the npm script 'script:cleanup' from the package.json file.
-- It will delete the node_modules, .nuxt and .output folders, empty the yarn-cache and reinstall everything from scratch.
 
 --
 

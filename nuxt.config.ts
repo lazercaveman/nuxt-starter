@@ -1,4 +1,3 @@
-import svgLoader from 'vite-svg-loader';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
@@ -16,17 +15,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@pinia/nuxt', '@nuxt/devtools'],
-
-  css: ['@/assets/style/animations.scss', '@/assets/style/tailwind.css'],
+  css: ['@/assets/style/tailwind.css'],
 
   vite: {
-    plugins: [svgLoader(), tailwindcss()],
+    plugins: [tailwindcss()],
     optimizeDeps: {
       include: ['@vue/devtools-core', '@vue/devtools-kit'],
     },
     resolve: {},
-    assetsInclude: ['**/*.mdx'],
     css: {},
   },
 

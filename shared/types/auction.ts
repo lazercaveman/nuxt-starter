@@ -1,3 +1,6 @@
+/** `NRW` = Nordrhein-Westfalen, `SH` = Schleswig-Holstein. */
+export type FederalState = 'NRW' | 'SH';
+
 export interface Auction {
   id: string;
   title: string;
@@ -10,6 +13,8 @@ export interface Auction {
   /** Set when the last crawl changed one of the mutable fields; cleared on the next quiet crawl. */
   updated: boolean;
   court: string;
+  /** Assigned per source in `server/utils/auction-sources.ts`, not read from the page. */
+  state: FederalState;
 }
 
 export interface CrawlResult {

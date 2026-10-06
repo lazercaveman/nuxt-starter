@@ -13,7 +13,10 @@ export const readAuctions = async (): Promise<Auction[]> => {
   try {
     const raw = await readFile(dataFile(), 'utf8');
     const parsed: unknown = JSON.parse(raw);
-    return Array.isArray(parsed) ? (parsed as Auction[]) : [];
+    if (!Array.isArray(parsed)) return [];
+
+    // Records stored before `state` existed all came from the NRW courts.
+    return (parsed as Auction[]).map((auction) => ({ ...auction, state: auction.state ?? 'NRW' }));
   } catch (error) {
     // A missing data file is the expected state before the first run.
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') return [];
