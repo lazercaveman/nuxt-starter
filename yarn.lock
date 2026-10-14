@@ -538,17 +538,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chromatic-com/storybook@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "@chromatic-com/storybook@npm:5.2.1"
+"@chromatic-com/storybook@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "@chromatic-com/storybook@npm:5.4.0"
   dependencies:
     "@neoconfetti/react": "npm:^1.0.0"
-    chromatic: "npm:16.10.0"
+    chromatic: "npm:^18.0.1"
     jsonfile: "npm:^6.1.0"
     strip-ansi: "npm:^7.1.0"
   peerDependencies:
-    storybook: ^0.0.0-0 || ^10.1.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0
-  checksum: 10/cb0e50221c5ba5abea743443ecaa71d8038099b2afca0e2f498bf7b15dd0530d2ea8dfd105c614b306431546cd07247a7f87bcdc38fda7e85f83fe06a2ef470a
+    storybook: ^0.0.0-0 || ^10.1.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0 || ^11.0.0-0
+  checksum: 10/6d224ad19ab7240b47b6cdaed18d7387202d5045c4bae4622a23d1bd2cffde9e7e69a05727c5f55e1ccf31843b94a9f22251524a20bacfc6e633ddc1c7f95a08
   languageName: node
   linkType: hard
 
@@ -5042,15 +5042,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:16.10.0":
-  version: 16.10.0
-  resolution: "chromatic@npm:16.10.0"
+"chromatic@npm:^18.0.1":
+  version: 18.11.0
+  resolution: "chromatic@npm:18.11.0"
   dependencies:
     semver: "npm:^7.3.5"
   peerDependencies:
     "@chromatic-com/cypress": ^0.*.* || ^1.0.0
     "@chromatic-com/playwright": ^0.*.* || ^1.0.0
     "@chromatic-com/vitest": ^0.*.* || ^1.0.0
+  dependenciesMeta:
+    "@sentry/cli":
+      built: true
+    esbuild:
+      built: true
   peerDependenciesMeta:
     "@chromatic-com/cypress":
       optional: true
@@ -5062,7 +5067,7 @@ __metadata:
     chroma: dist/bin.cjs
     chromatic: dist/bin.cjs
     chromatic-cli: dist/bin.cjs
-  checksum: 10/8c69384f7043dcc3d38632480da3c66619e3e2ac4aa596e38591f3ab1edf52bdc22aedfcd4166f6049fdb9db797c59cd0d0887e166aced558449cd46eb60fa23
+  checksum: 10/881ea0e21a321b29565432e4e3c3f1c53a8a3dc355997ea30252f542d7e0e59b6d76e7f8b6bcd9dfac0eac3d5f538121e00a5322f0b03eb3ca2809ecb14d1539
   languageName: node
   linkType: hard
 
@@ -9904,7 +9909,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@chromatic-com/storybook": "npm:^5.2.1"
+    "@chromatic-com/storybook": "npm:^5.4.0"
     "@nuxt/devtools": "npm:^3.4.0"
     "@nuxt/test-utils": "npm:^4.1.0"
     "@pinia/nuxt": "npm:^1.0.1"
