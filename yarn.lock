@@ -3215,15 +3215,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:10.5.5":
-  version: 10.5.5
-  resolution: "@storybook/addon-a11y@npm:10.5.5"
+"@storybook/addon-a11y@npm:10.6.1":
+  version: 10.6.1
+  resolution: "@storybook/addon-a11y@npm:10.6.1"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     axe-core: "npm:^4.2.0"
   peerDependencies:
-    storybook: ^10.5.5
-  checksum: 10/c9a6b6d327c92f950182345d9324a86620ec0d26427bc0f19e0fd84e1f7ee21d76092f10d663cf73c357df07332fef7d55b6fa1a9a402b25f4421bb1964e0491
+    storybook: ^10.6.1
+  checksum: 10/906663f4885fa6976fcf54328a4cf0685503cf04a7acf1fb5dd02a3074f734ec1dbf613b00ea451d0d9ab0e58c80844af711565368ad75b75adce800cbc4f705
   languageName: node
   linkType: hard
 
@@ -9909,7 +9909,7 @@ __metadata:
     "@nuxt/test-utils": "npm:^4.1.0"
     "@pinia/nuxt": "npm:^1.0.1"
     "@pinia/testing": "npm:^2.0.1"
-    "@storybook/addon-a11y": "npm:10.5.5"
+    "@storybook/addon-a11y": "npm:10.6.1"
     "@storybook/addon-docs": "npm:10.3.6"
     "@storybook/addon-themes": "npm:^10.5.5"
     "@storybook/addon-vitest": "npm:10.5.5"
