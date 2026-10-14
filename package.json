@@ -36,7 +36,7 @@
     "@pinia/testing": "^2.0.1",
     "@storybook/addon-a11y": "10.5.5",
     "@storybook/addon-docs": "10.3.6",
-    "@storybook/addon-themes": "^10.5.5",
+    "@storybook/addon-themes": "^10.6.1",
     "@storybook/addon-vitest": "10.5.5",
     "@storybook/vue3-vite": "10.5.5",
     "@tailwindcss/vite": "^4.3.3",
